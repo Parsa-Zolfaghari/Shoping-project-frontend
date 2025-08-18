@@ -1,0 +1,30 @@
+ /* ===== Header ===== */
+ header {
+     background: #111;
+     color: white;
+     padding: 15px 30px;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+ }
+
+ header .logo {
+     font-size: 22px;
+     font-weight: bold;
+ }ّ
+
+ header nav a {
+     margin: 0 10px;
+     color: white;
+     text-decoration: none;
+     font-size: 14px;
+ }
+
+ header .cart-btn {
+     background: #ff9800;
+     border: none;
+     padding: 8px 15px;
+     border-radius: 6px;
+     cursor: pointer;
+     font-weight: bold;
+ }
