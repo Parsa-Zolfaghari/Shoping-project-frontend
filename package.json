@@ -1,0 +1,40 @@
+{
+  "name": "suntime",
+  "version": "1.0.0",
+  "description": "Single-page watch shop with HTML, CSS, JS, featuring Swiper sliders, SweetAlert alerts, and Font Awesome icons.",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Parsa-Zolfaghari/Shoping-project.git"
+  },
+  "keywords": [
+    "watch",
+    "store",
+    "shop",
+    "ecommerce",
+    "frontend",
+    "html",
+    "css",
+    "javascript",
+    "swiper",
+    "sweetalert",
+    "fontawesome",
+    "single-page",
+    "ui",
+    "responsive"
+  ],
+  "author": "َApex",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Parsa-Zolfaghari/Shoping-project/issues"
+  },
+  "homepage": "https://github.com/Parsa-Zolfaghari/Shoping-project#readme",
+  "dependencies": {
+    "fontawesome": "^5.6.3",
+    "sweet-alert": "^2.0.5",
+    "swiper": "^11.2.10"
+  }
+}
