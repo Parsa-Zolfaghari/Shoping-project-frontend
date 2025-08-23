@@ -1,13 +1,15 @@
-
-
+:root{
+    --primary :#c5a46d ;
+    --dark :#1c1c1c ;
+    --light :aliceblue;
+}
 body{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: #1c1c1c;
+    background-color:var(--light);
 }
 a {
-    color: aliceblue;
-    /* #c5a46d */
+    color: var(--light);
     text-decoration: none;
 }
