@@ -1,0 +1,13 @@
+
+
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #1c1c1c;
+}
+a {
+    color: aliceblue;
+    /* #c5a46d */
+    text-decoration: none;
+}
