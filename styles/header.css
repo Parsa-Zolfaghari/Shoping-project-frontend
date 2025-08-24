@@ -1,13 +1,14 @@
 @import url("./default.css");
 
-*{
+* {
     font-family: 'IRANSANS', sans-serif;
 }
+
 .header-nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid var(--primary);
+    border-bottom: 0.1px solid var(--primary);
     height: 110px;
     color: var(--primary);
 }
@@ -17,14 +18,14 @@
     background-color: var(--primary);
     border-radius: 10px;
     color: var(--light);
-    padding:0 40px;
+    padding: 0 40px;
     margin-left: 50px;
 }
 
-header{
+header {
     background: url('../assets/img/header/pexels-castorlystock-3829441.jpg')center center / cover;
     width: 100%;
-    height: 632px;
+    height: 100vh;
 }
 
 .header-container {
@@ -33,13 +34,14 @@ header{
 }
 
 .header-title {
+    text-align: center;
     margin-top: 50px;
     font-size: 40px;
     font-weight: bold;
-    margin-left: 150px;
+    margin-left: 140px;
 }
 
-.header-button-home{
+.header-button-home {
     border: 3px solid var(--light);
     background-color: var(--primary);
     border-radius: 10px;
@@ -50,7 +52,7 @@ header{
     cursor: pointer;
 }
 
-.header-button-cart-shopping{
+.header-button-cart-shopping {
     border: 3px solid var(--light);
     background-color: var(--primary);
     border-radius: 10px;
@@ -61,23 +63,24 @@ header{
     cursor: pointer;
 }
 
-.header-button-home > svg{
+.header-button-home>svg {
     width: 100px;
-    height: 100px; 
+    height: 100px;
     display: flex;
     flex-direction: column;
     margin-bottom: -42.5px;
     margin-right: 95px;
     cursor: pointer;
 }
-.header-button-home > p{
+
+.header-button-home>p {
     margin-right: -25px;
     display: flex;
     flex-direction: column;
     margin-bottom: 0;
 }
 
-.header-button-cart-shopping > svg{
+.header-button-cart-shopping>svg {
     width: 35px;
     height: 35px;
     display: flex;
@@ -86,9 +89,53 @@ header{
     margin-right: 85px;
     cursor: pointer;
 }
-.header-button-cart-shopping > p{
+
+.header-button-cart-shopping>p {
     margin-right: -25px;
     display: flex;
     flex-direction: column;
     margin-bottom: 0;
+}
+
+.header__input {
+    /* margin-top: -21px; */
+    width: 100%;
+    text-align: center;
+    padding-top: 120px;
+}
+
+.header__input-title {
+    margin-top: 40px;
+    color: var(--light);
+}
+
+.header__input-title>span {
+    color: var(--primary);
+}
+
+.header__input-tagline {
+    margin-top: -20px;
+    color: var(--light);
+    font-size: 14px;
+}
+
+.input-box {
+    margin-top: 25px;
+    display: flex;
+    justify-self: center;
+    position: relative;
+    /* margin-left: 35px; */
+    width: 450px;
+}
+
+.input {
+    
+    width: 100%;
+    padding: 10px 40px 10px 10px;
+    border-radius: 50px;
+    background-color: var(--light);
+    border: 3px solid var(--primary);
+}
+.input::placeholder{
+    padding-left: 35px;
 }
