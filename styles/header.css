@@ -10,7 +10,7 @@
     align-items: center;
     border-bottom: 0.1px solid var(--primary);
     height: 110px;
-    color: var(--primary);
+    color: var(--light);
 }
 
 .header-log {
@@ -34,6 +34,7 @@ header {
 }
 
 .header-title {
+<<<<<<< HEAD
     text-align: center;
     margin-top: 50px;
     font-size: 40px;
@@ -42,16 +43,51 @@ header {
 }
 
 .header-button-home {
+=======
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    margin-top: 50px;
+    font-size: 40px;
+    font-weight: bold;
+    margin-left: 150px;
+    color: var(--primary);
+}
+
+.container_btn__header {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.header-button-home {
+    border: 3px solid var(--light);
+    background-color: var(--primary);
+    border-radius: 10px;
+    color: var(--light);
+    padding: 10px;
+    margin: 0 50px 0 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 400ms ease-in-out;
+}
+
+.container__cart-shopping {
+    position: relative;
+}
+
+.header-button-cart-shopping {
+>>>>>>> df60a43d4be1a3c0d2ccdbcf0ba7dbcd547f3187
     border: 3px solid var(--light);
     background-color: var(--primary);
     border-radius: 10px;
     color: var(--light);
     padding: 15px 20px;
-    margin-right: 50px;
     font-size: 16px;
     cursor: pointer;
+    transition: all 400ms ease-in-out;
 }
 
+<<<<<<< HEAD
 .header-button-cart-shopping {
     border: 3px solid var(--light);
     background-color: var(--primary);
@@ -63,6 +99,8 @@ header {
     cursor: pointer;
 }
 
+=======
+>>>>>>> df60a43d4be1a3c0d2ccdbcf0ba7dbcd547f3187
 .header-button-home>svg {
     width: 100px;
     height: 100px;
@@ -97,6 +135,7 @@ header {
     margin-bottom: 0;
 }
 
+<<<<<<< HEAD
 .header__input {
     /* margin-top: -21px; */
     width: 100%;
@@ -138,4 +177,38 @@ header {
 }
 .input::placeholder{
     padding-left: 35px;
+=======
+.dropdown__header {
+    background-color: var(--dark);
+    position: absolute;
+    border-radius: 10px;
+    border: 3px solid var(--primary);
+    width: 156px;
+    padding: 10px 30px;
+    right: 50px;
+    top: 68px;
+    transition: all 400ms ease-in-out;
+}
+
+.dropdown__header > li{
+    width: 100%;
+    display: block;
+    text-align: center;
+}
+
+.btn-price{
+    display: block;
+    width: 90%;
+    text-align: center;
+    padding: 10px;
+    margin: 10px auto;
+    border-radius: 5px;
+    color: var(--light);
+    background-color: var(--primary);
+}
+
+.hide{
+    display: none;
+    visibility: hidden;
+>>>>>>> df60a43d4be1a3c0d2ccdbcf0ba7dbcd547f3187
 }

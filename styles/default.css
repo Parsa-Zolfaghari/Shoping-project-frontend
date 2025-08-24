@@ -13,3 +13,6 @@ a {
     color: var(--light);
     text-decoration: none;
 }
+li{
+    list-style: none;
+}
