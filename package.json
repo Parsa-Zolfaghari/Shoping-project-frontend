@@ -33,7 +33,7 @@
   },
   "homepage": "https://github.com/Parsa-Zolfaghari/Shoping-project#readme",
   "dependencies": {
-    "fontawesome": "^5.6.3",
+    "fontawesome-free": "^1.0.4",
     "sweet-alert": "^2.0.5",
     "swiper": "^11.2.10"
   }
