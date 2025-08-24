@@ -47,6 +47,7 @@ header{
     padding: 15px 20px;
     margin-right: 50px;
     font-size: 16px;
+    cursor: pointer;
 }
 
 .header-button-cart-shopping{
@@ -57,15 +58,17 @@ header{
     padding: 15px 20px;
     margin-right: 25px;
     font-size: 16px;
+    cursor: pointer;
 }
 
-.header-button-home > i{
-    width: 35px;
-    height: 35px;
+.header-button-home > svg{
+    width: 100px;
+    height: 100px; 
     display: flex;
     flex-direction: column;
-    margin-bottom: -45px;
+    margin-bottom: -42.5px;
     margin-right: 95px;
+    cursor: pointer;
 }
 .header-button-home > p{
     margin-right: -25px;
@@ -74,13 +77,14 @@ header{
     margin-bottom: 0;
 }
 
-.header-button-cart-shopping > i{
+.header-button-cart-shopping > svg{
     width: 35px;
     height: 35px;
     display: flex;
     flex-direction: column;
-    margin-bottom: -45px;
-    margin-right: 95px;
+    margin-bottom: -42.5px;
+    margin-right: 85px;
+    cursor: pointer;
 }
 .header-button-cart-shopping > p{
     margin-right: -25px;
