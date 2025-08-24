@@ -34,7 +34,6 @@ header {
 }
 
 .header-title {
-<<<<<<< HEAD
     text-align: center;
     margin-top: 50px;
     font-size: 40px;
@@ -43,7 +42,6 @@ header {
 }
 
 .header-button-home {
-=======
     display: flex;
     justify-self: center;
     align-items: center;
@@ -76,7 +74,6 @@ header {
 }
 
 .header-button-cart-shopping {
->>>>>>> df60a43d4be1a3c0d2ccdbcf0ba7dbcd547f3187
     border: 3px solid var(--light);
     background-color: var(--primary);
     border-radius: 10px;
@@ -87,20 +84,6 @@ header {
     transition: all 400ms ease-in-out;
 }
 
-<<<<<<< HEAD
-.header-button-cart-shopping {
-    border: 3px solid var(--light);
-    background-color: var(--primary);
-    border-radius: 10px;
-    color: var(--light);
-    padding: 15px 20px;
-    margin-right: 25px;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-=======
->>>>>>> df60a43d4be1a3c0d2ccdbcf0ba7dbcd547f3187
 .header-button-home>svg {
     width: 100px;
     height: 100px;
@@ -135,7 +118,6 @@ header {
     margin-bottom: 0;
 }
 
-<<<<<<< HEAD
 .header__input {
     /* margin-top: -21px; */
     width: 100%;
@@ -168,7 +150,6 @@ header {
 }
 
 .input {
-    
     width: 100%;
     padding: 10px 40px 10px 10px;
     border-radius: 50px;
@@ -177,7 +158,8 @@ header {
 }
 .input::placeholder{
     padding-left: 35px;
-=======
+}
+
 .dropdown__header {
     background-color: var(--dark);
     position: absolute;
@@ -210,5 +192,4 @@ header {
 .hide{
     display: none;
     visibility: hidden;
->>>>>>> df60a43d4be1a3c0d2ccdbcf0ba7dbcd547f3187
 }
