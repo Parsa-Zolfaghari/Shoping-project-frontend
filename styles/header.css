@@ -1,4 +1,8 @@
 @import url("./default.css");
+
+*{
+    font-family: 'IRANSANS', sans-serif;
+}
 .header-nav {
     display: flex;
     justify-content: space-between;
@@ -20,7 +24,7 @@
 header{
     background: url('../assets/img/header/pexels-castorlystock-3829441.jpg')center center / cover;
     width: 100%;
-    height: 630px;
+    height: 632px;
 }
 
 .header-container {
@@ -32,9 +36,25 @@ header{
     margin-top: 50px;
     font-size: 40px;
     font-weight: bold;
-    margin-right: 225px;
+    margin-right: -60px;
 }
 
 .header-button-home{
+    border: 3px solid var(--light);
+    background-color: var(--primary);
+    border-radius: 10px;
+    color: var(--light);
+    padding: 15px 20px;
+    margin-right: 50px;
+    font-size: 16px;
+}
 
+.header-button-cart-shopping{
+    border: 3px solid var(--light);
+    background-color: var(--primary);
+    border-radius: 10px;
+    color: var(--light);
+    padding: 15px 20px;
+    margin-right: 25px;
+    font-size: 16px;
 }
