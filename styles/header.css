@@ -39,16 +39,6 @@ header {
     font-size: 40px;
     font-weight: bold;
     margin-left: 140px;
-}
-
-.header-button-home {
-    display: flex;
-    justify-self: center;
-    align-items: center;
-    margin-top: 50px;
-    font-size: 40px;
-    font-weight: bold;
-    margin-left: 150px;
     color: var(--primary);
 }
 
