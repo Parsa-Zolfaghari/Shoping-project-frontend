@@ -1,8 +1,9 @@
-:root{
-    --primary :#c5a46d ;
-    --dark :#1c1c1c ;
-    --light :aliceblue;
+:root {
+    --primary: #c5a46d;
+    --dark: #1c1c1c;
+    --light: aliceblue;
 }
+
 /* @import url("./default.css"); */
 
 * {
@@ -10,15 +11,16 @@
 }
 
 .header-nav {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 400px auto 450px;
     align-items: center;
-    border-bottom: 0.1px solid var(--primary);
-    height: 110px;
+    border-bottom: 1px solid var(--primary);
+    grid-template-rows: 110px;
     color: var(--light);
 }
 
 .header-log {
+    width: 95px;
     border: 3px solid var(--light);
     background-color: var(--primary);
     border-radius: 10px;
@@ -43,7 +45,6 @@ header {
     margin-top: 50px;
     font-size: 40px;
     font-weight: bold;
-    margin-left: 140px;
     color: var(--primary);
 }
 
@@ -53,12 +54,12 @@ header {
 }
 
 .header-button-home {
+    width: 150px;
     border: 3px solid var(--light);
     background-color: var(--primary);
     border-radius: 10px;
     color: var(--light);
     padding: 10px;
-    margin: 0 50px 0 20px;
     font-size: 16px;
     cursor: pointer;
     transition: all 400ms ease-in-out;
@@ -69,6 +70,7 @@ header {
 }
 
 .header-button-cart-shopping {
+    width: 150px;
     border: 3px solid var(--light);
     background-color: var(--primary);
     border-radius: 10px;
@@ -147,18 +149,20 @@ header {
     position: relative;
 
 }
-.container__box{
+
+.container__box {
     text-align: center;
     align-items: center;
     justify-content: center;
 }
+
 .input {
     position: relative;
     height: 26px;
     width: 350px;
     padding: 10px 40px 10px 10px;
     background-color: var(--light);
-    border-color: #c5a46d ;
+    border-color: #c5a46d;
     border: 3px solid var(--primary);
     border-left: none;
     border-top-right-radius: 50px;
@@ -167,7 +171,7 @@ header {
     margin-left: 45px;
 }
 
-.container__icon-box{
+.container__icon-box {
     position: absolute;
     margin-left: -394px;
     background-color: var(--light);
@@ -192,13 +196,13 @@ header {
     transition: all 400ms ease-in-out;
 }
 
-.dropdown__header > li{
+.dropdown__header>li {
     width: 100%;
     display: block;
     text-align: center;
 }
 
-.btn-price{
+.btn-price {
     display: block;
     width: 90%;
     text-align: center;
@@ -209,7 +213,7 @@ header {
     background-color: var(--primary);
 }
 
-.hide{
+.hide {
     display: none;
     visibility: hidden;
 }
