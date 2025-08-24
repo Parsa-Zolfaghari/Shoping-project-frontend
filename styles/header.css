@@ -17,7 +17,7 @@
     background-color: var(--primary);
     border-radius: 10px;
     color: var(--light);
-    padding:0 20px;
+    padding:0 40px;
     margin-left: 50px;
 }
 
@@ -36,7 +36,7 @@ header{
     margin-top: 50px;
     font-size: 40px;
     font-weight: bold;
-    margin-right: -60px;
+    margin-left: 150px;
 }
 
 .header-button-home{
@@ -57,4 +57,34 @@ header{
     padding: 15px 20px;
     margin-right: 25px;
     font-size: 16px;
+}
+
+.header-button-home > svg{
+    width: 35px;
+    height: 35px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: -45px;
+    margin-right: 95px;
+}
+.header-button-home > p{
+    margin-right: -25px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
+}
+
+.header-button-cart-shopping > svg{
+    width: 35px;
+    height: 35px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: -45px;
+    margin-right: 95px;
+}
+.header-button-cart-shopping > p{
+    margin-right: -25px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
 }
