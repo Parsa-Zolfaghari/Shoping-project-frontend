@@ -1,4 +1,9 @@
-@import url("./default.css");
+:root{
+    --primary :#c5a46d ;
+    --dark :#1c1c1c ;
+    --light :aliceblue;
+}
+/* @import url("./default.css"); */
 
 * {
     font-family: 'IRANSANS', sans-serif;
@@ -130,24 +135,49 @@ header {
     font-size: 14px;
 }
 
-.input-box {
+.container__box {
     margin-top: 25px;
     display: flex;
     justify-self: center;
     position: relative;
     /* margin-left: 35px; */
-    width: 450px;
+    width: 444px;
+    background-color: brown;
+    border-radius: 50px;
+    position: relative;
+
+}
+.container__box{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.input {
+    position: relative;
+    height: 26px;
+    width: 350px;
+    padding: 10px 40px 10px 10px;
+    background-color: var(--light);
+    border-color: #c5a46d ;
+    border: 3px solid var(--primary);
+    border-left: none;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    outline: none;
+    margin-left: 45px;
 }
 
-.input {
-    width: 100%;
-    padding: 10px 40px 10px 10px;
-    border-radius: 50px;
+.container__icon-box{
+    position: absolute;
+    margin-left: -394px;
     background-color: var(--light);
     border: 3px solid var(--primary);
-}
-.input::placeholder{
-    padding-left: 35px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-right: none;
+    text-decoration: none;
+    height: 46px;
+    width: 50px;
 }
 
 .dropdown__header {
