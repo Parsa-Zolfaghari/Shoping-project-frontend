@@ -59,7 +59,7 @@ header{
     font-size: 16px;
 }
 
-.header-button-home > svg{
+.header-button-home > i{
     width: 35px;
     height: 35px;
     display: flex;
@@ -74,7 +74,7 @@ header{
     margin-bottom: 0;
 }
 
-.header-button-cart-shopping > svg{
+.header-button-cart-shopping > i{
     width: 35px;
     height: 35px;
     display: flex;
