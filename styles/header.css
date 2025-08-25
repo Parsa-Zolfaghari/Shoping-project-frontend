@@ -4,15 +4,13 @@
     --light: aliceblue;
 }
 
-/* @import url("./default.css"); */
-
 * {
     font-family: 'IRANSANS', sans-serif;
 }
 
 .header-nav {
     display: grid;
-    grid-template-columns: 400px auto 450px;
+    grid-template-columns: 1fr auto 1fr;
     align-items: center;
     border-bottom: 1px solid var(--primary);
     grid-template-rows: 110px;
@@ -50,10 +48,11 @@ header {
 
 .container_btn__header {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: end;
 }
 
 .header-button-home {
+    margin: 0 20px;
     width: 150px;
     border: 3px solid var(--light);
     background-color: var(--primary);
@@ -116,7 +115,6 @@ header {
 }
 
 .header__input {
-    /* margin-top: -21px; */
     width: 100%;
     text-align: center;
     padding-top: 80px;
@@ -142,7 +140,6 @@ header {
     display: flex;
     justify-self: center;
     position: relative;
-    /* margin-left: 35px; */
     width: 605px;
     background-color: brown;
     border-radius: 50px;
