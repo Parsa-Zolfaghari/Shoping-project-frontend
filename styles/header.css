@@ -23,7 +23,7 @@
     background-color: var(--primary);
     border-radius: 10px;
     color: var(--light);
-    padding: 0 40px;
+    padding: 0 25px;
     margin-left: 50px;
 }
 
@@ -117,7 +117,7 @@ header {
 .header__input {
     width: 100%;
     text-align: center;
-    padding-top: 120px;
+    padding-top: 80px;
 }
 
 .header__input-title {
@@ -130,17 +130,17 @@ header {
 }
 
 .header__input-tagline {
-    margin-top: -20px;
+    margin-top: -10px;
     color: var(--light);
     font-size: 14px;
 }
 
 .container__box {
-    margin-top: 25px;
+    margin-top: 40px;
     display: flex;
     justify-self: center;
     position: relative;
-    width: 444px;
+    width: 605px;
     background-color: brown;
     border-radius: 50px;
     position: relative;
@@ -156,7 +156,7 @@ header {
 .input {
     position: relative;
     height: 26px;
-    width: 350px;
+    width: 510px;
     padding: 10px 40px 10px 10px;
     background-color: var(--light);
     border-color: #c5a46d;
@@ -167,10 +167,15 @@ header {
     outline: none;
     margin-left: 45px;
 }
+.input::placeholder {
+  color: #aaa; /* خاکستری ملایم‌تر */
+  font-size: 15px;
+}
+
 
 .container__icon-box {
     position: absolute;
-    margin-left: -394px;
+    margin-left: -555px;
     background-color: var(--light);
     border: 3px solid var(--primary);
     border-top-left-radius: 50px;
