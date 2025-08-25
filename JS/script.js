@@ -15,3 +15,4 @@ for (let index = 0; index < btnOfBoxEl.length; index++) {
         itemsOfCartEl.insertAdjacentElement('beforeend', targetOfEventEl);
     });
 }
+
