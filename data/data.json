@@ -1,7 +1,24 @@
 {
   "products": [
-    { "id": 1, "Name": "LapTop", "Picture": "http://127.0.0.1:5500/assets/img/boxes/pexels-alex-carollo-188285-592815.jpg", "Price": 1000 },
-    { "id": 2, "Name": "Phone", "Picture": "http://127.0.0.1:5500/assets/img/boxes/pexels-alexazabache-3766111%20(1).jpg", "Price": 2000 },
-    { "id": 3, "Name": "Pen", "Picture": "http://127.0.0.1:5500/assets/img/boxes/pexels-castorlystock-3829441.jpg", "Price": 3000 }
+    { "id": 1, "Name": "LapTop","description" : "", "Picture": "http://127.0.0.1:5500/assets/img/boxes/pexels-alex-carollo-188285-592815.jpg", "Price": 1000 },
+    { "id": 2, "Name": "Phone","description" : "", "Picture": "http://127.0.0.1:5500/assets/img/boxes/pexels-alexazabache-3766111%20(1).jpg", "Price": 2000 },
+    { "id": 3, "Name": "Pen","description" : "", "Picture": "http://127.0.0.1:5500/assets/img/boxes/pexels-castorlystock-3829441.jpg", "Price": 3000 },
+    { "id": 4, "Name": "Pen","description" : "", "Picture": "http://127.0.0.1:5500/assets/img/boxes/pexels-ferarcosn-190819.jpg", "Price": 3000 },
+    { "id": 5, "Name": "Pen","description" : "", "Picture": "http://127.0.0.1:5500/assets/img/boxes/pexels-grizzlybear-404181.jpg", "Price": 3000 },
+    { "id": 6, "Name": "Pen","description" : "", "Picture": "http://127.0.0.1:5500/assets/img/boxes/pexels-hassan-1353065 (1).jpg", "Price": 3000 },
+    { "id": 7, "Name": "Pen","description" : "", "Picture": "http://127.0.0.1:5500/assets/img/boxes/pexels-laurachouette-22032439.jpg", "Price": 3000 },
+    { "id": 8, "Name": "Pen","description" : "", "Picture": "http://127.0.0.1:5500/assets/img/boxes/pexels-luckysam-51011.jpg", "Price": 3000 },
+    { "id": 9, "Name": "Pen","description" : "", "Picture": "http://127.0.0.1:5500/assets/img/boxes/pexels-maxavans-5058216.jpg", "Price": 3000 },
+    { "id": 10, "Name": "Pen","description" : "", "Picture": "http://127.0.0.1:5500/assets/img/boxes/pexels-nimblevideoproductions-3153853.jpg", "Price": 3000 },
+    { "id": 11, "Name": "Pen","description" : "", "Picture": "http://127.0.0.1:5500/assets/img/boxes/pexels-pixabay-280391.jpg", "Price": 3000 },
+    { "id": 12, "Name": "Pen","description" : "", "Picture": "http://127.0.0.1:5500/assets/img/boxes/pexels-pixabay-364822.jpg", "Price": 3000 },
+    { "id": 13, "Name": "Pen","description" : "", "Picture": "http://127.0.0.1:5500/assets/img/boxes/pexels-jatin-anand-33853-125779.jpg", "Price": 3000 },
+    { "id": 14, "Name": "Pen","description" : "", "Picture": "http://127.0.0.1:5500/assets/img/boxes/pexels-pixabay-68201.jpg", "Price": 3000 },
+    { "id": 15, "Name": "Pen","description" : "", "Picture": "http://127.0.0.1:5500/assets/img/boxes/pexels-tdcat-437037.jpg", "Price": 3000 },
+    { "id": 16, "Name": "Pen","description" : "", "Picture": "http://127.0.0.1:5500/assets/img/boxes/pexels-vedant-sharma-146194-440320.jpg", "Price": 3000 },
+    { "id": 17, "Name": "Pen","description" : "", "Picture": "http://127.0.0.1:5500/assets/img/boxes/pexels-vishven-solanki-1441477-2779018.jpg", "Price": 3000 },
+    { "id": 18, "Name": "Pen","description" : "", "Picture": "http://127.0.0.1:5500/assets/img/boxes/pexels-youssef-sanad-1880577-3487862.jpg", "Price": 3000 },
+    { "id": 19, "Name": "Pen","description" : "", "Picture": "http://127.0.0.1:5500/assets/img/boxes/pexels-castorlystock-3829441.jpg", "Price": 3000 },
+    { "id": 20, "Name": "Pen","description" : "", "Picture": "http://127.0.0.1:5500/assets/img/boxes/pexels-castorlystock-3829441.jpg", "Price": 3000 }
   ]
 }
