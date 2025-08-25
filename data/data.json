@@ -1,7 +1,7 @@
 {
   "products": [
-    { "id": 1, "Name": "LapTop", "Picture": "", "Price": 1000 },
-    { "id": 2, "Name": "Phone", "Picture": "../", "Price": 2000 },
-    { "id": 3, "Name": "Pen", "Picture": "../", "Price": 3000 }
+    { "id": 1, "Name": "LapTop", "Picture": "http://127.0.0.1:5500/assets/img/boxes/pexels-alex-carollo-188285-592815.jpg", "Price": 1000 },
+    { "id": 2, "Name": "Phone", "Picture": "http://127.0.0.1:5500/assets/img/boxes/pexels-alexazabache-3766111%20(1).jpg", "Price": 2000 },
+    { "id": 3, "Name": "Pen", "Picture": "http://127.0.0.1:5500/assets/img/boxes/pexels-castorlystock-3829441.jpg", "Price": 3000 }
   ]
 }
