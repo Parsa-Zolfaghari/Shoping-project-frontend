@@ -27,6 +27,12 @@
     margin-left: 50px;
 }
 
+.header-log:hover{
+    color: var(--primary);
+    background-color: var(--light);
+    border: 3px solid var(--primary);
+}
+
 header {
     background: url('../assets/img/header/pexels-castorlystock-3829441.jpg')center center / cover;
     width: 100%;
@@ -258,6 +264,7 @@ header {
     visibility: hidden;
 }
 
+<<<<<<< HEAD
 @media screen and (max-width: 425px) {
     .header-nav {
         grid-template-areas: "t"
@@ -317,3 +324,5 @@ header {
         justify-self: center;
     }
 }
+=======
+>>>>>>> 0b44bed167ae6a29f4243b335d1f6d9a309fb790
