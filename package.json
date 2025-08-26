@@ -34,7 +34,7 @@
   },
   "homepage": "https://github.com/Parsa-Zolfaghari/Shoping-project#readme",
   "dependencies": {
-    "fontawesome-free": "^1.0.4",
+    "@fortawesome/fontawesome-free": "^7.0.0",
     "json-server": "^1.0.0-beta.3",
     "sweet-alert": "^2.0.5",
     "swiper": "^11.2.10"
