@@ -27,6 +27,12 @@
     margin-left: 50px;
 }
 
+.header-log:hover{
+    color: var(--primary);
+    background-color: var(--light);
+    border: 3px solid var(--primary);
+}
+
 header {
     background: url('../assets/img/header/pexels-castorlystock-3829441.jpg')center center / cover;
     width: 100%;
@@ -256,3 +262,4 @@ header {
     display: none;
     visibility: hidden;
 }
+
