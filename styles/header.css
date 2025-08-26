@@ -264,7 +264,6 @@ header {
     visibility: hidden;
 }
 
-<<<<<<< HEAD
 @media screen and (max-width: 425px) {
     .header-nav {
         grid-template-areas: "t"
@@ -324,5 +323,3 @@ header {
         justify-self: center;
     }
 }
-=======
->>>>>>> 0b44bed167ae6a29f4243b335d1f6d9a309fb790
