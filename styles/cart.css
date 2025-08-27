@@ -87,10 +87,15 @@
 .btn-boxes{
     background-color: var(--primary);
     padding: 10px 15px;
+    border: 3px solid var(--light);
     border-radius: 7px;
     transition: all 600ms ease-in;
 }
 
 .btn-boxes:hover{
-    background-color: #ad8847 ;
+    background-color: var(--light);
+    border: 3px solid var(--primary);
+    transition: all 600ms ease-in;
+    color: var(--primary);
+
 }
