@@ -1,6 +1,8 @@
+@import url("responsive.css");
+
 .container__main-title {
   text-align: center;
-  margin: 20px 0 40px 0;
+  margin: 5px 0;
   position: relative;
 }
 

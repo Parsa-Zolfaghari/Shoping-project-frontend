@@ -1,3 +1,4 @@
+@import url("responsive.css");
 :root {
     --primary: #c5a46d;
     --dark: #1c1c1c;
@@ -267,64 +268,4 @@ header {
 .hide {
     display: none;
     visibility: hidden;
-}
-
-@media screen and (max-width: 425px) {
-    .header-nav {
-        grid-template-areas: "t"
-            "b"
-        ;
-        grid-template-columns: repeat(1, auto);
-        border-bottom: none;
-    }
-
-    .container_btn__header {
-        justify-content: center;
-    }
-
-    .header-title {
-        grid-area: t;
-    }
-
-    .header-log {
-        grid-area: b;
-        justify-self: center;
-        margin: 0;
-    }
-
-    .header-button-home {
-        margin: 0;
-    }
-
-    .header__input-title {
-        font-size: 20px;
-        margin-top: 15px;
-    }
-
-    .header__input-tagline {
-        font-size: 13px;
-    }
-}
-
-@media screen and (min-width: 426px) and (max-width: 768px) {
-    .header-nav {
-        grid-template-areas: "t b"
-                             "i i"
-        ;
-        grid-template-columns: repeat(1, auto);
-        border-bottom: none;
-    }
-     .header-title {
-        grid-area: t;
-    }
-
-    .header-log {
-        grid-area: b;
-    }
-
-    .container_btn__header {
-        grid-area: i;
-        align-items: center;
-        justify-self: center;
-    }
 }

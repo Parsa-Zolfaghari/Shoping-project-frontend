@@ -1,0 +1,143 @@
+@media screen and (max-width: 425px) {
+    .header-nav {
+        grid-template-areas: 
+        "t"
+        "b i"
+        ;
+        grid-template-columns: repeat(1, auto);
+        border-bottom: none;
+    }
+
+    .container_btn__header {
+        justify-content: center;
+    }
+    
+    .header-title {
+        grid-area: t;
+        margin-left: 112.5px;
+    }
+
+    .header-log {
+        grid-area: b;
+        /* justify-self: center; */
+        margin-left: -325px;
+    }
+
+    .container_btn__header{
+        grid-area: i;
+        margin-left: -140px;
+    }
+
+    .header-button-home {
+        margin: 0;
+    }
+
+    .header__input-title {
+        font-size: 20px;
+        margin-top: 15px;
+    }
+
+    .header__input-tagline {
+        font-size: 13px;
+    }
+    .container__box{
+        width: 300px;
+    }
+    .input{
+        width: 203px;
+    }
+    .container__icon-box{
+    margin-left: -250px;
+    }
+}
+
+@media screen and (min-width: 425px) and (max-width: 563px) {
+       .header-nav {
+        grid-template-areas:
+            "t"
+            "b i"
+        ;
+        grid-template-columns: repeat(1, auto);
+        border-bottom: none;
+    }
+
+    .container_btn__header {
+        justify-content: center;
+    }
+
+    .header-title {
+        grid-area: t;
+        margin-left: 112.5px;
+    }
+
+    .header-log {
+        grid-area: b;
+        /* justify-self: center; */
+        margin-left: -340px;
+    }
+
+    .container_btn__header {
+        grid-area: i;
+        margin-left: -140px;
+    }
+
+    .header-button-home {
+        margin: 0;
+    }
+
+    .header__input-title {
+        font-size: 20px;
+        margin-top: 15px;
+    }
+
+    .header__input-tagline {
+        font-size: 13px;
+    }
+
+    .container__box {
+        width: 385px;
+    }
+
+    .input {
+        width: 300px;
+    }
+
+    .container__icon-box {
+        margin-left: -350px;
+    }
+}
+
+@media screen and (min-width: 563px) and (max-width: 768px) {
+    .header-nav {
+        grid-template-areas: "b t i";
+        grid-template-columns: repeat(1, auto);
+        border-bottom: none;
+    }
+     .header-title {
+        grid-area: t;
+        text-align: center;
+        margin-left: 85px;
+    }
+
+    .header-log {
+        grid-area: b;
+    }
+
+    .container_btn__header {
+        grid-area: i;
+        align-items: center;
+        justify-self: center;
+        margin-left: 60px;
+    }
+    .container__box {
+        width: 425px;
+    }
+
+    .input {
+        width: 375px;
+    }
+
+    .container__icon-box {
+        margin-left: -400px;
+    }
+}
