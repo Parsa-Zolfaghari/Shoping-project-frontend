@@ -1,18 +1,80 @@
-:root{
-    --primary :#c5a46d ;
-    --dark :#1c1c1c ;
-    --light :aliceblue;
+:root {
+    --primary: #c5a46d;
+    --dark: #1c1c1c;
+    --light: aliceblue;
 }
-body{
+
+body {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color:var(--light);
+    background-color: var(--light);
 }
+
 a {
     color: var(--light);
     text-decoration: none;
 }
-li{
+
+li {
     list-style: none;
+}
+
+/* The SubTitle */
+.title-parent {
+    text-align: center;
+    margin: 5px 0;
+    position: relative;
+}
+
+.title {
+    font-size: 30px;
+    font-weight: bold;
+    color: transparent;
+    background: linear-gradient(90deg, #c5a46d, #e6d3a3);
+    -webkit-background-clip: text;
+    background-clip: text;
+    letter-spacing: 2px;
+    position: relative;
+    display: inline-block;
+}
+
+.title::after {
+    content: "";
+    position: absolute;
+    left: 315px;
+    top: 10px;
+    width: 160px;
+    height: 3px;
+    background: linear-gradient(90deg, #c5a46d, #e6d3a3);
+    margin: 15px auto 0 auto;
+    border-radius: 10px;
+    animation: shine 2s infinite linear;
+}
+
+.title::before {
+    content: "";
+    position: absolute;
+    right: 315px;
+    top: 10px;
+    width: 160px;
+    height: 3px;
+    background: linear-gradient(90deg, #c5a46d, #e6d3a3);
+    margin: 15px auto 0 auto;
+    border-radius: 10px;
+    animation: shine 2s infinite linear;
+}
+
+@keyframes shine {
+    0% {
+        box-shadow: 0 0 5px var(--primary);
+    }
+
+    50% {
+        box-shadow: 0 0 20px #e6d3a3;
+    }
+
+    100% {
+        box-shadow: 0 0 5px var(--primary);
+    }
 }
