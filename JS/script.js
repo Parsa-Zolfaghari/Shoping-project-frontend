@@ -16,3 +16,4 @@ for (let index = 0; index < btnOfBoxEl.length; index++) {
     });
 }
 
+
