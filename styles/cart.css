@@ -148,20 +148,20 @@
 
 @media screen and (max-width:499px) {
 
-    .main-title{
+    .title-parent{
         font-size: 18px;
         width: 100%;
         text-align: center;
     }
 
-    .main-title::before{
+    .title::before{
         display: block;
         right: 38%;
         top: 25px;
         width: 100px;
     }
 
-    .main-title::after{
+    .title::after{
         display: block;
         left: 35%;
         top: -25px;
