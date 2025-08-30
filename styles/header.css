@@ -51,12 +51,10 @@ header {
     background-color: rgba(0, 0, 0, 0.616);
 }
 
-.header-title {
-    text-align: center;
-    margin-top: 50px;
-    font-size: 40px;
-    font-weight: bold;
-    color: var(--primary);
+.logo{
+    width: 200px;
+    height: 73px;
+    margin-top: 10px;
 }
 
 .container_btn__header {
