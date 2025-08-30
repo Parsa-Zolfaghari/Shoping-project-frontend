@@ -1,0 +1,122 @@
+.aboutus {
+    background: linear-gradient(to bottom left, #000000, #111827, #000000);
+    margin: 30px 0;
+}
+
+.content-aboutus {
+    display: grid;
+    grid-template-columns: 2fr 1.3fr;
+    margin: 50px 0;
+    position: relative;
+}
+
+.aboutus__right-item {
+    margin: 50px auto 50px 20px;
+    width: 600px;
+}
+
+.aboutus__left-item {
+    width: 600px;
+    margin-left: auto;
+    margin-top: 30px;
+}
+
+.persian-title__aboutus {
+    color: var(--primary);
+    font-size: 40px;
+    margin: 0;
+}
+
+.english-title__aboutus {
+    color: var(--light);
+    margin: 0;
+}
+
+.english-title__aboutus::after {
+    content: "";
+    display: block;
+    width: 120px;
+    height: 3px;
+    margin: 15px 0 0 0;
+    border-radius: 5px;
+    background: linear-gradient(to left, #c5a46d, rgba(197, 164, 109, 0));
+}
+
+.persian-paragraph__aboutus {
+    color: var(--light);
+}
+
+.english-paragraph__aboutus {
+    color: #aaa;
+}
+
+.english-paragraph__aboutus::after {
+    content: "";
+    display: block;
+    width: 250px;
+    height: 1.5px;
+    margin: 10px 0;
+    border-radius: 3px;
+    background: linear-gradient(to left,
+            rgba(197, 164, 109, 0),
+            #c5a46d,
+            rgba(197, 164, 109, 0));
+}
+
+.button-aboutus {
+    margin-top: 35px;
+}
+
+.btn-aboutus {
+    width: 40px;
+    text-align: center;
+    color: var(--primary);
+    background-color: var(--dark);
+    border: 2px solid var(--primary);
+    border-radius: 10px;
+    padding: 15px 28px;
+    transition-duration: 0.7s;
+}
+
+.btn-aboutus:hover {
+    color: var(--light);
+    background-color: var(--primary);
+    box-shadow: 0 0 20px rgba(197, 164, 109, 0.9);
+}
+
+.img-aboutus {
+    width: 477px;
+    height: 497px;
+    margin: 30px;
+    transition: all 0.3s ease-in-out;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(197, 164, 109, 0.6);
+    border: 1px solid var(--primary);
+}
+
+.img-aboutus:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 35px rgba(197, 164, 109, 0.9);
+}
+
+.aboutus__left-item::before{
+    content: "";
+    position: absolute;
+    bottom: 20px;
+    left: 40px;
+    width: 30px;
+    height: 30px;
+    border-left: 2px solid var(--primary);
+    border-bottom: 2px solid var(--primary);
+}
+
+.aboutus__left-item::after{
+    content: "";
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    width: 30px;
+    height: 30px;
+    border-right: 2px solid var(--primary);
+    border-top: 2px solid var(--primary);
+}
