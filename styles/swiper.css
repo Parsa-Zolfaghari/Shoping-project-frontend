@@ -62,43 +62,12 @@
     }
 }
 
-.swiper {
-    /* margin-top: 55px; */
-    border-radius: 15px;
-    border: 3px solid var(--primary);
-    width: 93.5%;
-    height: fit-content;
-    background-color: var(--dark);
-    padding-right: 250px;
+.owl-stage-outer{
+    direction: ltr;
 }
 
-.swiper-slide {
-    width: 600px;
-    border: 3px solid var(--dark);
-    height: 300px;
-}
+#owl-product{
+    display: block;
+    /* display: flex; */
 
-.swiper-slide>.item-box {
-    display: flex;
-    justify-self: center;
-    align-self: center;
-    width: 500px;
-    height: 100%;
-    border: 3px solid var(--primary);
-    border-radius: 15px ;
-    margin-bottom: 40px;
-}
-.swiper-slide>.item-box >.item-box__details{
-    border: none;
-}
-
-.swiper-slide>.item-box>img {
-    width: 100%; 
-    margin-right: -px;
-    border:none;
-
-}
-
-.swiper-button-next{
-    color : var(--primary);
 }
