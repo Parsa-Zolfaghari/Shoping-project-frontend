@@ -3,6 +3,7 @@
 .container__main-title {
     text-align: center;
     margin: 0px 0;
+    margin-top: -15px;
     position: relative;
 }
 
