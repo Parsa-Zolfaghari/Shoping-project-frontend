@@ -1,9 +1,29 @@
-.title-advantage__text::before {
-    right: 199px;
+@import url('responsive.css');
+
+.title::before {
+    content: "";
+    position: absolute;
+    right: 225px;
+    top: 10px;
+    width: 160px;
+    height: 3px;
+    background: linear-gradient(90deg, #c5a46d, #e6d3a3);
+    margin: 15px auto 0 auto;
+    border-radius: 10px;
+    animation: shine 2s infinite linear;
 }
 
-.title-advantage__text::after {
-    right: -169px;
+.title::after {
+    content: "";
+    position: absolute;
+    left: 225px;
+    top: 10px;
+    width: 160px;
+    height: 3px;
+    background: linear-gradient(90deg, #c5a46d, #e6d3a3);
+    margin: 15px auto 0 auto;
+    border-radius: 10px;
+    animation: shine 2s infinite linear;
 }
 
 .content-advantage {

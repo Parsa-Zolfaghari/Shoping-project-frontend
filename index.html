@@ -9,12 +9,11 @@
     <!-- <link rel="stylesheet" href="./styles/swiper.css"> -->
     <link rel="stylesheet" href="./styles/font.css">
     <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
-    <link rel="stylesheet" href="node_modules/swiper/swiper-bundle.min.css" />
+    <link rel="smtylesheet" href="node_modules/swiper/swiper-bundle.min.css" />
     <!-- <link rel="stylesheet" href="node_modules/owl.carousel/dist/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="node_modules/owl.carousel/dist/assets/owl.theme.default.min.css"> -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="node_modules\owl.carousel\src\scss\owl.carousel.scss">
+    <link rel="stylesheet" href="node_modules\owl.carousel\src\scss\owl.theme.default.scss">
     <title>سان تایم | گالری ساعت</title>
 </head>
 
@@ -63,7 +62,7 @@
 
             <div class="header__input">
                 <h1 class="header__input-title"> <span>سان تایم</span> | جایی که زمان زیبا تر می‌گذرد</h1>
-                <p class="header__input-tagline">فروشگاه آنلاین ساعت‌های اصل , از کلاسیک تا مدرن برای هر سلیقه</p>
+                <p class="header__input-tagline">فروشگاه آنلاین ساعت‌ های اصل , از کلاسیک تا مدرن برای هر سلیقه</p>
 
                 <div class="container__box">
                     <div class="container__icon-box">
@@ -85,7 +84,7 @@
                     <h2 class="main-title"> تخفیف های ویژه </h2>
                 </div>
 
-                <div id="owl-product" class="owl-carousel owl-theme">
+                <!-- <div id="owl-product" class="owl-carousel owl-theme">
 
                     <div class="item-box">
                         <img style="width: 400px; " src="./assets/img/boxes/pexels-alex-carollo-188285-592815.jpg"
@@ -231,7 +230,7 @@
                         </div>
                     </div>
 
-                </div>
+                </div> -->
             </div>
             <div class="container__main-title">
                 <h2 class="main-title">ساعت‌هایی برای هر لحظه</h2>
@@ -364,13 +363,11 @@
     <section class="advantage" dir="rtl">
         <div class="container-advantage">
             <div class="title-advantage title-parent">
-                <h2 class="title-advantage__text title">
-                    مزایای سان تایم
-                </h2>
+                <h2 class="title-advantage__text title">مزایای سان تایم </h2>
             </div>
             <div class="content-advantage">
                 <div class="items-top">
-                    <div class="item-advantage border-bottom">
+                    <div class="item-advantage margin">
                         <i class="fas fa-headset icon-advantage"></i>
                         <h2 class="title-item__text">
                             پشتیبانی و گارانتی اختصاصی
@@ -380,7 +377,7 @@
                             می‌شوید. در صورت نیاز به تعمیر، تعویض یا مشاوره، مستقیماً با تیم ما در ارتباط خواهید بود.
                         </p>
                     </div>
-                    <div class="item-advantage">
+                     <div class="item-advantage">
                         <i class="fas fa-award icon-advantage"></i>
                         <h2 class="title-item__text">
                             امتیاز وفاداری و تخفیف‌های اختصاصی
@@ -392,7 +389,7 @@
                     </div>
                 </div>
                 <div class="items-bottom">
-                    <div class="item-advantage border-bottom">
+                    <div class="item-advantage margin-responsive">
                         <i class="fas fa-shield-alt  icon-advantage"></i>
                         <h2 class="title-item__text">
                             بهترین قیمت و تضمین اصل بودن کالا
@@ -402,7 +399,7 @@
                             باشید و بدون پرداخت هزینه‌های اضافی، ساعتی اصل و با کیفیت را دریافت کنید.
                         </p>
                     </div>
-                    <div class="item-advantage">
+                    <div class="item-advantage border-responsive">
                         <i class="fas fa-user-check  icon-advantage"></i>
                         <h2 class="title-item__text">
                             تجربه خرید شخصی‌سازی شده و مشاوره تخصصی
@@ -458,19 +455,13 @@
             </div>
         </div>
     </section>
+
+
     <script src="JS/script.js"></script>
     <script src="node_modules/@fortawesome/fontawesome-free/js/all.min.js"></script>
-    <!-- <script src="node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="node_modules/owl.carousel/dist/owl.carousel.min.js"></script> -->
-    <!-- jQuery (لازمه قبل از Owl بارگذاری بشه) -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
-    <!-- OwlCarousel -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-
-    <!-- پلاگین Mousewheel (برای دمو mousewheel) -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
-
+    <script src="node_modules\jquery\dist\jquery.min.js"></script>
+    <script src="node_modules\owl.carousel\src\js\owl.carousel.js"></script>
+    <script src="node_modules\owl.carousel\docs\assets\vendors\jquery.mousewheel.min.js"></script>
     <script>
         $(document).ready(function () {
             var owl = $('.owl-carousel');
@@ -479,11 +470,9 @@
                 nav: true,
                 margin: 10,
                 responsive: {
-                    responsive: {
-                        0: { items: 1 },
-                        600: { items: 2 },
-                        1000: { items: 3 }
-                    }
+                    0: { items: 1 },
+                    600: { items: 2 },
+                    1000: { items: 3 }
                 }
             });
             owl.on('mousewheel', '.owl-stage', function (e) {
@@ -493,6 +482,7 @@
             });
         });
     </script>
+
 </body>
 
 </html>
