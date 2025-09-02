@@ -4,7 +4,7 @@
     --light: aliceblue;
 }
 
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 480px) {
     .header-nav {
         grid-template-areas:
             "t t"
@@ -121,7 +121,7 @@
 
 }
 
-@media screen and (min-width: 426px) and (max-width: 563px) {
+@media screen and (min-width: 481px) and (max-width: 600px) {
     .header-nav {
         grid-template-areas:
             "t"
@@ -177,7 +177,7 @@
     }
 }
 
-@media screen and (min-width: 564px) and (max-width: 768px) {
+@media screen and (min-width: 601px) and (max-width: 767px) {
     .header-nav {
         grid-template-areas: "b t i";
         grid-template-columns: repeat(1, auto);
@@ -212,4 +212,8 @@
     .container__icon-box {
         margin-left: -400px;
     }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    
 }
