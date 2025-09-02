@@ -107,7 +107,7 @@
 .container-price {
     display: flex;
     justify-content: start;
-    
+
 }
 
 .price-title {
@@ -117,7 +117,7 @@
     margin: 5px 30px 5px 0;
 }
 
-.price-text{
+.price-text {
     margin: 10px;
     color: var(--light);
     font-size: 20px;
@@ -149,27 +149,27 @@
 
 @media screen and (max-width:499px) {
 
-    .title-parent{
+    .title-parent {
         font-size: 18px;
         width: 100%;
         text-align: center;
     }
 
-    .title::before{
+    .title::before {
         display: block;
         right: 38%;
         top: 25px;
         width: 100px;
     }
 
-    .title::after{
+    .title::after {
         display: block;
         left: 35%;
         top: -25px;
         width: 100px;
     }
 
-    .items-box{
+    .items-box {
         grid-template-columns: 1fr;
     }
 }
