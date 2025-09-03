@@ -3,6 +3,7 @@
     --dark: #1c1c1c;
     --light: aliceblue;
 }
+
 @media screen and (max-width: 480px) {
     .title-parent {
         font-size: 18px;
@@ -11,18 +12,30 @@
     }
 
     .title::before {
-        display: block;
-        right: 38%;
-        top: 25px;
-        width: 100px;
+        display: none;
     }
 
     .title::after {
-        display: block;
-        left: 35%;
-        top: -25px;
-        width: 100px;
+        display: none;
     }
+
+    .title-advantage>.title::before {
+        display: none;
+    }
+
+    .title-advantage>.title::after {
+        display: none;
+    }
+
+    .main-title::before {
+        display: none;
+    }
+
+    .main-title::after {
+        display: none;
+    }
+
+
 
     .items-box {
         grid-template-columns: 1fr;
@@ -108,32 +121,6 @@
         bottom: none;
     }
 
-    .title-advantage>.title::before {
-        content: "";
-        position: absolute;
-        right: 225px;
-        top: 10px;
-        width: 160px;
-        height: 3px;
-        background: linear-gradient(90deg, #c5a46d, #e6d3a3);
-        margin: 15px auto 0 auto;
-        border-radius: 10px;
-        animation: shine 2s infinite linear;
-    }
-
-    .title-advantage>.title::after {
-        content: "";
-        position: absolute;
-        left: 225px;
-        top: 10px;
-        width: 160px;
-        height: 3px;
-        background: linear-gradient(90deg, #c5a46d, #e6d3a3);
-        margin: 15px auto 0 auto;
-        border-radius: 10px;
-        animation: shine 2s infinite linear;
-    }
-
     .margin-responsive {
         margin-top: -20px;
     }
@@ -141,9 +128,6 @@
     .margin {
         margin-top: -12px;
     }
-
-
-
 
     .aboutus {
         width: 100%;
@@ -173,7 +157,7 @@
 
     .img-aboutus {
         width: 90%;
-        margin:0 0 30px 0;
+        margin: 0 0 30px 0;
     }
 
     .content-footer {
@@ -201,20 +185,6 @@
         font-size: 18px;
         width: 100%;
         text-align: center;
-    }
-
-    .title::before {
-        display: block;
-        right: 38%;
-        top: 25px;
-        width: 100px;
-    }
-
-    .title::after {
-        display: block;
-        left: 35%;
-        top: -25px;
-        width: 100px;
     }
 
     .items-box {
@@ -316,31 +286,31 @@
         bottom: none;
     }
 
+    .title::before {
+        display: none;
+    }
+
+    .title::after {
+        display: none;
+    }
+
     .title-advantage>.title::before {
-        content: "";
-        position: absolute;
-        right: 225px;
-        top: 10px;
-        width: 160px;
-        height: 3px;
-        background: linear-gradient(90deg, #c5a46d, #e6d3a3);
-        margin: 15px auto 0 auto;
-        border-radius: 10px;
-        animation: shine 2s infinite linear;
+        display: none;
     }
 
     .title-advantage>.title::after {
-        content: "";
-        position: absolute;
-        left: 225px;
-        top: 10px;
-        width: 160px;
-        height: 3px;
-        background: linear-gradient(90deg, #c5a46d, #e6d3a3);
-        margin: 15px auto 0 auto;
-        border-radius: 10px;
-        animation: shine 2s infinite linear;
+        display: none;
     }
+
+    .main-title::before {
+        display: none;
+    }
+
+    .main-title::after {
+        display: none;
+    }
+
+
 
     .margin-responsive {
         margin-top: -20px;
@@ -352,6 +322,31 @@
 }
 
 @media screen and (min-width: 601px) and (max-width: 767px) {
+
+    .title::before {
+        display: none;
+    }
+
+    .title::after {
+        display: none;
+    }
+
+    .title-advantage>.title::before {
+        display: none;
+    }
+
+    .title-advantage>.title::after {
+        display: none;
+    }
+
+    .main-title::before {
+        display: none;
+    }
+
+    .main-title::after {
+        display: none;
+    }
+
     .header-nav {
         grid-template-areas: "b t i";
         grid-template-columns: repeat(1, auto);
@@ -361,11 +356,11 @@
     .header-title {
         grid-area: t;
         text-align: center;
-        margin-left: 85px;
     }
 
     .header-log {
         grid-area: b;
+        margin-right: 80px;
     }
 
     .container_btn__header {
@@ -376,16 +371,127 @@
     }
 
     .container__box {
-        width: 425px;
+        width: 600px;
     }
 
     .input {
-        width: 375px;
+        width: 503px;
     }
 
     .container__icon-box {
-        margin-left: -400px;
+        margin-left: -548px;
     }
+
+    .content-advantage {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .items-top {
+        margin-bottom: 30px;
+        border: none;
+    }
+
+    .item-advantage {
+        border-bottom: 3px solid var(--primary);
+        height: 250px;
+    }
+
+    .items-bottom {
+        border-right: none;
+    }
+
+    .border-responsive {
+        border-bottom: none;
+        height: 235px;
+    }
+
+    .border-bottom {
+        bottom: none;
+    }
+
+    .margin-responsive {
+        margin-top: -20px;
+    }
+
+    .margin {
+        margin-top: -12px;
+    }
+
+    .items-box {
+        grid-template-columns: 1fr 1fr;
+    }
+
 }
 
-@media screen and (min-width: 768px) and (max-width: 1023px) {}
+@media screen and (min-width: 768px) and (max-width: 885px) {
+
+
+    .title::before {
+        display: none;
+    }
+
+    .title::after {
+        display: none;
+    }
+
+    .title-advantage>.title::before {
+        display: none;
+    }
+
+    .title-advantage>.title::after {
+        display: none;
+    }
+
+    .items-box {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .img-box {
+        object-fit: cover;
+        width: 100%;
+        border-bottom: none;
+    }
+
+    .main-title::before {
+        display: none;
+    }
+
+    .main-title::after {
+        display: none;
+    }
+
+    .content-advantage {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .items-top {
+        /* margin-bottom: 30px; */
+        border: none;
+    }
+
+    .item-advantage {
+        /* border-bottom: 3px solid var(--primary); */
+        height: 250px;
+    }
+
+}
+
+
+@media screen and (min-width: 886px) and (max-width: 1023px) {
+    .content-advantage {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .items-top {
+        /* margin-bottom: 30px; */
+        border: none;
+    }
+
+    .item-advantage {
+        /* border-bottom: 3px solid var(--primary); */
+        height: 250px;
+    }
+}
