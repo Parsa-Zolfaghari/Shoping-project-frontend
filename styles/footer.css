@@ -5,7 +5,6 @@ footer {
             #121212 50%,
             #1a1a1a 75%,
             #1c1c1c 100%);
-    /* background-color: var(--dark); */
     margin: 20px 0 0 0;
 }
 
@@ -129,12 +128,6 @@ footer {
 
 .bottom-item__footer {
     margin: 10px 0 0 0;
-    /* background: linear-gradient(135deg,
-            #000000 0%,
-            #0a0a0a 25%,
-            #121212 50%,
-            #1a1a1a 75%,
-            #1c1c1c 100%); */
     background-color: #121212;
 
     height: 60px;

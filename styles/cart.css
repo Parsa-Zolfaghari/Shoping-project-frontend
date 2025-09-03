@@ -70,10 +70,10 @@
 
 .img-box {
     object-fit: cover;
-    width: 98.5%;
+    width: 100%;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
-    border: 3px solid var(--primary);
+    /* border: 3px solid var(--primary); */
     border-bottom: none;
 }
 
@@ -88,7 +88,7 @@
     text-align: center;
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
-    border: 3px solid var(--primary);
+    /* border: 3px solid var(--primary); */
     border-top: none;
 }
 
