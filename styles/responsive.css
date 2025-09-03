@@ -5,6 +5,30 @@
 }
 
 @media screen and (max-width: 480px) {
+    .title-parent {
+        font-size: 18px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .title::before {
+        display: block;
+        right: 38%;
+        top: 25px;
+        width: 100px;
+    }
+
+    .title::after {
+        display: block;
+        left: 35%;
+        top: -25px;
+        width: 100px;
+    }
+
+    .items-box {
+        grid-template-columns: 1fr;
+    }
+
     .header-nav {
         grid-template-areas:
             "t t"
@@ -20,7 +44,7 @@
 
     .container__header-title {
         grid-area: t;
-        margin-left: 125px;
+        margin-left: 145px;
     }
 
     .header-log {
@@ -111,20 +135,45 @@
         animation: shine 2s infinite linear;
     }
 
-    .margin-responsive{
+    .margin-responsive {
         margin-top: -20px;
     }
 
-    .margin{
+    .margin {
         margin-top: -12px;
     }
 
 }
 
 @media screen and (min-width: 481px) and (max-width: 600px) {
+
+    .title-parent {
+        font-size: 18px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .title::before {
+        display: block;
+        right: 38%;
+        top: 25px;
+        width: 100px;
+    }
+
+    .title::after {
+        display: block;
+        left: 35%;
+        top: -25px;
+        width: 100px;
+    }
+
+    .items-box {
+        grid-template-columns: 1fr;
+    } 
+    
     .header-nav {
         grid-template-areas:
-            "t"
+            "t t"
             "b i"
         ;
         grid-template-columns: repeat(1, auto);
@@ -135,20 +184,19 @@
         justify-content: center;
     }
 
-    .header-title {
+    .container__header-title {
         grid-area: t;
-        margin-left: 112.5px;
+        margin-left: 200px;
     }
 
     .header-log {
         grid-area: b;
         /* justify-self: center; */
-        margin-left: -340px;
+        margin-left: 30px;
     }
 
     .container_btn__header {
         grid-area: i;
-        margin-left: -140px;
     }
 
     .header-button-home {
@@ -156,24 +204,100 @@
     }
 
     .header__input-title {
-        font-size: 20px;
+        font-size: 32.5px;
         margin-top: 15px;
     }
 
     .header__input-tagline {
-        font-size: 13px;
+        font-size: 16px;
     }
 
     .container__box {
-        width: 385px;
+        width: 445px;
     }
 
     .input {
-        width: 300px;
+        width: 350px;
     }
 
     .container__icon-box {
-        margin-left: -350px;
+        margin-left: -400px;
+    }
+
+    .items-box {
+        display: grid;
+        grid-template-columns: 2fr;
+        align-items: center;
+        justify-content: space-between;
+        gap: 25px;
+        margin: 0px 35px;
+    }
+
+    .item-box {
+        margin: 5px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .content-advantage {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .items-top {
+        margin-bottom: 30px;
+        border: none;
+    }
+
+    .item-advantage {
+        border-bottom: 3px solid var(--primary);
+        height: 300px;
+    }
+
+    .items-bottom {
+        border-right: none;
+    }
+
+    .border-responsive {
+        border-bottom: none;
+    }
+
+    .border-bottom {
+        bottom: none;
+    }
+
+    .title-advantage>.title::before {
+        content: "";
+        position: absolute;
+        right: 225px;
+        top: 10px;
+        width: 160px;
+        height: 3px;
+        background: linear-gradient(90deg, #c5a46d, #e6d3a3);
+        margin: 15px auto 0 auto;
+        border-radius: 10px;
+        animation: shine 2s infinite linear;
+    }
+
+    .title-advantage>.title::after {
+        content: "";
+        position: absolute;
+        left: 225px;
+        top: 10px;
+        width: 160px;
+        height: 3px;
+        background: linear-gradient(90deg, #c5a46d, #e6d3a3);
+        margin: 15px auto 0 auto;
+        border-radius: 10px;
+        animation: shine 2s infinite linear;
+    }
+
+    .margin-responsive {
+        margin-top: -20px;
+    }
+
+    .margin {
+        margin-top: -12px;
     }
 }
 
@@ -214,6 +338,4 @@
     }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-    
-}
+@media screen and (min-width: 768px) and (max-width: 1023px) {}
