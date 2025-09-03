@@ -73,7 +73,6 @@
     /* display: flex; */
 }
 
-
 #owl-product>.item-box {
     display: flex;
     justify-self: center;
@@ -84,6 +83,7 @@
     border-radius: 15px ;
     margin-bottom: 40px;
 }
+
 #owl-product>.item-box >.item-box__details{
     border: none;
 }
@@ -96,4 +96,5 @@
 
 .container-price{
     direction: rtl;
+    margin-bottom: 10px;
 }

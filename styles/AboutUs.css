@@ -80,8 +80,8 @@
 }
 
 .btn-aboutus:hover {
-    color: var(--light);
-    background-color: var(--primary);
+    color: var(--primary);
+    background-color: var(--light);
     box-shadow: 0 0 20px rgba(197, 164, 109, 0.9);
 }
 
