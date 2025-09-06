@@ -124,7 +124,7 @@ body {
 }
 
 .form__name{
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     color: var(--light);
     text-align: center;
 }
