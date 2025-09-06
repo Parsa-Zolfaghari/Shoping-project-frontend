@@ -1,3 +1,4 @@
+
 :root {
     --primary: #c5a46d;
     --dark: #1c1c1c;
@@ -181,6 +182,11 @@
 
     .item-bottom__paragraph {
         font-size: 11px;
+    }
+
+    /* Add Responsive For Sign-Up and Sign-In */
+    .form-sign__up {
+        width: 90%;
     }
 }
 
@@ -671,4 +677,6 @@
     .item-bottom__paragraph {
         font-size: 15px;
     }
+
+
 }

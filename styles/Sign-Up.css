@@ -1,4 +1,4 @@
-@import url("default.css");
+/* @import url("default.css"); */
 
 body {
     background-color: var(--dark);
@@ -13,7 +13,7 @@ body {
     align-items: center;
 }
 
-.form {
+.form-sign__up {
     width: 400px;
     text-align: center;
     border-radius: 10px;
