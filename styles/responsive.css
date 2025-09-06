@@ -4,6 +4,18 @@
     --light: aliceblue;
 }
 
+@media screen and (max-width: 455px) {
+    .container>form {
+        background-color: color-mix(in oklab, var(--color-black) 30%, transparent);
+        box-shadow: rgba(197, 164, 109, 0.3) 0px 0px 40px, rgba(0, 0, 0, 0.5) 0px 20px 40px;
+        width: 448px;
+        border-radius: 15px;
+        margin-top: 0;
+        padding-top: 25px;
+        transition: 600ms;
+    }
+}
+
 @media screen and (max-width: 480px) {
     .title-parent {
         font-size: 18px;
@@ -34,8 +46,6 @@
     .main-title::after {
         display: none;
     }
-
-
 
     .items-box {
         grid-template-columns: 1fr;
