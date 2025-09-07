@@ -132,9 +132,19 @@ body {
 }
 
 .form__name {
-    margin-bottom: 10px;
+    margin-bottom: 0;
     color: var(--light);
     text-align: center;
+}
+
+.form__color-text-home {
+    text-align: center;
+    margin-top: 5px;
+}
+
+.back-home__link{
+    color: var(--primary);
+    border-bottom: 1px solid var(--primary);
 }
 
 .form__img-profile:hover {
@@ -263,11 +273,3 @@ body {
     color: var(--primary);
 }
 
-.form__color-text-home {
-    text-align: center;
-    margin-bottom: -30px;
-}
-
-.form__color-text-home a {
-    color: var(--primary);
-}
