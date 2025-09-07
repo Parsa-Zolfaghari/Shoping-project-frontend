@@ -1,4 +1,4 @@
-/* @import url("default.css"); */
+@import url("default.css");
 
 body {
     background-color: var(--dark);
@@ -147,4 +147,11 @@ input::placeholder {
 
 .--global-paragraph {
     color: var(--primary);
+}
+
+@media screen and (max-width: 480px) {
+    /* Add Responsive For Sign-Up and Sign-In */
+    .form-sign__up {
+        width: 90%;
+    }
 }
