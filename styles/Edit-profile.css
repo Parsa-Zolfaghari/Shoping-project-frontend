@@ -1,4 +1,5 @@
 @import url("font.css");
+@import url("animate.css");
 
 * {
     font-family: 'IRANSANS', sans-serif;
@@ -11,7 +12,7 @@ body {
 .body {
     background-color: #292929;
     direction: rtl;
-    z-index: 1;
+    z-index: -1;
 }
 
 :root {
@@ -24,80 +25,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 1;
-}
-
-.bubbles {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 110%;
-    overflow: hidden;
-    z-index: -1;
-    /* پشت باکس EditProfile قرار می‌گیره */
-}
-
-.bubbles span {
-    position: absolute;
-    bottom: -100px;
-    width: 10px;
-    height: 10px;
-    background-color: #67573C;
-    /* رنگ نیمه‌شفاف */
-    border-radius: 50%;
-    animation: rise 15s linear infinite;
-}
-
-.bubbles span:nth-child(1) {
-    left: 10%;
-    width: 12px;
-    height: 12px;
-    animation-duration: 12s;
-}
-
-.bubbles span:nth-child(2) {
-    left: 30%;
-    animation-duration: 18s;
-    animation-delay: 2s;
-}
-
-.bubbles span:nth-child(3) {
-    left: 50%;
-    width: 15px;
-    height: 15px;
-    animation-duration: 20s;
-    animation-delay: 4s;
-}
-
-.bubbles span:nth-child(4) {
-    left: 70%;
-    animation-duration: 25s;
-    animation-delay: 6s;
-}
-
-.bubbles span:nth-child(5) {
-    left: 90%;
-    width: 10px;
-    height: 10px;
-    animation-duration: 15s;
-    animation-delay: 1s;
-}
-
-@keyframes rise {
-    0% {
-        transform: translateY(0) scale(1);
-        opacity: 0;
-    }
-
-    30% {
-        opacity: 1;
-    }
-
-    100% {
-        transform: translateY(-1200px) scale(1.5);
-        opacity: 0;
-    }
 }
 
 .container>form {
@@ -105,16 +32,16 @@ body {
     box-shadow: rgba(197, 164, 109, 0.3) 0px 0px 40px, rgba(0, 0, 0, 0.5) 0px 20px 40px;
     width: 448px;
     border-radius: 15px;
-    margin-top: 40px;
-    padding-top: 25px;
+    margin-top: 25px;
+    padding-top: 20px;
     transition: 600ms;
     margin-bottom: 50px;
     padding-bottom: 25px;
+    z-index: 2;
 }
 
 .container>form:hover {
     transition: 600ms;
-    transform: translateY(-5px);
     box-shadow: rgba(244, 176, 59, 0.637) 0px 0px 40px, rgba(0, 0, 0, 0.5) 0px 20px 40px;
 }
 
@@ -132,7 +59,7 @@ body {
 }
 
 .form__name {
-    margin-bottom: 0;
+    margin-bottom: 5px;
     color: var(--light);
     text-align: center;
 }
@@ -142,7 +69,7 @@ body {
     margin-top: 5px;
 }
 
-.back-home__link{
+.back-home__link {
     color: var(--primary);
     border-bottom: 1px solid var(--primary);
 }
@@ -189,7 +116,7 @@ body {
 
 .form__input::placeholder {
     color: var(--light);
-    font-size: 16px;
+    font-size: 15px;
 }
 
 .form__input:focus {
@@ -265,6 +192,7 @@ body {
 }
 
 .form__text {
+    margin-top: -8px;
     color: aliceblue;
     text-align: center;
 }
@@ -272,4 +200,3 @@ body {
 .form__color-text {
     color: var(--primary);
 }
-
