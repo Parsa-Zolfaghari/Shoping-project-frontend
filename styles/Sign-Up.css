@@ -1,4 +1,78 @@
 @import url("default.css");
+@import url("animate.css");
+
+.bubbles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+    /* پشت باکس EditProfile قرار می‌گیره */
+}
+
+.bubbles span {
+    position: absolute;
+    bottom: -100px;
+    width: 10px;
+    height: 10px;
+    background-color: #67573C;
+    /* رنگ نیمه‌شفاف */
+    border-radius: 50%;
+    animation: rise 15s linear infinite;
+}
+
+.bubbles span:nth-child(1) {
+    left: 10%;
+    width: 12px;
+    height: 12px;
+    animation-duration: 12s;
+}
+
+.bubbles span:nth-child(2) {
+    left: 30%;
+    animation-duration: 18s;
+    animation-delay: 2s;
+}
+
+.bubbles span:nth-child(3) {
+    left: 50%;
+    width: 15px;
+    height: 15px;
+    animation-duration: 20s;
+    animation-delay: 4s;
+}
+
+.bubbles span:nth-child(4) {
+    left: 70%;
+    animation-duration: 25s;
+    animation-delay: 6s;
+}
+
+.bubbles span:nth-child(5) {
+    left: 90%;
+    width: 10px;
+    height: 10px;
+    animation-duration: 15s;
+    animation-delay: 1s;
+}
+
+@keyframes rise {
+    0% {
+        transform: translateY(0) scale(1);
+        opacity: 0;
+    }
+
+    30% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(-1200px) scale(1.5);
+        opacity: 0;
+    }
+}
 
 body {
     background-color: var(--dark);
@@ -11,14 +85,16 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    z-index: 2;
 }
 
 .form-sign__up {
     width: 400px;
     text-align: center;
-    border-radius: 10px;
+    border-radius: 15px;
     border: 1px solid var(--primary);
     animation: shine 3s ease-in-out infinite;
+    background-color: #1C1C1C;
 }
 
 @keyframes shine {
@@ -74,14 +150,15 @@ label {
 input {
     width: 80%;
     height: 45px;
-    border-radius: 5px;
-    border: 1px solid #aaa;
+    border-radius: 15px;
+    border: 2px solid #aaa;
     background-color: #080808;
     padding: 0 15px;
     color: var(--light);
 }
 
 input:focus {
+    transition: 600ms;
     outline: none;
     border-color: var(--primary);
     box-shadow: 0 0 10px rgba(197, 164, 109, 0.5);
@@ -108,7 +185,7 @@ input::placeholder {
 .btn-form {
     font-family: "IRANSANS";
     font-size: 18px;
-    width: 90%;
+    width: 85%;
     height: 45px;
     cursor: pointer;
     border-radius: 5px;

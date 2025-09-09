@@ -7,21 +7,24 @@
     <link rel="icon" type="image/svg+xml" href="assets/img/svg/st p1.svg">
     <link rel="stylesheet" href="styles/font.css">
     <link rel="stylesheet" href="styles/Sign-Up.css">
+        <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
     <title>صفحه ورود | گالری سان تایم</title>
 </head>
 
 <body>
- <form action="#" class="form-sign__up">
+    <form action="#" class="form-sign__up">
         <div class="logo-container">
             <img src="assets/img/svg/st p1.svg" alt="logo" class="logo">
         </div>
-            <a href="index.html" class="back-home__link">بازگشت به خانه </a>
+        <a href="index.html" class="back-home__link">بازگشت به خانه </a>
         <div class="item-input">
-            <label for="input-email">ایمیل</label>
+            <label for="input-email"><i class="fa-regular fa-envelope"
+                    style="color: aliceblue; width: 18px; height: 17px;"></i> ایمیل</label>
             <input type="email" class="input-email" placeholder="ایمیل خود را وارد کنید">
         </div>
         <div class="item-input">
-            <label for="input-password">رمز عبور</label>
+            <label for="input-password"><i class="fa-solid fa-lock"
+                    style="color: aliceblue; width: 18px; height: 17px;"></i> رمز عبور</label>
             <input type="text" class="input-password" placeholder="رمز عبور خود را وارد کنید">
         </div>
         <div class="go-signin">
@@ -37,10 +40,22 @@
             <p class="last-paragraph">
                 با ورود به
                 <span class="--global-paragraph">سان تایم</span>
-                دوباره به جمع دوستداران زمان لوکس بپیوندید. 
+                دوباره به جمع دوستداران زمان لوکس بپیوندید.
             </p>
         </div>
+
+        <div class="bubbles">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
     </form>
+
+    <script src="node_modules/@fortawesome/fontawesome-free/js/all.min.js"></script>
+
 </body>
 
 </html>
