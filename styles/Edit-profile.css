@@ -1,4 +1,5 @@
 @import url("font.css");
+@import url("animate.css");
 
 * {
     font-family: 'IRANSANS', sans-serif;
@@ -11,7 +12,7 @@ body {
 .body {
     background-color: #292929;
     direction: rtl;
-    z-index: 1;
+    z-index: -1;
 }
 
 :root {
@@ -103,16 +104,16 @@ body {
     box-shadow: rgba(197, 164, 109, 0.3) 0px 0px 40px, rgba(0, 0, 0, 0.5) 0px 20px 40px;
     width: 448px;
     border-radius: 15px;
-    margin-top: 40px;
-    padding-top: 25px;
+    margin-top: 25px;
+    padding-top: 20px;
     transition: 600ms;
     margin-bottom: 50px;
     padding-bottom: 25px;
+    z-index: 2;
 }
 
 .container>form:hover {
     transition: 600ms;
-    transform: translateY(-5px);
     box-shadow: rgba(244, 176, 59, 0.637) 0px 0px 40px, rgba(0, 0, 0, 0.5) 0px 20px 40px;
 }
 
@@ -130,7 +131,7 @@ body {
 }
 
 .form__name {
-    margin-bottom: 0;
+    margin-bottom: 5px;
     color: var(--light);
     text-align: center;
 }
@@ -140,7 +141,7 @@ body {
     margin-top: 5px;
 }
 
-.back-home__link{
+.back-home__link {
     color: var(--primary);
     border-bottom: 1px solid var(--primary);
 }
@@ -187,7 +188,7 @@ body {
 
 .form__input::placeholder {
     color: var(--light);
-    font-size: 16px;
+    font-size: 15px;
 }
 
 .form__input:focus {
@@ -264,10 +265,10 @@ body {
 
 .form__text {
     color: var(--light);
+    margin-top: -8px;
     text-align: center;
 }
 
 .form__color-text {
     color: var(--primary);
 }
-
