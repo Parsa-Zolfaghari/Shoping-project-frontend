@@ -35,7 +35,6 @@ body {
     height: 110%;
     overflow: hidden;
     z-index: -1;
-    /* پشت باکس EditProfile قرار می‌گیره */
 }
 
 .bubbles span {
@@ -44,7 +43,6 @@ body {
     width: 10px;
     height: 10px;
     background-color: #67573C;
-    /* رنگ نیمه‌شفاف */
     border-radius: 50%;
     animation: rise 15s linear infinite;
 }
@@ -265,7 +263,7 @@ body {
 }
 
 .form__text {
-    color: aliceblue;
+    color: var(--light);
     text-align: center;
 }
 
