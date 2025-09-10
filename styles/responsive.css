@@ -272,7 +272,7 @@
     .item-box {
         margin: 5px;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
     }
 
     .content-advantage {
@@ -325,8 +325,6 @@
     .main-title::after {
         display: none;
     }
-
-
 
     .margin-responsive {
         margin-top: -20px;
@@ -417,6 +415,14 @@
         display: none;
     }
 
+    .container__box {
+        width: 450px;
+    }
+
+    .input {
+        width: 300px;
+    }
+
     .header-nav {
         grid-template-areas: "b t i";
         grid-template-columns: repeat(1, auto);
@@ -430,14 +436,15 @@
 
     .header-log {
         grid-area: b;
-        margin-right: 80px;
+        margin-left: 18px;
+        margin-right: 30px;
     }
 
     .container_btn__header {
         grid-area: i;
         align-items: center;
         justify-self: center;
-        margin-left: 60px;
+        margin-left: 10px;
     }
 
     .container__box {
@@ -491,7 +498,6 @@
     .items-box {
         grid-template-columns: 1fr 1fr;
     }
-
 }
 
 @media screen and (min-width: 768px) and (max-width: 885px) {
