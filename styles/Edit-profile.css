@@ -25,6 +25,78 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 1;
+}
+
+.bubbles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 110%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.bubbles span {
+    position: absolute;
+    bottom: -100px;
+    width: 10px;
+    height: 10px;
+    background-color: #67573C;
+    border-radius: 50%;
+    animation: rise 15s linear infinite;
+}
+
+.bubbles span:nth-child(1) {
+    left: 10%;
+    width: 12px;
+    height: 12px;
+    animation-duration: 12s;
+}
+
+.bubbles span:nth-child(2) {
+    left: 30%;
+    animation-duration: 18s;
+    animation-delay: 2s;
+}
+
+.bubbles span:nth-child(3) {
+    left: 50%;
+    width: 15px;
+    height: 15px;
+    animation-duration: 20s;
+    animation-delay: 4s;
+}
+
+.bubbles span:nth-child(4) {
+    left: 70%;
+    animation-duration: 25s;
+    animation-delay: 6s;
+}
+
+.bubbles span:nth-child(5) {
+    left: 90%;
+    width: 10px;
+    height: 10px;
+    animation-duration: 15s;
+    animation-delay: 1s;
+}
+
+@keyframes rise {
+    0% {
+        transform: translateY(0) scale(1);
+        opacity: 0;
+    }
+
+    30% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(-1200px) scale(1.5);
+        opacity: 0;
+    }
 }
 
 .container>form {
@@ -192,8 +264,8 @@ body {
 }
 
 .form__text {
+    color: var(--light);
     margin-top: -8px;
-    color: aliceblue;
     text-align: center;
 }
 

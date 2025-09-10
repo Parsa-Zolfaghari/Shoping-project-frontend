@@ -1,4 +1,3 @@
-
 :root {
     --primary: #c5a46d;
     --dark: #1c1c1c;
@@ -498,7 +497,65 @@
     .items-box {
         grid-template-columns: 1fr 1fr;
     }
+<<<<<<< HEAD
+=======
+
+    .aboutus {
+        width: 100%;
+    }
+
+    .content-aboutus {
+        display: grid;
+        grid-template-columns: 100%;
+    }
+
+    .aboutus__right-item {
+        width: 90%;
+        margin-bottom: 0;
+    }
+
+    .aboutus__left-item {
+        width: 100%;
+        text-align: center;
+        margin-top: 0;
+    }
+
+    .aboutus__left-item::before,
+    .aboutus__left-item::after {
+        display: none;
+    }
+
+
+    .img-aboutus {
+        width: 90%;
+        margin: 0 20px 30px 20px;
+    }
+
+    .content-footer {
+        grid-template-columns: 90%;
+        gap: 20px;
+        margin: 15px 15px 20px 15px;
+    }
+
+    .container-footer {
+        width: 100%;
+    }
+
+    .item-footer {
+        width: 100%;
+        margin: 0 15px;
+    }
+
+    .bottom-item__footer {
+        width: 100%;
+    }
+
+    .item-bottom__paragraph {
+        font-size: 15px;
+    }
+>>>>>>> a680af11c57ee4e87ac53e4b1e1a8d7caf37c95f
 }
+
 
 @media screen and (min-width: 768px) and (max-width: 885px) {
 
