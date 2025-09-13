@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/svg+xml" href="assets/img/svg/st p1.svg">
     <link rel="stylesheet" href="./styles/font.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/default.css">
+    <link rel="stylesheet" href="styles/shopping-cart.css">
     <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
     <title>صفحه سبد خرید | گالری سان تایم</title>
 </head>
@@ -15,15 +18,14 @@
         <div class="container-nav">
             <div class="content-nav">
                 <div class="container_btn__header">
-                    <button class="header__button-heart">
-                        <i class="fas fa-heart" style="color: #c5a46d; width: 30px; height: 30px;"></i>
-                    </button>
-                    <div class="container__cart-shopping">
-                        <button class="header-button__home">
-                            <i class="fas fa-home icon-home"
-                                style="color: #c5a46d; width: 30px; height: 30px;  position: absolute;"></i>
-                        </button>
-                    </div>
+                    <a href="index.html" class="header-button__home">
+                        <i class="fas fa-home"
+                            style="color: #c5a46d; width: 100%; height: 30px; padding-top: 10px;"></i>
+                    </a>
+                    <a href="#" class="header__button-heart">
+                        <i class="fas fa-heart"
+                            style="color: #c5a46d; width: 100%; height: 30px; padding-top: 10px;"></i>
+                    </a>
                 </div>
                 <div class="container-top__item">
                     <p class="item-top__text">SunTime</p>
@@ -39,61 +41,199 @@
                     <h2 class="first-text__main">
                         سبد خرید شما
                     </h2>
-                    <h3 class="first-text__english-main">Your Shopping Cart</h3>
+                    <h4 class="first-text__english-main">Your Shopping Cart</h4>
                 </div>
-                <div class="container-box__price">
-                    <div class="content-box__price">
-                        <div class="container-summary__texts">
-                            <p class="text-persian__text">خلاصه سفارش</p>
-                            <p class="text-english__text">Order Summary</p>
-                        </div>
-                        <div class="container-calculate__price">
-                            <span class="calculate-price__num">12,000,000 تومان</span>
-                            <p class="calculate-price__text">جمع کل کالاها</p>
-                        </div>
-                        <div class="container-calculate__sending">
-                            <span class="calculate-sending__num">رایگان</span>
-                            <p class="calculate-sending__text">هزینه ارسال</p>
-                        </div>
-                        <div class="container-calculate__all">
-                            <span class="calculate-all__num">12,000,000 تومان</span>
-                            <h4 class="calculate-all__text">مبلغ قابل پرداخت</h4>
-                        </div>
-                        <div class="container-calculate__btn">
-                            <button class="btn-calculate__all">ادامه خرید</button>
-                        </div>
-                        <div class="last-text__calculate-price-box">
-                            <p class="last-text__box-calculate">ارسال رایگان برای خریدهای بالای 3,000,000 تومان</p>
+                <div class="container-boxes__main">
+                    <div class="container-box__price">
+                        <div class="content-box__price">
+                            <div class="container-summary__texts">
+                                <h2 class="text-persian__text">خلاصه سفارش</h2>
+                                <h4 class="text-english__text">Order Summary</h4>
+                            </div>
+                            <div class="container-calculate__price">
+                                <span class="calculate-price__num">12,000,000 تومان</span>
+                                <p class="calculate-price__text">جمع کل کالاها</p>
+                            </div>
+                            <div class="container-calculate__sending">
+                                <span class="calculate-sending__num">رایگان</span>
+                                <p class="calculate-sending__text">هزینه ارسال</p>
+                            </div>
+                            <div class="container-calculate__all">
+                                <span class="calculate-all__num">12,000,000 تومان</span>
+                                <h4 class="calculate-all__text">مبلغ قابل پرداخت</h4>
+                            </div>
+                            <div class="container-calculate__btn">
+                                <button class="btn-calculate__all">ادامه خرید</button>
+                            </div>
+                            <div class="last-text__calculate-price-box">
+                                <p class="last-text__box-calculate">ارسال رایگان برای خریدهای بالای 3,000,000 تومان</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="boxes-item__container">
-                    <div class="boxes-item__content">
-                        <div class="boxes-item__right">
-                            <div class="delete-btn__container">
-                                <button class="delete-btn">حذف</button>
-                            </div>
-                        </div>
-                        <div class="boxes-item__left">
-                            <div class="right-item__description">
-                                <h2 class="title-persian__item-left">ساعت الماس پریمیوم</h2>
-                                <h3 class="title-english__item-left">Premium Diamond Edition</h3>
-                                <span class="price-box__item-left">1,300,000</span>
-                                <div class="container-add__number">
-
+                    <div class="container-item__boxes">
+                        <section class="boxes-item">
+                            <div class="boxes-item__container">
+                                <div class="boxes-item__content">
+                                    <div class="boxes-item__right">
+                                        <div class="delete-btn__container">
+                                            <button class="delete-btn">
+                                                حذف
+                                                <i class="far fa-trash-alt"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="boxes-item__left">
+                                        <div class="right-item__description">
+                                            <h2 class="title-persian__item-left">ساعت الماس پریمیوم</h2>
+                                            <span class="price-box__item-left">1,300,000 تومان</span>
+                                            <div class="container-add__number">
+                                                <button class="plus-btn">
+                                                    <i class="fas fa-plus plus-btn__icon"></i>
+                                                </button>
+                                                <span class="number-box__for-price">1</span>
+                                                <button class="minus-btn">
+                                                    <i class="fas fa-minus minus-btn__icon"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="left-item__img">
+                                            <img src="assets/img/boxes/pexels-natri-128621.jpg" class="left-item_image"
+                                                alt="img-box">
+                                            <span class="left-item__badge">1</span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="left-item__img">
-                                <img src="" alt="img-box">
+                        </section>
+                        <section class="boxes-item">
+                            <div class="boxes-item__container">
+                                <div class="boxes-item__content">
+                                    <div class="boxes-item__right">
+                                        <div class="delete-btn__container">
+                                            <button class="delete-btn">
+                                                حذف
+                                                <i class="far fa-trash-alt"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="boxes-item__left">
+                                        <div class="right-item__description">
+                                            <h2 class="title-persian__item-left">ساعت الماس پریمیوم</h2>
+                                            <span class="price-box__item-left">1,300,000 تومان</span>
+                                            <div class="container-add__number">
+                                                <button class="plus-btn">
+                                                    <i class="fas fa-plus plus-btn__icon"></i>
+                                                </button>
+                                                <span class="number-box__for-price">1</span>
+                                                <button class="minus-btn">
+                                                    <i class="fas fa-minus minus-btn__icon"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="left-item__img">
+                                            <img src="assets/img/boxes/pexels-natri-128621.jpg" class="left-item_image"
+                                                alt="img-box">
+                                            <span class="left-item__badge">2</span>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
+                        </section>
+                        <section class="boxes-item">
+                            <div class="boxes-item__container">
+                                <div class="boxes-item__content">
+                                    <div class="boxes-item__right">
+                                        <div class="delete-btn__container">
+                                            <button class="delete-btn">
+                                                حذف
+                                                <i class="far fa-trash-alt"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="boxes-item__left">
+                                        <div class="right-item__description">
+                                            <h2 class="title-persian__item-left">ساعت الماس پریمیوم</h2>
+                                            <span class="price-box__item-left">1,300,000 تومان</span>
+                                            <div class="container-add__number">
+                                                <button class="plus-btn">
+                                                    <i class="fas fa-plus plus-btn__icon"></i>
+                                                </button>
+                                                <span class="number-box__for-price">1</span>
+                                                <button class="minus-btn">
+                                                    <i class="fas fa-minus minus-btn__icon"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="left-item__img">
+                                            <img src="assets/img/boxes/pexels-natri-128621.jpg" class="left-item_image"
+                                                alt="img-box">
+                                            <span class="left-item__badge">1</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
                     </div>
                 </div>
             </div>
         </div>
     </main>
     <footer>
+        <div class="container-footer">
+            <div class="content-footer">
+                <div class="item-footer">
+                    <h2 class="item-right__title">
+                        سان تایم
+                    </h2>
+                    <p class="item-right__subtitle">
+                        در سان‌تایم، زمان فقط گذر ثانیه‌ها نیست؛ ما باور داریم ساعت‌ها می‌تونن بخشی از استایل و شخصیت
+                        شما باشن. همراه شماییم برای انتخابی مطمئن، شیک و خاص.
+                        سان‌تایم؛ جایی که زمان، لوکس می‌گذرد
+                    </p>
+                </div>
+                <div class="item-footer">
+                    <img src="assets/img/svg/st p1.svg" alt="" class="logo">
+                    <ul class="list-footer">
+                        <li class="item-top__title">دسترسی سریع</li>
+                        <li class="text-link"><a href="#" class="item-top__link-list">صفحه اصلی</a></li>
+                        <li class="text-link"><a href="#" class="item-top__link-list">ثبت نام</a></li>
+                        <li class="text-link"><a href="#" class="item-top__link-list">درباره ما</a></li>
+                    </ul>
+                </div>
+                <div class="item-footer">
+                    <h2 class="item-left__title">
+                        ارتباط با ما
+                    </h2>
+                    <div class="icons-footer">
+                        <a href="#" class="link-icon__footer">
+                            <i class="fab fa-instagram left-item__icon"></i>
+                        </a>
+                        <a href="#" class="link-icon__footer">
+                            <i class="fab fa-whatsapp left-item__icon"></i>
+                        </a>
+                        <a href="#" class="link-icon__footer">
+                            <i class="fab fa-telegram left-item__icon"></i>
+                        </a>
+                    </div>
+                    <div class="item-left__paragraph">
+                        <p class="item-left__paragraph-text"> پشتیبانی :</p>
+                        <span class="item-left__paragraph-number">0912345678</span>
+                        <i class="fas fa-phone  item-left__phone-icon"></i>
+                    </div>
+                    <div class="item-left__paragraph">
+                        <span class="item-left__paragraph-email">support@suntime.com</span>
+                        <i class="fas fa-envelope  item-left__email-icon"></i>
+                    </div>
+                </div>
 
+            </div>
+            <div class="bottom-item__footer">
+                <p class="item-bottom__paragraph">
+                    کپی رایت © 2025 سان تایم. کلیه حقوق محفوظ است. توسعه یافته توسط <span
+                        class="--global_footer">Apex</span>
+                </p>
+            </div>
+        </div>
     </footer>
 </body>
 
