@@ -497,8 +497,6 @@
     .items-box {
         grid-template-columns: 1fr 1fr;
     }
-<<<<<<< HEAD
-=======
 
     .aboutus {
         width: 100%;
@@ -553,7 +551,6 @@
     .item-bottom__paragraph {
         font-size: 15px;
     }
->>>>>>> a680af11c57ee4e87ac53e4b1e1a8d7caf37c95f
 }
 
 

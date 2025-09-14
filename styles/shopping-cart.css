@@ -31,7 +31,6 @@ nav {
     margin-top: 15px;
     display: grid;
     grid-template-columns: 1fr auto 1fr;
-
 }
 
 .container_btn__header {
@@ -175,7 +174,7 @@ nav {
     }
 }
 
-.content-box__price{
+.content-box__price {
     width: 85%;
 }
 
@@ -405,4 +404,171 @@ nav {
 
 .left-item_image:hover {
     transform: scale(1.03);
+}
+
+@media screen and (max-width: 576px) {
+    nav {
+        position: relative;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .content-nav {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .header-button__home {
+        margin-right: 0;
+    }
+
+    .header__button-heart {
+        margin-right: 0;
+    }
+
+    .item-top__text {
+        font-size: 25px;
+    }
+
+    .first-texts__main {
+        margin-top: 0;
+    }
+
+    .first-text__main {
+        font-size: 25px;
+    }
+
+    .container-boxes__main {
+        grid-template-columns: 1fr;
+        grid-template-areas: "t"
+            "b"
+        ;
+    }
+
+    .container-box__price {
+        position: relative;
+        grid-area: b;
+        top: 0;
+    }
+
+    .container-item__boxes {
+        grid-area: t;
+    }
+
+    .boxes-item__content {
+        grid-template-columns: 1fr;
+        grid-template-areas: "top"
+            "bottom";
+    }
+
+    .boxes-item {
+        margin: 20px auto;
+        height: 100%;
+    }
+
+    .boxes-item__right {
+        width: 100%;
+        margin: 0 auto;
+        grid-area: bottom;
+    }
+
+
+    .delete-btn__container {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .delete-btn {
+        width: 90%;
+        margin: 10px auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .boxes-item__left {
+        justify-content: space-evenly;
+        gap: 0;
+    }
+
+    .title-persian__item-left {
+        font-size: 15px;
+        margin: 5px auto;
+    }
+
+    .price-box__item-left {
+        justify-content: center;
+        font-size: 16px;
+    }
+
+    .left-item__img {
+        margin: 15px 0;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 1023px) {
+    nav {
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .content-nav {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .header-button__home {
+        margin-right: 0;
+    }
+
+    .header__button-heart {
+        margin-right: 0;
+    }
+
+    .item-top__text {
+        font-size: 25px;
+    }
+
+    .first-text__main {
+        font-size: 25px;
+    }
+
+    .container-boxes__main {
+        grid-template-columns: 1fr;
+        grid-template-areas: "t"
+            "b"
+        ;
+    }
+
+    .container-box__price {
+        position: relative;
+        grid-area: b;
+        top: 0;
+    }
+
+    .container-item__boxes {
+        grid-area: t;
+    }
+
+    .boxes-item {
+        margin: 20px auto;
+        height: 100%;
+    }
+
+    .boxes-item__content {
+        margin: 20px 0;
+    }
+
+    .title-persian__item-left {
+        font-size: 17px;
+    }
+
+    .boxes-item__right {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .delete-btn {
+        margin: 10px 20px 10px 0;
+    }
 }
