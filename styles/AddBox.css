@@ -1,0 +1,291 @@
+:root {
+    --primary: #c5a46d;
+    --dark: #1c1c1c;
+    --light: aliceblue;
+}
+
+body {
+    background: linear-gradient(135deg, #000000 0%, #1C1C1C 50%, #110e0e 100%);
+}
+
+main {
+    margin-top: 120px;
+}
+
+.content-main__items {
+    display: grid;
+    grid-template-columns: 2.5fr 3fr;
+}
+
+.container-box__title{
+    margin-bottom: 25px;
+}
+
+.show-box__title{
+    color: var(--primary);
+    font-size: 20px;
+    margin-bottom: 3px;
+}
+
+.container-box__title::after {
+    content: "";
+    display: block;
+    width: 120px;
+    height: 3px;
+    margin: 15px 0 0 0;
+    border-radius: 5px;
+    background: linear-gradient(to right, #c5a46d, rgba(197, 164, 109, 0));
+}
+
+
+.container-box__show-content {
+    width: 100%;
+}
+
+.item-box {
+    width: 70%;
+    box-shadow: rgba(255, 195, 92, 0.566) 0px 0px 40px, rgba(0, 0, 0, 0.5) 0px 20px 40px;
+    border-radius: 15px;
+}
+
+.container-box__show-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-addbox__item-content {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid var(--primary);
+    border-radius: 10px;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.658) 0%, rgba(28, 28, 28, 0.9) 50%, #c5a56d3b 100%);
+    box-shadow: rgba(255, 195, 92, 0.566) 0px 0px 40px, rgba(0, 0, 0, 0.5) 0px 20px 40px;
+    transition: all 600ms ease-out;
+}
+
+form:hover{
+    transform: scale(1.02);
+}
+
+input:focus {
+    box-shadow: rgba(255, 248, 236, 0.8) 0px 0px 10px, rgba(0, 0, 0, 0.5) 0px 20px 40px;
+}
+
+.input-item {
+    width: 100%;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    font-family: "IRANSANS";
+    width: 80%;
+    border-radius: 10px;
+    height: 60px;
+    outline: none;
+    background-color: #000000;
+    caret-color: var(--primary);
+    color: var(--primary);
+    border: none;
+    padding: 0 15px;
+    transition: all 600ms ease-in;
+}
+
+input::placeholder {
+    font-family: "IRANSANS";
+}
+
+.container-box__show-content{
+    margin-bottom: 180px;
+}
+
+.container-title__form {
+    margin-bottom: 10px;
+}
+
+.container-title__form::after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 230px;
+    height: 3.5px;
+    margin: 10px 0;
+    border-radius: 3px;
+    background: linear-gradient(to left,
+            rgba(197, 164, 109, 0),
+            #c5a46d,
+            rgba(197, 164, 109, 0));
+}
+
+.title-form {
+    color: var(--primary);
+    font-size: 30px;
+    margin-bottom: 0;
+}
+
+.subtile-form {
+    color: var(--light);
+    margin-top: 20px;
+}
+
+.container-label__name,
+.container-label__des{
+    width: 100%;
+    color: var(--light);
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin:0 55px 10px 0;
+}
+
+.upload-box {
+    width: 80%;
+    border: 2px dashed var(--primary);
+    border-radius: 10px;
+    padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--primary);
+    background: rgba(28, 28, 28, 0.6);
+    backdrop-filter: blur(6px);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 10px;
+}
+
+.upload-label {
+    margin: 8px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-upload__form {
+    font-size: 90px;
+    transition: all 600ms ease-in-out;
+}
+
+.icon-upload__form:hover {
+    transform: scale(1.04);
+    color: #e6c98f;
+}
+
+.upload-box:hover {
+    background: rgba(197, 164, 109, 0.1);
+    border-color: #e6c98f;
+    transform: scale(1.02);
+}
+
+.container-label__price {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-input__label,
+.container-input__price {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.price-box,
+.label-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container-label__price-text,
+.container-label__label {
+    margin: 8px;
+    color: var(--light);
+}
+
+.container-btn__form {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-form {
+    margin: 10px;
+    font-size: 17px;
+    color: var(--light);
+    font-family: "IRANSANS";
+    width: 100%;
+    border-radius: 10px;
+    outline: none;
+    border: 2px solid var(--light);
+    background-color: var(--primary);
+    padding: 20px;
+    cursor: pointer;
+    transition: all 600ms ease-in-out;
+}
+
+.btn-form:hover {
+    background-color: var(--dark);
+    border-color: var(--primary);
+    transform: scale(1.03);
+    color: var(--primary);
+}
+
+.container-footer__form {
+    margin-top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid var(--primary);
+}
+
+.text-footer__form {
+    width: 100%;
+    color: var(--primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 18px;
+}
+
+@media screen and (max-width:1020px){
+    .content-main__items {
+        grid-template-columns: 1fr;
+        grid-template-areas: "t"
+                             "b";
+    }
+
+    .container-box__show-content{
+        grid-area: b;
+    }
+
+    .container-addbox__item-content {
+        width: 100%;
+    }
+}
