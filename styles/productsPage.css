@@ -1,0 +1,13 @@
+:root {
+    --primary: #c5a46d;
+    --dark: #1c1c1c;
+    --light: aliceblue;
+}
+
+*{
+    direction: rtl;
+}
+
+body{
+    background-color: var(--dark);
+}
