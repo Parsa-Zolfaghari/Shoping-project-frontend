@@ -1,18 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="rtl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="icon" href="assets/img/svg/st p1.svg">
+    <link rel="stylesheet" href="styles/shopping-cart__nav.css">
+    <link rel="stylesheet" href="styles/default.css">
+    <link rel="stylesheet" href="styles/font.css">
     <link rel="stylesheet" href="styles/product.css">
     <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/responsive.css">
     <title>سان تایم | صفحه محولات</title>
 </head>
+
 <body>
-    <div class="container">
-        
-    </div>
+
+    <nav>
+        <div class="container-nav">
+            <div class="content-nav">
+                <div class="container_btn__header">
+                    <a href="index.html" class="header-button__home">
+                        <i class="fas fa-home"
+                            style="color: #c5a46d; width: 100%; height: 30px; padding-top: 10px;"></i>
+                    </a>
+                    <a href="#" class="header__button-heart">
+                        <i class="fas fa-heart"
+                            style="color: #c5a46d; width: 100%; height: 30px; padding-top: 10px;"></i>
+                    </a>
+                    <a href="#" class="header__button-heart">
+                        <i class="fas fa-shopping-cart"
+                            style="color: #c5a46d; width: 100%; height: 30px; padding-top: 10px;"></i>
+                    </a>
+                </div>
+                <div class="container-top__item">
+                    <p class="item-top__text">SunTime</p>
+                    <i class="fas fa-box top-item__icon"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container_main">
+            <div class="first_container">
+                <div class="div_img">
+                    <img src="assets/img/boxes/pexels-alex-carollo-188285-592815.jpg" alt="">
+                </div>
+                <div class="div_specifications">
+                    <h1 class="color title_box">ساعت لوکس طلایی</h1>
+                    <h2 class="div_price">قیمت : <span class="color">۲,۵۰۰,۰۰۰</span>تومان</h2>
+                    <p class="div_description">این محصول با بالاترین کیفیت و طراحی مدرن ارائه می‌شود تا تجربه‌ای خاص و
+                        متفاوت برای شما فراهم کند.</p>
+                    <div class="div_btns">
+                        <button class="btns btn_cart"><i class="fas fa-shopping-cart"></i> افزودن به سبد خرید</button>
+                        <button class="btns btn_heart"><i class="fa-regular fa-heart"></i> افزودن به علاقه مندی
+                            ها</button>
+                    </div>
+                </div>
+            </div>
+            <div class="secund__container">
+                <div class="secund__div">
+                    <button class="secund__div_btns btn_1">مشخصات فنی</button>
+                    <button class="secund__div_btns btn_2">نظرات کاربران</button>
+                    <button class="secund__div_btns btn_3">توضیحات بیشتر</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
     <footer dir="rtl">
         <div class="container-footer">
             <div class="content-footer">
@@ -64,7 +121,8 @@
             </div>
             <div class="bottom-item__footer">
                 <p class="item-bottom__paragraph">
-                    کپی رایت © 2025 سان تایم. کلیه حقوق محفوظ است. توسعه یافته توسط <span class="--global_footer">Apex</span>
+                    کپی رایت © 2025 سان تایم. کلیه حقوق محفوظ است. توسعه یافته توسط <span
+                        class="--global_footer">Apex</span>
                 </p>
             </div>
         </div>
@@ -73,4 +131,5 @@
     <script src="node_modules/@fortawesome/fontawesome-free/js/all.min.js"></script>
 
 </body>
+
 </html>
