@@ -149,7 +149,6 @@ body {
 .form__img-profile:hover {
     transition: 600ms;
     box-shadow: rgba(255, 195, 92, 0.566) 0px 0px 40px, rgba(0, 0, 0, 0.5) 0px 20px 40px;
-
 }
 
 .form__img-profile>img {

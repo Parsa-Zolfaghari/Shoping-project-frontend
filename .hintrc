@@ -23,7 +23,8 @@
       {
         "ignore": [
           "background-color: color-mix(in oklab, var(--color-black) 50%, transparent)",
-          "background-color: color-mix(in oklab, var(--color-black) 30%, transparent)"
+          "background-color: color-mix(in oklab, var(--color-black) 30%, transparent)",
+          "backdrop-filter"
         ]
       }
     ]

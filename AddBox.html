@@ -9,11 +9,14 @@
     <link rel="stylesheet" href="styles/footer.css">
     <link rel="stylesheet" href="styles/default.css">
     <link rel="stylesheet" href="styles/shopping-cart__nav.css">
+    <link rel="stylesheet" href="styles/AddBox.css">
+    <link rel="stylesheet" href="styles/cart.css">
     <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
     <title>اضافه کردن محصولات | گالری سان تایم </title>
 </head>
 
 <body>
+    <!-- Add Navbar -->
     <nav>
         <div class="container-nav">
             <div class="content-nav">
@@ -34,8 +37,122 @@
             </div>
         </div>
     </nav>
-
-
+    <!-- Finish Navbar -->
+    <!-- start main Item -->
+    <main>
+        <div class="container-main">
+            <div class="content-main__items">
+                <div class="container-box__show-content">
+                    <div class="container-box__title">
+                        <h4 class="show-box__title">
+                            پیش‌ نمایش زنده
+                        </h4>
+                    </div>
+                    <div class="item-box">
+                        <img src="./assets/img/boxes/pexels-alexazabache-3766111.jpg" alt="img" class="img-box">
+                        <div class="item-box__details">
+                            <h2 class="title-box">عنوان باکس</h2>
+                            <p class="description-box">
+                                توضیحات باکس در اینجا نمایش داده خواهد شد...
+                            </p>
+                            <div class="container-price">
+                                <p class="price-title">قیمت :
+                                <p class="price-text"><span class="price-num">0</span> تومان</p>
+                                </p>
+                            </div>
+                            <div class="footer-box">
+                                <button class="header__button-heart">
+                                    <i class="fa-regular fa-heart"
+                                        style="color: #c5a46d; width: 30px; height: 30px;"></i>
+                                </button>
+                                <a href="#" class="btn-boxes">افزودن به سبد خرید</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-addbox__item-content">
+                    <form action="#">
+                        <div class="container-title__form">
+                            <h2 class="title-form">
+                                افزودن باکس جدید
+                            </h2>
+                        </div>
+                        <p class="subtile-form">
+                            باکس لوکس خود را با جزئیات کامل ایجاد کنید
+                        </p>
+                        <div class="input-item">
+                            <div class="container-label__name">
+                                <label for="name-box">
+                                    <i class="fas fa-cube"></i>
+                                    عنوان باکس
+                                </label>
+                            </div>
+                            <input type="text" name="box-name" id="name-box" placeholder="نام باکس خود را وارد کنید">
+                        </div>
+                        <div class="input-item">
+                            <div class="container-label__des">
+                                <label for="description-box">توضیحات باکس</label>
+                            </div>
+                            <input type="text" name="box-description" id="description-box"
+                                placeholder="توضیحات جامع و جذاب خود را وارد کنید">
+                        </div>
+                        <div class="input-item">
+                            <div class="upload-box">
+                                <label for="boxImage" class="upload-label">
+                                    <i class="fas fa-upload icon-upload__form"></i>
+                                    <span>آپلود عکس</span>
+                                </label>
+                                <input type="file" id="boxImage" name="boxImage" accept="image/*" hidden>
+                            </div>
+                        </div>
+                        <div class="input-item">
+                            <div class="container-label__price">
+                                <div class="content-label">
+                                    <div class="container-label__label">
+                                        <i class="fas fa-tags"></i>
+                                        <label for="label-box">
+                                            برچسب ها
+                                        </label>
+                                    </div>
+                                    <div class="container-input__label">
+                                        <input type="text" name="box-label" class="label-box" placeholder="لوکس , ویژه">
+                                    </div>
+                                </div>
+                                <div class="content-price">
+                                    <div class="container-label__price-text">
+                                        <i class="fas fa-money-bill-wave"></i>
+                                        <label for="price-box">
+                                            قیمت (تومان)
+                                        </label>
+                                    </div>
+                                    <div class="container-input__price">
+                                        <input type="text" name="price-label" class="price-box" placeholder="0">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="input-item">
+                            <div class="container-btn__form">
+                                <button class="btn-form">
+                                    <i class="fas fa-cube"></i>
+                                    افزودن باکس
+                                </button>
+                            </div>
+                        </div>
+                        <div class="input-item">
+                            <div class="container-footer__form">
+                                <p class="text-footer__form">
+                                    این بخش فقط مخصوص مدیر سایت است.
+                                </p>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Finish main Item -->
+    <!-- start footer Item -->
     <footer>
         <div class="container-footer">
             <div class="content-footer">
@@ -93,6 +210,7 @@
             </div>
         </div>
     </footer>
+    <!-- finish footer Item -->
     <script src="node_modules/@fortawesome/fontawesome-free/js/all.min.js"></script>
 </body>
 
