@@ -226,7 +226,6 @@ header {
 
 .input::placeholder {
     color: #aaa;
-    /* خاکستری ملایم‌تر */
     font-size: 15px;
 }
 
