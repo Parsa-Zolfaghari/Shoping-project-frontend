@@ -204,10 +204,6 @@ header {
     background-color: brown;
     border-radius: 50px;
     position: relative;
-
-}
-
-.container__box {
     text-align: center;
     align-items: center;
     justify-content: center;
