@@ -21,6 +21,14 @@ li {
     list-style: none;
 }
 
+.container-icon__heart-primary {
+    color: var(--primary);
+}
+
+.container-icon__heart-light {
+    color: var(--light);
+}
+
 .logo {
     width: 200px;
     height: 73px;
