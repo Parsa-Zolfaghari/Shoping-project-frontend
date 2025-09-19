@@ -1,12 +1,23 @@
+/* ===============================
+   Global Variables (Theme Colors)
+================================= */
 :root {
     --primary: #c5a46d;
     --dark: #1c1c1c;
     --light: aliceblue;
 }
 
+/* ===============================
+   Global Reset
+================================= */
+
 * {
     font-family: 'IRANSANS', sans-serif;
 }
+
+/* ===============================
+   Header Navigation Bar
+================================= */
 
 .header-nav {
     display: grid;
@@ -16,6 +27,10 @@
     grid-template-rows: 110px;
     color: var(--light);
 }
+
+/* ===============================
+   Login / Register Section
+================================= */
 
 .header-log {
     width: 95px;
@@ -41,6 +56,10 @@
     transition: all 600ms;
 }
 
+/* ===============================
+   Header Background (Hero Section)
+================================= */
+
 header {
     background: url('../assets/img/header/pexels-castorlystock-3829441.jpg')center center / cover;
     object-fit: cover;
@@ -53,16 +72,28 @@ header {
     background-color: rgba(0, 0, 0, 0.616);
 }
 
+/* ===============================
+   Logo
+================================= */
+
 .logo {
     width: 200px;
     height: 73px;
     margin-top: 10px;
 }
 
+/* ===============================
+   Header Buttons Container
+================================= */
+
 .container_btn__header {
     display: flex;
     justify-content: end;
 }
+
+/* ===============================
+   Home Button
+================================= */
 
 .header-button-home {
     position: relative;
@@ -86,6 +117,10 @@ header {
     color: var(--primary);
     box-shadow: 0 0 20px rgba(249, 194, 100, 0.9);
 }
+
+/* ===============================
+   Shopping Cart Button
+================================= */
 
 .container__cart-shopping {
     position: relative;
@@ -115,6 +150,10 @@ header {
     box-shadow: 0 0 20px rgba(249, 194, 100, 0.9);
 }
 
+/* ===============================
+   Wishlist / Heart Button
+================================= */
+
 .header__button-heart {
     position: relative;
     width: 50px;
@@ -139,6 +178,10 @@ header {
     box-shadow: 0 0 20px rgba(249, 194, 100, 0.9);
     border: 3px solid var(--primary);
 }
+
+/* ===============================
+   Home / Cart SVG & Text Adjustments
+================================= */
 
 .header-button-home>svg {
     width: 100px;
@@ -174,6 +217,10 @@ header {
     margin-bottom: 0;
 }
 
+/* ===============================
+   Header Intro Text & Tagline
+================================= */
+
 .header__input {
     width: 100%;
     text-align: center;
@@ -194,6 +241,10 @@ header {
     color: var(--light);
     font-size: 14px;
 }
+
+/* ===============================
+   Search Box Container
+================================= */
 
 .container__box {
     margin-top: 40px;
@@ -229,6 +280,9 @@ header {
     font-size: 15px;
 }
 
+/* ===============================
+   Search Icon Container
+================================= */
 
 .container__icon-box {
     position: absolute;
@@ -242,6 +296,10 @@ header {
     height: 46px;
     width: 50px;
 }
+
+/* ===============================
+   Dropdown Menu
+================================= */
 
 .dropdown__header {
     background-color: var(--dark);
@@ -271,6 +329,8 @@ header {
     color: var(--light);
     background-color: var(--primary);
 }
+
+/* Hide class to toggle dropdown */
 
 .hide {
     display: none;
