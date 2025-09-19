@@ -1,5 +1,6 @@
 @import url('responsive.css');
 
+/* Creates an animated decorative line before section titles */
 .title::before {
     content: "";
     position: absolute;
@@ -13,6 +14,7 @@
     animation: shine 2s infinite linear;
 }
 
+/* Creates an animated decorative line after section titles */
 .title::after {
     content: "";
     position: absolute;
@@ -26,42 +28,50 @@
     animation: shine 2s infinite linear;
 }
 
+/* Grid layout for the advantages content (2 columns) */
 .content-advantage {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
 }
 
+/* Container for the advantages section */
 .container-advantage {
     text-align: center;
     margin: 15px;
 }
 
+/* Adds a right border to the bottom items container */
 .items-bottom {
     width: 100%;
     border-right: 3px solid var(--primary);
 }
 
+/* Adds a bottom border to specific items */
 .border-bottom {
     border-bottom: 3px solid var(--primary);
 }
 
+/* Styling for individual advantage items */
 .item-advantage {
     margin: 15px 15px 0 15px;
     padding: 15px 15px 0 15px;
     height: 227px;
 }
 
+/* Styling for the advantage icons */
 .icon-advantage {
     font-size: 44px;
     color: var(--primary);
 }
 
+/* Styling for the advantage item titles */
 .title-item__text {
     font-weight: bold;
     color: var(--primary);
 }
 
+/* Styling for the advantage item descriptions */
 .description-item__advantage {
     color: var(--dark);
 }

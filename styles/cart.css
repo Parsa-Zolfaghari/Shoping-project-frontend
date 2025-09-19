@@ -1,5 +1,6 @@
 @import url("responsive.css");
 
+/* Container for the main title on the page */
 .container__main-title {
     text-align: center;
     margin: 0px 0;
@@ -7,6 +8,7 @@
     position: relative;
 }
 
+/* Main title styling with gradient text and decorative lines */
 .main-title {
     font-size: 30px;
     font-weight: bold;
@@ -19,6 +21,7 @@
     display: inline-block;
 }
 
+/* Creates an animated decorative line after the title */
 .main-title::after {
     content: "";
     position: absolute;
@@ -32,6 +35,7 @@
     animation: shine 2s infinite linear;
 }
 
+/* Creates an animated decorative line before the title */
 .main-title::before {
     content: "";
     position: absolute;
@@ -45,6 +49,7 @@
     animation: shine 2s infinite linear;
 }
 
+/* Keyframes for the shine animation used on the title lines */
 @keyframes shine {
     0% {
         box-shadow: 0 0 5px var(--primary);
@@ -59,6 +64,7 @@
     }
 }
 
+/* Grid layout for the product items container */
 .items-box {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -68,6 +74,7 @@
     margin: 0px 35px;
 }
 
+/* Styling for product images */
 .img-box {
     object-fit: cover;
     width: 100%;
@@ -77,6 +84,7 @@
     border-bottom: none;
 }
 
+/* Styling for individual product item boxes */
 .item-box {
     margin: 5px;
     display: flex;
@@ -86,12 +94,13 @@
     transition: 600ms all;
 }
 
+/* Hover effect for product item boxes */
 .item-box:hover {
     transition: 600ms all;
     box-shadow: rgba(241, 184, 84, 0.208) 0px 20px 40px;
 }
 
-
+/* Styling for the details section inside a product box */
 .item-box__details {
     background-color: var(--dark);
     text-align: center;
@@ -101,24 +110,28 @@
     border-top: none;
 }
 
+/* Styling for the product title inside the details */
 .title-box {
     color: var(--primary);
     padding: 5px;
     margin: 5px;
 }
 
+/* Styling for the product description */
 .description-box {
     color: var(--light);
     padding: 5px 10px;
     margin: 5px;
 }
 
+/* Container for the price display, aligned to the start */
 .container-price {
     display: flex;
     justify-content: start;
 
 }
 
+/* Styling for the price title text */
 .price-title {
     font-size: 24px;
     font-weight: bold;
@@ -126,6 +139,7 @@
     margin: 5px 30px 5px 0;
 }
 
+/* Styling for the price value text */
 .price-text {
     margin: 10px;
     color: var(--light);
@@ -133,6 +147,7 @@
     font-weight: 800;
 }
 
+/* Footer section of the product box containing action buttons */
 .footer-box {
     display: flex;
     justify-content: space-evenly;
@@ -140,6 +155,7 @@
     margin: 0 5px 20px;
 }
 
+/* Styling for the 'Add to Cart' button */
 .btn-boxes {
     background-color: var(--primary);
     padding: 10px 15px;
@@ -148,6 +164,7 @@
     transition: all 600ms ease-in;
 }
 
+/* Hover effect for the 'Add to Cart' button */
 .btn-boxes:hover {
     background-color: var(--light);
     border: 3px solid var(--primary);
@@ -157,6 +174,7 @@
 
 }
 
+/* Media query for very small screens (max-width: 480px) */
 @media screen and (max-width:480px) {
 
     .title-parent {
@@ -185,6 +203,7 @@
 
 }
 
+/* Media query for small screens (481px to 600px) */
 @media screen and (min-width:481px) and (max-width:600px) {
 
     .title-parent {
@@ -219,6 +238,7 @@
 
 }
 
+/* Media query for medium screens (601px to 767px) */
 @media screen and (min-width:601px) and (max-width:767px) {
 
     .title-parent {

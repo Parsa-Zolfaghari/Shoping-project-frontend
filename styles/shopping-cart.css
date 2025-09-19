@@ -1,11 +1,13 @@
 @import url("shopping-cart__nav.css");
-@import url("shopping-cart__responsive.css");
+
+/* CSS custom properties (variables) for consistent theming */
 :root {
     --primary: #c5a46d;
     --dark: #1c1c1c;
     --light: aliceblue;
 }
 
+/* Base body styling */
 body {
     margin: 0;
     padding: 0;
@@ -14,6 +16,7 @@ body {
     background-color: var(--dark);
 }
 
+/* Container for the main title texts */
 .first-texts__main {
     margin-top: 130px;
     margin-bottom: 20px;
@@ -23,6 +26,7 @@ body {
     align-items: center;
 }
 
+/* Adds a decorative gradient line below the main title */
 .first-texts__main::after {
     content: "";
     display: block;
@@ -36,17 +40,20 @@ body {
             rgba(197, 164, 109, 0));
 }
 
+/* Styling for the main Persian title */
 .first-text__main {
     margin-bottom: 0;
     font-size: 33px;
     color: var(--light);
 }
 
+/* Styling for the English subtitle */
 .first-text__english-main {
     color: var(--primary);
     margin-top: 5px;
 }
 
+/* Grid layout for the main content (price summary and cart items) */
 .container-boxes__main {
     width: 100%;
     display: grid;
@@ -54,6 +61,7 @@ body {
     align-items: start;
 }
 
+/* Styling for the price summary box (sticky on scroll) */
 .container-box__price {
     width: 75%;
     height: 360px;
@@ -73,6 +81,7 @@ body {
     top: 120px;
 }
 
+/* Keyframes for the shimmering gradient animation */
 @keyframes shimmer {
     0% {
         background-position: 0% 50%;
@@ -87,10 +96,12 @@ body {
     }
 }
 
+/* Inner container for price summary content */
 .content-box__price {
     width: 85%;
 }
 
+/* Container for summary title texts */
 .container-summary__texts {
     display: flex;
     flex-direction: column;
@@ -98,17 +109,20 @@ body {
     align-items: center;
 }
 
+/* Styling for Persian summary text */
 .text-persian__text {
     color: var(--light);
     font-weight: bold;
     margin-bottom: 0;
 }
 
+/* Styling for English summary text */
 .text-english__text {
     color: var(--primary);
     margin-top: 0;
 }
 
+/* Flex layout for price calculation rows */
 .container-calculate__price,
 .container-calculate__sending,
 .container-calculate__all {
@@ -116,6 +130,7 @@ body {
     justify-content: space-between;
 }
 
+/* Styling for price numbers and text */
 .calculate-price__num,
 .calculate-price__text {
     color: var(--light);
@@ -125,33 +140,40 @@ body {
     margin: 0;
 }
 
+/* Styling for shipping cost numbers and text */
 .calculate-sending__num,
 .calculate-sending__text {
     color: var(--light);
 }
 
+/* Adds a border below the shipping cost section */
 .container-calculate__sending {
     border-bottom: 1px solid var(--primary);
 }
+
 
 .calculate-sending__num {
     margin: 16px 0;
 }
 
+/* Container for total price calculation */
 .container-calculate__all {
     margin-top: 16px;
 }
 
+/* Styling for total price number */
 .calculate-all__num {
     font-weight: bold;
     color: var(--primary);
 }
 
+/* Styling for total price text */
 .calculate-all__text {
     margin-top: 0;
     color: var(--primary);
 }
 
+/* Styling for the checkout button */
 .btn-calculate__all {
     width: 100%;
     font-family: "IRANSANS";
@@ -166,17 +188,20 @@ body {
     box-shadow: inset 0 0 0 rgba(0, 0, 0, 0);
 }
 
+/* Hover effect for checkout button */
 .btn-calculate__all:hover {
     transform: scale(1.02);
     box-shadow: 0 0 12px rgba(249, 194, 100, 0.9);
 }
 
+/* Styling for free shipping notice text */
 .last-text__box-calculate {
     text-align: center;
     font-size: 12px;
     color: var(--primary);
 }
 
+/* Styling for individual cart item boxes */
 .boxes-item {
     width: 90%;
     height: 190px;
@@ -187,16 +212,18 @@ body {
     transition: all 600ms ease-in-out;
 }
 
+/* Hover effect for cart item boxes */
 .boxes-item:hover {
     border-color: var(--primary);
     box-shadow: rgba(244, 176, 59, 0.637) 0px 0px 20px, rgba(0, 0, 0, 0.5) 0px 10px 10px;
 }
 
-
+/* Container for cart item content */
 .boxes-item__container {
     height: 100%;
 }
 
+/* Grid layout for cart item content (image + details + delete button) */
 .boxes-item__content {
     height: 100%;
     display: grid;
@@ -205,6 +232,7 @@ body {
     align-items: center;
 }
 
+/* Container for the delete button (right side) */
 .boxes-item__right {
     height: 100%;
     display: flex;
@@ -212,6 +240,7 @@ body {
     margin: 0 30px 80px 0;
 }
 
+/* Styling for the delete button */
 .delete-btn {
     font-family: "IRANSANS";
     border: none;
@@ -224,10 +253,12 @@ body {
     transition: all 600ms ease-in-out;
 }
 
+/* Hover effect for delete button */
 .delete-btn:hover {
     background-color: rgba(255, 0, 0, 0.363);
 }
 
+/* Container for item details and image (left side) */
 .boxes-item__left {
     display: flex;
     justify-content: center;
@@ -235,6 +266,7 @@ body {
     align-items: center;
 }
 
+/* Container for item description text */
 .right-item__description {
     display: flex;
     flex-direction: column;
@@ -242,11 +274,13 @@ body {
     margin-bottom: 10px;
 }
 
+/* Styling for item title */ 
 .title-persian__item-left {
     margin: 0;
     color: var(--light);
 }
 
+/* Styling for item price */
 .price-box__item-left {
     display: flex;
     justify-content: end;
@@ -255,6 +289,7 @@ body {
     margin: 5px 0;
 }
 
+/* Container for quantity controls (+/- buttons) */
 .container-add__number {
     display: flex;
     justify-content: end;
@@ -262,12 +297,14 @@ body {
     margin: 10px 0;
 }
 
+/* Styling for quantity number display */
 .number-box__for-price {
     color: var(--light);
     font-weight: 500;
     margin: 0 25px;
 }
 
+/* Styling for plus and minus buttons */
 .plus-btn,
 .minus-btn {
     width: 32px;
@@ -279,17 +316,20 @@ body {
     cursor: pointer;
 }
 
+/* Hover effect for quantity buttons */
 .plus-btn:hover,
 .minus-btn:hover {
     background-color: var(--dark);
     border: 2px solid var(--primary);
 }
 
+/* Styling for quantity button icons */
 .plus-btn__icon,
 .minus-btn__icon {
     color: var(--primary);
 }
 
+/* Container for item image with badge */
 .left-item__img {
     width: 126px;
     height: 126px;
@@ -297,6 +337,7 @@ body {
     display: grid;
 }
 
+/* Styling for quantity badge on image */
 .left-item__badge {
     grid-area: 1/1;
     z-index: 2;
@@ -307,6 +348,7 @@ body {
     padding: 5px 10px;
 }
 
+/* Styling for item image */
 .left-item_image {
     grid-area: 1/1;
     width: 100%;
@@ -315,10 +357,12 @@ body {
     transition: all 600ms ease;
 }
 
+/* Hover effect for item image */
 .left-item_image:hover {
     transform: scale(1.03);
 }
 
+/* Styling for empty cart image */
 .container-img__havent-box {
     width: 90%;
     border: 1px solid var(--primary);
@@ -326,12 +370,13 @@ body {
     margin: 0 auto;
 }
 
+/* Styling for empty cart image */
 .img__havent-box {
     width: 100%;
     height: 700px;
-
 }
 
+/* Media query for very small screens (max-width: 576px) */
 @media screen and (max-width: 576px) {  
     .first-texts__main {
         margin-top: 0;
@@ -409,6 +454,7 @@ body {
     }
 }
 
+/* Media query for small to medium screens (576px to 1023px) */
 @media screen and (min-width: 576px) and (max-width: 1023px) {
 
     .first-text__main {

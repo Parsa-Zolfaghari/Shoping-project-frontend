@@ -1,3 +1,4 @@
+/* Styles for the main footer element with gradient background */
 footer {
     background: linear-gradient(135deg,
             #000000 0%,
@@ -8,6 +9,7 @@ footer {
     margin: 20px 0 0 0;
 }
 
+/* Grid layout for the footer content with 3 columns */
 .content-footer {
     display: grid;
     grid-template-columns: 400px auto 400px;
@@ -19,12 +21,14 @@ footer {
 
 }
 
+/* Styling for individual footer items */
 .item-footer {
     width: 350px;
     text-align: center;
     margin: 20px 0 30px 0;
 }
 
+/* Styling for the right item title in footer */
 .item-right__title {
     font-weight: bold;
     font-size: 30px;
@@ -32,30 +36,36 @@ footer {
     margin-bottom: 5px;
 }
 
+/* Styling for the right item subtitle/description */
 .item-right__subtitle {
     color: var(--light);
     line-height: 2;
 }
 
+/* Margin for the logo in footer */
 .logo {
     margin-top: 20px;
 }
 
+/* Padding for the footer list */
 .list-footer {
     padding: 0 10px 0 0;
 }
 
+/* Styling for the list title in footer */
 .item-top__title {
     font-weight: bold;
     color: var(--primary);
     font-size: 18px;
 }
 
+/* Styling and positioning for list text links */
 .text-link {
     margin-top: 10px;
     position: relative;
 }
 
+/* Creates an animated underline effect for footer links on hover */
 .item-top__link-list::after {
     content: '';
     position: absolute;
@@ -67,14 +77,17 @@ footer {
     transition: width 0.3s ease;
 }
 
+/* Expands the underline on link hover */
 .item-top__link-list:hover::after {
     width: 100px;
 }
 
+/* Changes link color on hover */
 .item-top__link-list:hover {
     color: var(--primary);
 }
 
+/* Styling for the left item title in footer */
 .item-left__title {
     color: var(--primary);
     font-weight: bold;
@@ -82,6 +95,7 @@ footer {
     font-size: 25px;
 }
 
+/* Flexbox layout for contact paragraphs and social icons */
 .item-left__paragraph,
 .icons-footer {
     display: flex;
@@ -89,6 +103,7 @@ footer {
     align-items: center;
 }
 
+/* Styling for social media icon links */
 .link-icon__footer {
     width: 50px;
     height: 50px;
@@ -98,6 +113,7 @@ footer {
     transition: all 600ms ease-in-out;
 }
 
+/* Styling for social media icons */
 .left-item__icon {
     font-size: 30px;
     color: var(--primary);
@@ -105,15 +121,18 @@ footer {
     transition: all 600ms ease-in-out;
 }
 
+/* Hover effect for social media links */
 .link-icon__footer:hover {
     background-color: var(--primary);
     box-shadow: 0 0 20px rgba(197, 164, 109, 0.9);
 }
 
+/* Changes icon color on hover */
 .link-icon__footer:hover .left-item__icon {
     color: var(--dark);
 }
 
+/* Styling for phone and email icons */
 .item-left__phone-icon,
 .item-left__email-icon {
     margin-right: 10px;
@@ -121,12 +140,14 @@ footer {
     color: var(--primary);
 }
 
+/* Text color for contact information */
 .item-left__paragraph-text,
 .item-left__paragraph-number,
 .item-left__paragraph-email {
     color: var(--light);
 }
 
+/* Styling for the bottom section of footer (copyright area) */
 .bottom-item__footer {
     margin: 10px 0 0 0;
     background-color: #121212;
@@ -135,10 +156,12 @@ footer {
     border-top: 1px solid var(--primary);
 }
 
+/* Styling for copyright text */
 .item-bottom__paragraph {
     color: var(--light);
 }
 
+/* Special color for the developer name in copyright */
 .--global_footer {
     color: var(--primary);
 } 

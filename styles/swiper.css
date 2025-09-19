@@ -6,12 +6,14 @@
     --light: aliceblue;
 }
 
+/* Styles for the main discount section title container */
 .main__discount>.container__main-title {
     text-align: center;
     margin: 0px 0;
     position: relative;
 }
 
+/* Main title styling with gradient text */
 .main__discount>.container__main-title>.main-title {
     font-size: 30px;
     font-weight: bold;
@@ -24,6 +26,7 @@
     display: inline-block;
 }
 
+/* Creates an animated line on the right side of the title */
 .main__discount>.container__main-title>.main-title::after {
     content: "";
     position: absolute;
@@ -37,6 +40,7 @@
     animation: shine 2s infinite linear;
 }
 
+/* Creates an animated line on the left side of the title */
 .main__discount>.container__main-title>.main-title::before {
     content: "";
     position: absolute;
@@ -50,6 +54,7 @@
     animation: shine 2s infinite linear;
 }
 
+/* Keyframes for the shining animation on the title lines */
 @keyframes shine {
     0% {
         box-shadow: 0 0 5px var(--primary);
@@ -64,15 +69,18 @@
     }
 }
 
+/* Ensures the Owl Carousel stage flows left-to-right */
 .owl-stage-outer{
     direction: ltr;
 }
 
+/* Base styling for the Owl Carousel container */
 #owl-product{
     display: block;
     /* display: flex; */
 }
 
+/* Styling for individual product items in the carousel */
 #owl-product>.item-box {
     display: flex;
     justify-self: center;
@@ -84,16 +92,19 @@
     margin-bottom: 40px;
 }
 
+/* Removes border from the details section inside carousel items */
 #owl-product>.item-box >.item-box__details{
     border: none;
 }
 
+/* Styling for images inside the Owl Carousel items */
 .owl-carousel>.item-box>img {
     width: 90%; 
     margin-right: -px;
     border:none;
 }
 
+/* Sets the direction for price containers to right-to-left */
 .container-price{
     direction: rtl;
     margin-bottom: 10px;

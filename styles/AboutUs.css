@@ -1,8 +1,10 @@
+/* Styles for the main About Us section */
 .aboutus {
     background: linear-gradient(to bottom left, #000000, #111827, #000000);
     margin: 30px 0;
 }
 
+/* Grid layout for the About Us content */
 .content-aboutus {
     display: grid;
     grid-template-columns: 2fr 1.3fr;
@@ -10,28 +12,33 @@
     position: relative;
 }
 
+/* Styling for the right item (text content) in the About Us section */
 .aboutus__right-item {
     margin: 50px auto 50px 20px;
     width: 600px;
 }
 
+/* Styling for the left item (image) in the About Us section */
 .aboutus__left-item {
     width: 600px;
     margin-left: auto;
     margin-top: 30px;
 }
 
+/* Styling for the Persian title */
 .persian-title__aboutus {
     color: var(--primary);
     font-size: 40px;
     margin: 0;
 }
 
+/* Styling for the English title */
 .english-title__aboutus {
     color: var(--light);
     margin: 0;
 }
 
+/* Adds a decorative gradient line after the English title */
 .english-title__aboutus::after {
     content: "";
     display: block;
@@ -42,14 +49,17 @@
     background: linear-gradient(to left, #c5a46d, rgba(197, 164, 109, 0));
 }
 
+/* Styling for the Persian paragraph text */
 .persian-paragraph__aboutus {
     color: var(--light);
 }
 
+/* Styling for the English paragraph text */
 .english-paragraph__aboutus {
     color: #aaa;
 }
 
+/* Adds a decorative gradient line after the English paragraph */
 .english-paragraph__aboutus::after {
     content: "";
     display: block;
@@ -63,11 +73,13 @@
             rgba(197, 164, 109, 0));
 }
 
+/* Container for the 'Learn More' button */
 .button-aboutus {
     margin-top: 35px;
     height: 80px;
 }
 
+/* Styling for the 'Learn More' button */
 .btn-aboutus {
     width: 40px;
     text-align: center;
@@ -79,12 +91,14 @@
     transition-duration: 0.7s;
 }
 
+/* Hover effect for the 'Learn More' button */
 .btn-aboutus:hover {
     color: var(--primary);
     background-color: var(--light);
     box-shadow: 0 0 20px rgba(197, 164, 109, 0.9);
 }
 
+/* Styling for the About Us image */
 .img-aboutus {
     width: 477px;
     height: 497px;
@@ -95,11 +109,13 @@
     border: 1px solid var(--primary);
 }
 
+/* Hover effect for the About Us image */
 .img-aboutus:hover {
     transform: scale(1.03);
     box-shadow: 0 0 35px rgba(197, 164, 109, 0.9);
 }
 
+/* Adds a decorative corner element (bottom-left) to the image container */
 .aboutus__left-item::before {
     content: "";
     position: absolute;
@@ -111,6 +127,7 @@
     border-bottom: 2px solid var(--primary);
 }
 
+/* Adds a decorative corner element (top-right) to the image container */
 .aboutus__left-item::after {
     content: "";
     position: absolute;
