@@ -192,7 +192,6 @@ nav {
     transform: translateY(-10px);
     transition: all 600ms ease-in-out;
     padding-right: 0;
-    margin: 0;
 }
 
 .container-icon__title:hover .list-box__title {
