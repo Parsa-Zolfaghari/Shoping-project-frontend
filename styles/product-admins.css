@@ -147,6 +147,96 @@ nav {
     width: 50px;
 }
 
+.container-title__box {
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+}
+
+.title-box {
+    font-size: 17px;
+}
+
+.link-icon__title {
+    all: unset;
+    width: 35px;
+    cursor: pointer;
+}
+
+.icon-btn__title {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color:  #aaa;
+    margin-top: 5px;
+}
+
+.container-icon__title {
+    height: 35px;
+    transition: all 600ms ease-in-out;
+}
+
+.list-box__title {
+    visibility: hidden;
+    height: 105px;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    background-color: #000000;
+    border: 2px solid #c5a46d;
+    border-radius: 10px;
+    transition: all 600ms ease-in-out;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: all 600ms ease-in-out;
+    visibility: hidden;
+}
+
+.container-icon__title:hover .list-box__title {
+    display: block;
+    visibility: visible;
+    transition: all 600ms ease-in-out;
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible;
+}
+
+.btn-box__title {
+    width: 100%;
+    cursor: pointer;
+}
+
+.li-box__title {
+    padding: 5px;
+    border-bottom: 1px solid var(--primary);
+    transition-duration: 600ms;
+}
+
+.li-box__title:hover {
+    background-color: var(--primary);
+}
+
+.b-b-n {
+    border-bottom: none;
+}
+
+.button-box__title {
+    all: unset;
+    color: var(--light);
+    font-size: 12px;
+    cursor: pointer;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.link-box__title {
+    display: block;
+    font-size: 12px;
+    width: 100%;
+    height: 100%;
+    padding: 10px 0;
+}
+
 
 @media screen and (max-width: 576px) {
     nav {
