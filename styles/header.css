@@ -266,7 +266,7 @@ header {
     width: 510px;
     padding: 10px 40px 10px 10px;
     background-color: var(--light);
-    border-color: #c5a46d;
+    border-color: var(--primary);
     border: 3px solid var(--primary);
     border-left: none;
     border-top-right-radius: 50px;
