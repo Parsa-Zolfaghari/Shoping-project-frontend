@@ -81,7 +81,16 @@
     margin: 5px;
     display: flex;
     flex-direction: column;
+    box-shadow: rgba(197, 165, 109, 0.208) 5px 10px 30px;
+    border-radius: 10px;
+    transition: 600ms all;
 }
+
+.item-box:hover {
+    transition: 600ms all;
+    box-shadow: rgba(241, 184, 84, 0.208) 0px 20px 40px;
+}
+
 
 .item-box__details {
     background-color: var(--dark);
@@ -207,7 +216,7 @@
         width: 100%;
         border-bottom: none;
     }
-    
+
 }
 
 @media screen and (min-width:601px) and (max-width:767px) {
