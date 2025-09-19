@@ -1,3 +1,9 @@
+@import url("font.css");
+
+*{
+    font-family: 'IRANSANS';
+}
+
 nav {
     position: fixed;
     inset: 0 0 auto 0;
@@ -118,6 +124,7 @@ nav {
     outline: none;
     margin-left: 45px;
     direction: ltr;
+    color: var(--primary);
 }
 
 .input::placeholder {

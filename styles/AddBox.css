@@ -17,11 +17,11 @@ main {
     grid-template-columns: 2.5fr 3fr;
 }
 
-.container-box__title{
+.container-box__title {
     margin-bottom: 25px;
 }
 
-.show-box__title{
+.show-box__title {
     color: var(--primary);
     font-size: 20px;
     margin-bottom: 3px;
@@ -77,7 +77,7 @@ form {
     transition: all 600ms ease-out;
 }
 
-form:hover{
+form:hover {
     transform: scale(1.02);
 }
 
@@ -112,7 +112,7 @@ input::placeholder {
     font-family: "IRANSANS";
 }
 
-.container-box__show-content{
+.container-box__show-content {
     margin-bottom: 180px;
 }
 
@@ -146,13 +146,13 @@ input::placeholder {
 }
 
 .container-label__name,
-.container-label__des{
+.container-label__des {
     width: 100%;
     color: var(--light);
     display: flex;
     justify-content: start;
     align-items: center;
-    margin:0 55px 10px 0;
+    margin: 0 55px 10px 0;
 }
 
 .upload-box {
@@ -274,14 +274,14 @@ input::placeholder {
     margin-top: 18px;
 }
 
-@media screen and (max-width:1020px){
+@media screen and (max-width:1020px) {
     .content-main__items {
         grid-template-columns: 1fr;
         grid-template-areas: "t"
-                             "b";
+            "b";
     }
 
-    .container-box__show-content{
+    .container-box__show-content {
         grid-area: b;
     }
 
