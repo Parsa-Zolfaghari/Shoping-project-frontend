@@ -189,7 +189,7 @@ nav {
     opacity: 0;
     transform: translateY(-10px);
     transition: all 600ms ease-in-out;
-    visibility: hidden;
+    padding-right: 0;
 }
 
 .container-icon__title:hover .list-box__title {

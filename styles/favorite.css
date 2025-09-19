@@ -1,14 +1,16 @@
+@import url("default.css");
+
 :root {
     --primary: #c5a46d;
     --dark: #1c1c1c;
     --light: aliceblue;
 }
 
-*{
+/* *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
+} */
 
 .footer-box{
     display: flex;
@@ -79,7 +81,6 @@ header{
 
 .navbar_heart_color{
     margin-top: 8px;
-    /* margin-left: 8px; */
 }
 
 .navbar__a_title{
