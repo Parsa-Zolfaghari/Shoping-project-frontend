@@ -1,10 +1,12 @@
 @import url("font.css");
 @import url("default.css");
 
+/* Set IRANSANS font for all elements */
 *{
     font-family: 'IRANSANS';
 }
 
+/* Styling for fixed navigation bar */
 nav {
     position: fixed;
     inset: 0 0 auto 0;
@@ -19,12 +21,14 @@ nav {
     border-bottom: 1px solid rgba(249, 194, 100, 0.9);
 }
 
+/* Container for page title and icon */
 .container-top__item {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+/* Styling for page title text */
 .item-top__text {
     color: var(--primary);
     font-size: 32px;
@@ -32,6 +36,7 @@ nav {
     margin-left: 15px;
 }
 
+/* Styling for page icon */
 .top-item__icon {
     width: 30px;
     height: 30px;
@@ -41,7 +46,7 @@ nav {
     padding: 10px;
 }
 
-
+/* Grid layout for navigation content */
 .content-nav {
     height: 100%;
     margin-top: 15px;
@@ -49,11 +54,13 @@ nav {
     grid-template-columns: 1fr auto 1fr;
 }
 
+/* Container for navigation buttons */
 .container_btn__header {
     display: flex;
     justify-content: start;
 }
 
+/* Styling for home button */
 .header-button__home {
     width: 50px;
     height: 50px;
@@ -66,6 +73,7 @@ nav {
     margin-right: 40px;
 }
 
+/* Hover effect for home button */
 .header-button__home:hover {
     background-color: var(--light);
     border: 3px solid var(--primary);
@@ -74,6 +82,7 @@ nav {
     box-shadow: 0 0 20px rgba(249, 194, 100, 0.9);
 }
 
+/* Styling for heart (wishlist) button */
 .header__button-heart {
     width: 50px;
     height: 50px;
@@ -87,6 +96,7 @@ nav {
     transition: all 400ms ease-in-out;
 }
 
+/* Hover effect for heart button */
 .header__button-heart:hover {
     background-color: var(--light);
     border: 3px solid var(--primary);
@@ -95,6 +105,7 @@ nav {
     box-shadow: 0 0 20px rgba(249, 194, 100, 0.9);
 }
 
+/* Search box container */
 .container__box {
     display: flex;
     justify-self: center;
@@ -111,6 +122,7 @@ nav {
     align-self: center;
 }
 
+/* Search input field */
 .input {
     position: relative;
     height: 46px;
@@ -128,13 +140,13 @@ nav {
     color: var(--primary);
 }
 
+/* Placeholder styling for search input */
 .input::placeholder {
     color: #aaa;
-    /* خاکستری ملایم‌تر */
     font-size: 15px;
 }
 
-
+/* Search icon container */
 .container__icon-box {
     position: absolute;
     margin-left: -415px;
@@ -148,22 +160,26 @@ nav {
     width: 50px;
 }
 
+/* Container for product title and admin options */
 .container-title__box {
     display: flex;
     justify-content: space-evenly;
     position: relative;
 }
 
+/* Product title styling */
 .title-box {
     text-align: center;
 }
 
+/* Admin options button styling */
 .link-icon__title {
     all: unset;
     width: 35px;
     cursor: pointer;
 }
 
+/* Admin options icon styling */
 .icon-btn__title {
     display: block;
     width: 100%;
@@ -173,11 +189,13 @@ nav {
     margin-right: -25px;
 }
 
+/* Container for admin options icon */
 .container-icon__title {
     height: 35px;
     transition: all 600ms ease-in-out;
 }
 
+/* Admin options dropdown menu (hidden by default) */
 .list-box__title {
     visibility: hidden;
     height: 105px;
@@ -194,6 +212,7 @@ nav {
     padding-right: 0;
 }
 
+/* Show admin options on hover */
 .container-icon__title:hover .list-box__title {
     display: block;
     visibility: visible;
@@ -204,25 +223,30 @@ nav {
     margin-top: 20px;
 }
 
+/* Admin option button styling */
 .btn-box__title {
     width: 100%;
     cursor: pointer;
 }
 
+/* Admin option list item styling */
 .li-box__title {
     padding: 5px;
     border-bottom: 1px solid var(--primary);
     transition-duration: 600ms;
 }
 
+/* Hover effect for admin options */
 .li-box__title:hover {
     background-color: var(--primary);
 }
 
+/* Remove bottom border for last item */
 .b-b-n {
     border-bottom: none;
 }
 
+/* Delete product button styling */
 .button-box__title {
     all: unset;
     color: var(--light);
@@ -232,6 +256,7 @@ nav {
     padding: 10px 0;
 }
 
+/* Edit product link styling */
 .link-box__title {
     display: block;
     font-size: 12px;
@@ -240,7 +265,7 @@ nav {
     padding: 10px 0;
 }
 
-
+/* Media query for very small screens (max-width: 576px) */
 @media screen and (max-width: 576px) {
     nav {
         position: relative;
@@ -266,6 +291,7 @@ nav {
     }
 }
 
+/* Media query for small to medium screens (576px to 1023px) */
 @media screen and (min-width: 576px) and (max-width: 1023px) {
     nav {
         width: 100%;

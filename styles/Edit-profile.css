@@ -1,26 +1,31 @@
 @import url("font.css");
 @import url("animate.css");
 
+/* Global styles */
 * {
     font-family: 'IRANSANS', sans-serif;
 }
 
+/* Body styling */
 body {
     font-family: 'IRANSANS', sans-serif;
 }
 
+/* Body container styling */
 .body {
     background-color: #292929;
     direction: rtl;
     z-index: -1;
 }
 
+/* CSS custom properties (variables) for consistent theming */
 :root {
     --primary: #c5a46d;
     --dark: #1c1c1c;
     --light: aliceblue;
 }
 
+/* Container styling */
 .container {
     display: flex;
     align-items: center;
@@ -28,6 +33,7 @@ body {
     z-index: 1;
 }
 
+/* Bubbles animation */
 .bubbles {
     position: absolute;
     top: 0;
@@ -38,6 +44,7 @@ body {
     z-index: -1;
 }
 
+/* Bubbles styling */
 .bubbles span {
     position: absolute;
     bottom: -100px;
@@ -48,6 +55,7 @@ body {
     animation: rise 15s linear infinite;
 }
 
+/* Individual bubble styling and animation delays */
 .bubbles span:nth-child(1) {
     left: 10%;
     width: 12px;
@@ -55,12 +63,14 @@ body {
     animation-duration: 12s;
 }
 
+/* Individual bubble styling and animation delays */
 .bubbles span:nth-child(2) {
     left: 30%;
     animation-duration: 18s;
     animation-delay: 2s;
 }
 
+/* Individual bubble styling and animation delays */
 .bubbles span:nth-child(3) {
     left: 50%;
     width: 15px;
@@ -69,12 +79,14 @@ body {
     animation-delay: 4s;
 }
 
+/* Individual bubble styling and animation delays */
 .bubbles span:nth-child(4) {
     left: 70%;
     animation-duration: 25s;
     animation-delay: 6s;
 }
 
+/* Individual bubble styling and animation delays */
 .bubbles span:nth-child(5) {
     left: 90%;
     width: 10px;
@@ -83,6 +95,7 @@ body {
     animation-delay: 1s;
 }
 
+/* Bubbles rise animation */
 @keyframes rise {
     0% {
         transform: translateY(0) scale(1);
@@ -99,6 +112,7 @@ body {
     }
 }
 
+/* Container styling */
 .container>form {
     background-color: #292929;
     box-shadow: rgba(197, 164, 109, 0.3) 0px 0px 40px, rgba(0, 0, 0, 0.5) 0px 20px 40px;
@@ -112,11 +126,13 @@ body {
     z-index: 2;
 }
 
+/* Container hover effect */
 .container>form:hover {
     transition: 600ms;
     box-shadow: rgba(244, 176, 59, 0.637) 0px 0px 40px, rgba(0, 0, 0, 0.5) 0px 20px 40px;
 }
 
+/* Profile image container styling */
 .form__img-profile {
     justify-self: center;
     width: 94px;
@@ -130,27 +146,32 @@ body {
     transition: 600ms;
 }
 
+/* Profile name styling */
 .form__name {
     margin-bottom: 5px;
     color: var(--light);
     text-align: center;
 }
 
+/* Home link styling */
 .form__color-text-home {
     text-align: center;
     margin-top: 5px;
 }
 
+/* Home link styling */
 .back-home__link {
     color: var(--primary);
     border-bottom: 1px solid var(--primary);
 }
 
+/* Profile image container hover effect */
 .form__img-profile:hover {
     transition: 600ms;
     box-shadow: rgba(255, 195, 92, 0.566) 0px 0px 40px, rgba(0, 0, 0, 0.5) 0px 20px 40px;
 }
 
+/* Profile image styling */
 .form__img-profile>img {
     width: 84px;
     height: 84px;
@@ -159,12 +180,14 @@ body {
     transition: 600ms;
 }
 
+/* Form label styling */
 .form__label {
     margin-right: 50px;
     color: var(--light);
     font-size: 16px;
 }
 
+/* Form input styling */
 .form__input {
     margin-right: 40px;
     background-color: color-mix(in oklab, var(--color-black) 50%, transparent);
@@ -180,22 +203,26 @@ body {
     transition: 600ms;
 }
 
+/* Form input hover effect */
 .form__input:hover {
     transition: 600ms;
     border: 3px solid #67573C;
 }
 
+/* Form input placeholder styling */
 .form__input::placeholder {
     color: var(--light);
     font-size: 15px;
 }
 
+/* Form input focus styling */
 .form__input:focus {
     transition: 600ms;
     box-shadow: rgba(255, 248, 236, 0.8) 0px 0px 10px, rgba(0, 0, 0, 0.5) 0px 20px 40px;
     border: 3px solid var(--primary);
 }
 
+/* Form buttons container styling */
 .form__div-buttons {
     width: 367px;
     display: flex;
@@ -206,24 +233,25 @@ body {
     transition: 600ms;
 }
 
+/* Form buttons styling */
 .form__buttons {
     background-color: var(--primary);
     color: var(--light);
     border: none;
     border-radius: 5px;
-    /* padding: 10px 15px; */
     cursor: pointer;
     transition: background-color 300ms;
     width: 100px;
     transition: 600ms;
 }
 
+/* Form buttons hover effect */
 .form__buttons:hover {
     transition: 600ms;
     background-color: darken(var(--primary), 10%);
 }
 
-
+/* Form button cancel styling */
 .form__button-cancel {
     background-color: var(--light);
     width: 170px;
@@ -236,6 +264,7 @@ body {
     transition: background-color 300ms;
 }
 
+/* Form button cancel hover effect */
 .form__button-cancel:hover {
     transition: 600ms;
     background-color: var(--primary);
@@ -243,6 +272,7 @@ body {
     color: var(--light);
 }
 
+/* Form button save styling */
 .form__button-save {
     background-color: #D2B279;
     width: 170px;
@@ -255,6 +285,7 @@ body {
     transition: 600ms;
 }
 
+/* Form button save hover effect */
 .form__button-save:hover {
     transition: 600ms;
     background-color: var(--light);
@@ -262,12 +293,14 @@ body {
     color: var(--primary);
 }
 
+/* Form text styling */
 .form__text {
     color: var(--light);
     margin-top: -8px;
     text-align: center;
 }
 
+/* Form color text styling */
 .form__color-text {
     color: var(--primary);
 }

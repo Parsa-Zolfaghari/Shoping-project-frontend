@@ -1,9 +1,11 @@
+/* CSS custom properties (variables) for consistent theming */
 :root {
     --primary: #c5a46d;
     --dark: #1c1c1c;
     --light: aliceblue;
 }
 
+/* Base styles for the body element */
 body {
     box-sizing: border-box;
     margin: 0;
@@ -12,29 +14,35 @@ body {
     overflow-x: hidden;
 }
 
+/* Anchor tag styling */
 a {
     color: var(--light);
     text-decoration: none;
 }
 
+/* List item styling */
 li {
     list-style: none;
 }
 
+/* Container for primary heart icon */
 .container-icon__heart-primary {
     color: var(--primary);
 }
 
+/* Container for light heart icon */
 .container-icon__heart-light {
     color: var(--light);
 }
 
+/* Container for light header icon */
 .container-icon__header-light{
     color: var(--light);
     width: 30px;
     height: 30px;
 }
 
+/* Container for navigation icon */
 .container-icon__nav {
     width: 100%;
     height: 30px;
@@ -42,12 +50,14 @@ li {
     color: var(--primary);
 }
 
+/* Container for header icon */
 .container-icon__header {
     width: 30px;
     height: 30px;
     color: var(--primary);
 }
 
+/* Container for header icon position */
 .container-icon__header-position {
     width: 100%;
     height: 30px;
@@ -55,6 +65,7 @@ li {
     color: var(--primary);
 }
 
+/* Logo styling */
 .logo {
     width: 200px;
     height: 73px;
@@ -68,6 +79,7 @@ li {
     position: relative;
 }
 
+/* Title styling */
 .title {
     font-size: 30px;
     font-weight: bold;
@@ -80,6 +92,7 @@ li {
     display: inline-block;
 }
 
+/* Decorative line after title */
 .title::after {
     content: "";
     position: absolute;
@@ -93,6 +106,7 @@ li {
     animation: shine 2s infinite linear;
 }
 
+/* Decorative line before title */
 .title::before {
     content: "";
     position: absolute;
@@ -106,6 +120,7 @@ li {
     animation: shine 2s infinite linear;
 }
 
+/* Keyframes for shine animation */
 @keyframes shine {
     0% {
         box-shadow: 0 0 5px var(--primary);
@@ -120,7 +135,7 @@ li {
     }
 }
 
-
+/* Color styling */
 .color {
     color: var(--primary);
     margin-top: 7px;

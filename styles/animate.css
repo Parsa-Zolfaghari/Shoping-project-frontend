@@ -6,7 +6,6 @@
     height: 100%;
     overflow: hidden;
     z-index: 1;
-    /* پشت باکس EditProfile قرار می‌گیره */
 }
 
 .bubbles span {
@@ -15,7 +14,6 @@
     width: 10px;
     height: 10px;
     background-color: #67573C;
-    /* رنگ نیمه‌شفاف */
     border-radius: 50%;
     animation: rise 15s linear infinite;
 }
