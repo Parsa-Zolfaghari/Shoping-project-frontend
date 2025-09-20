@@ -1,32 +1,39 @@
+/* CSS custom properties (variables) for consistent theming */
 :root {
     --primary: #c5a46d;
     --dark: #1c1c1c;
     --light: aliceblue;
 }
 
+/* Body styling with gradient background */
 body {
     background: linear-gradient(135deg, #000000 0%, #1C1C1C 50%, #110e0e 100%);
 }
 
+/* Main content margin */
 main {
     margin-top: 120px;
 }
 
+/* Grid layout for main content items */
 .content-main__items {
     display: grid;
     grid-template-columns: 2.5fr 3fr;
 }
 
+/* Container for preview title */
 .container-box__title {
     margin-bottom: 25px;
 }
 
+/* Preview title styling */
 .show-box__title {
     color: var(--primary);
     font-size: 20px;
     margin-bottom: 3px;
 }
 
+/* Decorative line after preview title */
 .container-box__title::after {
     content: "";
     display: block;
@@ -37,17 +44,19 @@ main {
     background: linear-gradient(to right, #c5a46d, rgba(197, 164, 109, 0));
 }
 
-
+/* Container for product preview */
 .container-box__show-content {
     width: 100%;
 }
 
+/* Product preview item styling */
 .item-box {
     width: 70%;
     box-shadow: rgba(255, 195, 92, 0.566) 0px 0px 40px, rgba(0, 0, 0, 0.5) 0px 20px 40px;
     border-radius: 15px;
 }
 
+/* Flex layout for preview container */
 .container-box__show-content {
     display: flex;
     flex-direction: column;
@@ -55,6 +64,7 @@ main {
     align-items: center;
 }
 
+/* Container for form content */
 .container-addbox__item-content {
     margin-top: 50px;
     display: flex;
@@ -63,6 +73,7 @@ main {
     justify-content: center;
 }
 
+/* Form styling */
 form {
     width: 70%;
     height: 100%;
@@ -77,14 +88,17 @@ form {
     transition: all 600ms ease-out;
 }
 
+/* Hover effect for form */
 form:hover {
     transform: scale(1.02);
 }
 
+/* Focus effect for input fields */
 input:focus {
     box-shadow: rgba(255, 248, 236, 0.8) 0px 0px 10px, rgba(0, 0, 0, 0.5) 0px 20px 40px;
 }
 
+/* Input item container */
 .input-item {
     width: 100%;
     margin-bottom: 10px;
@@ -94,6 +108,7 @@ input:focus {
     align-items: center;
 }
 
+/* Input field styling */
 input {
     font-family: "IRANSANS";
     width: 80%;
@@ -108,18 +123,22 @@ input {
     transition: all 600ms ease-in;
 }
 
+/* Placeholder font family */
 input::placeholder {
     font-family: "IRANSANS";
 }
 
+/* Margin for preview container */
 .container-box__show-content {
     margin-bottom: 180px;
 }
 
+/* Form title container */
 .container-title__form {
     margin-bottom: 10px;
 }
 
+/* Decorative line after form title */
 .container-title__form::after {
     position: absolute;
     content: "";
@@ -134,17 +153,20 @@ input::placeholder {
             rgba(197, 164, 109, 0));
 }
 
+/* Form title styling */
 .title-form {
     color: var(--primary);
     font-size: 30px;
     margin-bottom: 0;
 }
 
+/* Form subtitle styling */
 .subtile-form {
     color: var(--light);
     margin-top: 20px;
 }
 
+/* Container for name and description labels */
 .container-label__name,
 .container-label__des {
     width: 100%;
@@ -155,6 +177,7 @@ input::placeholder {
     margin: 0 55px 10px 0;
 }
 
+/* Container for upload box */
 .upload-box {
     width: 80%;
     border: 2px dashed var(--primary);
@@ -172,6 +195,7 @@ input::placeholder {
     margin: 10px;
 }
 
+/* Upload label container */
 .upload-label {
     margin: 8px;
     width: 100%;
@@ -181,22 +205,26 @@ input::placeholder {
     justify-content: center;
 }
 
+/* Icon upload styling */
 .icon-upload__form {
     font-size: 90px;
     transition: all 600ms ease-in-out;
 }
 
+/* Hover effect for icon upload */
 .icon-upload__form:hover {
     transform: scale(1.04);
     color: #e6c98f;
 }
 
+/* Hover effect for upload box */
 .upload-box:hover {
     background: rgba(197, 164, 109, 0.1);
     border-color: #e6c98f;
     transform: scale(1.02);
 }
 
+/* Container for price label and input */
 .container-label__price {
     width: 100%;
     display: flex;
@@ -204,6 +232,7 @@ input::placeholder {
     align-items: center;
 }
 
+/* Container for input labels and fields */
 .container-input__label,
 .container-input__price {
     display: flex;
@@ -212,6 +241,7 @@ input::placeholder {
     align-items: center;
 }
 
+/* Container for price and label boxes */
 .price-box,
 .label-box {
     display: flex;
@@ -220,13 +250,14 @@ input::placeholder {
     align-items: center;
 }
 
-
+/* Container for price and label text */
 .container-label__price-text,
 .container-label__label {
     margin: 8px;
     color: var(--light);
 }
 
+/* Container for button form */
 .container-btn__form {
     width: 90%;
     display: flex;
@@ -234,6 +265,7 @@ input::placeholder {
     justify-content: center;
 }
 
+/* Button form styling */
 .btn-form {
     margin: 10px;
     font-size: 17px;
@@ -249,6 +281,7 @@ input::placeholder {
     transition: all 600ms ease-in-out;
 }
 
+/* Hover effect for button form */
 .btn-form:hover {
     background-color: var(--dark);
     border-color: var(--primary);
@@ -256,6 +289,7 @@ input::placeholder {
     color: var(--primary);
 }
 
+/* Container for footer form */
 .container-footer__form {
     margin-top: 0;
     width: 100%;
@@ -265,6 +299,7 @@ input::placeholder {
     border-top: 1px solid var(--primary);
 }
 
+/* Footer text styling */
 .text-footer__form {
     width: 100%;
     color: var(--primary);
@@ -274,6 +309,7 @@ input::placeholder {
     margin-top: 18px;
 }
 
+/* Responsive design for smaller screens */
 @media screen and (max-width:1020px) {
     .content-main__items {
         grid-template-columns: 1fr;

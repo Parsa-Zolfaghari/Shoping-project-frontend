@@ -7,5 +7,6 @@
         "IRANSANS",
         "suntime",
         "sweetalert"
-    ]
+    ],
+    "github.copilot.nextEditSuggestions.enabled": true
 }
