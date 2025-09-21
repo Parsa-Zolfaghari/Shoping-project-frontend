@@ -249,6 +249,26 @@ input::placeholder {
     justify-content: center;
     align-items: center;
 }
+.color-box{
+    margin-right: 15px;
+}
+
+.container-label__color-text{
+    width: 350px;
+    margin-top: 1px;
+    color: var(--light);
+    margin-right: 25px;
+    margin-bottom: 4px;
+}
+
+.container-label__brand-text{
+    color: var(--light);
+    margin-right: 10px;
+}
+
+.container-label__price{
+    margin-top: 5px;
+}
 
 /* Container for price and label text */
 .container-label__price-text,

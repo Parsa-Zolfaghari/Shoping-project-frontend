@@ -8,6 +8,13 @@
     position: relative;
 }
 
+.container__main-title-oof{
+    text-align: center;
+    margin: 0px 0;
+    margin-top: -45px;
+    position: relative;
+}
+
 /* Main title styling with gradient text and decorative lines */
 .main-title {
     font-size: 30px;
@@ -153,6 +160,8 @@
     justify-content: space-evenly;
     align-items: center;
     margin: 0 5px 20px;
+    flex-direction: row;
+    direction: rtl;
 }
 
 /* Styling for the 'Add to Cart' button */
