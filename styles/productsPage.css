@@ -166,3 +166,10 @@ label:hover {
         grid-template-columns: 1fr;
     }
 }
+.footer-box{
+    display: flex;
+    flex-direction: row;
+}
+
+.container__main-title-oof{
+}

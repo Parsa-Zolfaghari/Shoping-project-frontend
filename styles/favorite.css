@@ -11,11 +11,6 @@
     flex-direction: column;
 }
 
-.footer-box a{
-    width: 280px;
-    margin-top: 15px;
-}
-
 .favorite__button-heart{
     position: absolute;
     width: 50px;
