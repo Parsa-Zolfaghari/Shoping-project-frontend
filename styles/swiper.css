@@ -109,3 +109,18 @@
     direction: rtl;
     margin-bottom: 10px;
 }
+
+.div-price{
+    color: var(--light);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.price-margin{
+    bottom: 0;
+    margin-bottom: -15px;
+    margin-left: 40px;
+    font-size: 12px;
+}
