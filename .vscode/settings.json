@@ -8,5 +8,8 @@
         "suntime",
         "sweetalert"
     ],
-    "github.copilot.nextEditSuggestions.enabled": true
+    "github.copilot.nextEditSuggestions.enabled": true,
+    "cSpell.enabledFileTypes": {
+        "html": false
+    }
 }
