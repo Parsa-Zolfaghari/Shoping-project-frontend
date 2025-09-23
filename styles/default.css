@@ -146,6 +146,4 @@ li {
 /* Color styling */
 .color {
     color: var(--primary);
-    margin-top: 7px;
-    margin-left: 10px;
 }
