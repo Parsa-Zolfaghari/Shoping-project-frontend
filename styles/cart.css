@@ -91,6 +91,8 @@
 }
 
 /* Styling for individual product item boxes */
+
+
 .item-box {
     margin: 5px;
     display: flex;
@@ -104,6 +106,21 @@
 .item-box:hover {
     transition: 600ms all;
     box-shadow: rgba(241, 184, 84, 0.208) 0px 20px 40px;
+}
+
+.items{
+    box-shadow: none;
+    border: 1px solid var(--primary);
+    border-radius: 8px;
+}
+
+.items > img{
+    border-radius: 7px;
+}
+
+.items:hover{
+    box-shadow: none;
+    transition: 600ms;
 }
 
 /* Styling for the details section inside a product box */
@@ -179,12 +196,11 @@
     transition: all 600ms ease-in;
     color: var(--primary);
     box-shadow: 0 0 20px rgba(249, 194, 100, 0.9);
-
 }
 
 .container__label{
     background-color: var(--red);
-    width: 100px;
+    width: 110px;
     height: 25px;
     color: var(--light);
     position: absolute;
@@ -193,6 +209,17 @@
     margin-top: 15px;
     margin-right: 20px;
     right: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding-left: 10px;
+}
+
+.img_label{
+    width: 19px;
+    height: 19px;
+    margin-left: -42px;
 }
 
 /* Media query for very small screens (max-width: 480px) */

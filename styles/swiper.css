@@ -90,11 +90,13 @@
     border: 3px solid var(--primary);
     border-radius: 15px ;
     margin-bottom: 40px;
+    box-shadow: none;
 }
 
 /* Removes border from the details section inside carousel items */
 #owl-product>.item-box >.item-box__details{
     border: none;
+
 }
 
 /* Styling for images inside the Owl Carousel items */
@@ -108,4 +110,19 @@
 .container-price{
     direction: rtl;
     margin-bottom: 10px;
+}
+
+.div-price{
+    color: var(--light);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.price-margin{
+    bottom: 0;
+    margin-bottom: -15px;
+    margin-left: 40px;
+    font-size: 12px;
 }

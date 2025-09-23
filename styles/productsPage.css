@@ -28,7 +28,12 @@ label:hover {
 }
 
 .items-box {
+    display: grid;
     grid-template-columns: 1fr 1fr;
+}
+
+.item-box{
+    grid-column: 1 / 1 / 1;
 }
 
 .form {

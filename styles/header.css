@@ -299,42 +299,4 @@ header {
     width: 50px;
 }
 
-/* ===============================
-   Dropdown Menu
-================================= */
-
-.dropdown__header {
-    background-color: var(--dark);
-    position: absolute;
-    border-radius: 10px;
-    border: 3px solid var(--primary);
-    width: 156px;
-    padding: 10px 30px;
-    right: 50px;
-    top: 68px;
-    transition: all 400ms ease-in-out;
-}
-
-.dropdown__header>li {
-    width: 100%;
-    display: block;
-    text-align: center;
-}
-
-.btn-price {
-    display: block;
-    width: 90%;
-    text-align: center;
-    padding: 10px;
-    margin: 10px auto;
-    border-radius: 5px;
-    color: var(--light);
-    background-color: var(--primary);
-}
-
 /* Hide class to toggle dropdown */
-
-.hide {
-    display: none;
-    visibility: hidden;
-}
