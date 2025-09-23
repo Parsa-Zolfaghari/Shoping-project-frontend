@@ -179,7 +179,6 @@
     transition: all 600ms ease-in;
     color: var(--primary);
     box-shadow: 0 0 20px rgba(249, 194, 100, 0.9);
-
 }
 
 .container__label{
