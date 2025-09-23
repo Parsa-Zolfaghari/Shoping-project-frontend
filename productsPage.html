@@ -12,8 +12,8 @@
     <link rel="stylesheet" href="styles/shopping-cart__nav.css">
     <link rel="stylesheet" href="styles/cart.css">
     <link rel="stylesheet" href="styles/favorite.css">
-    <link rel="stylesheet" href="styles/productsPage.css">
     <link rel="stylesheet" href="styles/swiper.css">
+    <link rel="stylesheet" href="styles/productsPage.css">
     <link rel="stylesheet" href="node_modules/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="node_modules/owl.carousel/dist/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="node_modules/owl.carousel/dist/assets/owl.theme.default.min.css">
@@ -52,6 +52,10 @@
     <main class="main">
         <div class="container-main">
             <div class="container-filterings-box">
+                <div class="container__input-product">
+                    <input type="text" class="input-product" placeholder="جستجو بین محصولات...">
+                    <i class="fas fa-search search-icon__filtering"></i>
+                </div>
                 <form action="#" class="form">
                     <div class="container-form">
                         <div class="content-form">
@@ -210,124 +214,149 @@
             <!-- <div class="container__main-title">
                 <h2 class="main-title">ساعت‌هایی برای هر لحظه</h2>
             </div> -->
-            <div class="items-box">
-                <div class="item-box">
-                    <img src="./assets/img/boxes/pexels-alexazabache-3766111.jpg" alt="img" class="img-box">
-                    <div class="item-box__details">
-                        <h2 class="title-box">ساعت رولکس مدل عقابی</h2>
-                        <p class="description-box">ساعت رولکس مدل عقابی ساعت رولکس مدل عقابی ساعت رولکس مدل عقابی
-                            ساعت
-                            رولکس مدل عقابی</p>
-                        <div class="container-price">
-                            <p class="price-title">قیمت :
-                            <p class="price-text"><span class="price-num">100,000</span> تومان</p>
-                            </p>
+            <div class="container-items__box">
+                <div class="container-texts__product-filters">
+                    <div class="container-active__filter">
+                        <div class="container-active__filter-text">
+                            <span class="active__filter-text">
+                                فیلتر های فعال :
+                            </span>
                         </div>
-                        <div class="footer-box">
-                            <button class="header__button-heart">
-                                <i class="fa-regular fa-heart container-icon__header"></i>
-                            </button>
-                            <a href="#" class="btn-boxes">افزودن به سبد خرید</a>
+                        <div class="active-filters">
+                            <span class="filter-tag">Rolex</span>
+                            <span class="filter-tag">طلایی</span>
+                            <span class="filter-tag">طلایی</span>
+                            <span class="filter-tag">طلایی</span>
                         </div>
                     </div>
-                </div>
-                <div class="item-box">
-                    <img src="./assets/img/boxes/pexels-alexazabache-3766111.jpg" alt="img" class="img-box">
-                    <div class="item-box__details">
-                        <h2 class="title-box">ساعت رولکس مدل عقابی</h2>
-                        <p class="description-box">ساعت رولکس مدل عقابی ساعت رولکس مدل عقابی ساعت رولکس مدل عقابی
-                            ساعت
-                            رولکس مدل عقابی</p>
-                        <div class="container-price">
-                            <p class="price-title">قیمت :
-                            <p class="price-text"><span class="price-num">100,000</span> تومان</p>
-                            </p>
-                        </div>
-                        <div class="footer-box">
-                            <button class="header__button-heart">
-                                <i class="fa-regular fa-heart container-icon__header"></i>
-                            </button>
-                            <a href="#" class="btn-boxes">افزودن به سبد خرید</a>
-                        </div>
+                    <div class="container-found__product">
+                        <span class="active__filter-number">
+                            0
+                        </span>
+                        <span class="active__filter-text">
+                            محصول پیدا شد
+                        </span>
                     </div>
                 </div>
-                <div class="item-box">
-                    <img src="./assets/img/boxes/pexels-alexazabache-3766111.jpg" alt="img" class="img-box">
-                    <div class="item-box__details">
-                        <h2 class="title-box">ساعت رولکس مدل عقابی</h2>
-                        <p class="description-box">ساعت رولکس مدل عقابی ساعت رولکس مدل عقابی ساعت رولکس مدل عقابی
-                            ساعت
-                            رولکس مدل عقابی</p>
-                        <div class="container-price">
-                            <p class="price-title">قیمت :
-                            <p class="price-text"><span class="price-num">100,000</span> تومان</p>
-                            </p>
-                        </div>
-                        <div class="footer-box">
-                            <button class="header__button-heart">
-                                <i class="fa-regular fa-heart container-icon__header"></i>
-                            </button>
-                            <a href="#" class="btn-boxes">افزودن به سبد خرید</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="item-box">
-                    <img src="./assets/img/boxes/pexels-alexazabache-3766111.jpg" alt="img" class="img-box">
-                    <div class="item-box__details">
-                        <h2 class="title-box">ساعت رولکس مدل عقابی</h2>
-                        <p class="description-box">ساعت رولکس مدل عقابی ساعت رولکس مدل عقابی ساعت رولکس مدل عقابی
-                            ساعت
-                            رولکس مدل عقابی</p>
-                        <div class="container-price">
-                            <p class="price-title">قیمت :
-                            <p class="price-text"><span class="price-num">100,000</span> تومان</p>
-                            </p>
-                        </div>
-                        <div class="footer-box">
-                            <button class="header__button-heart">
-                                <i class="fa-regular fa-heart container-icon__header"></i>
-                            </button>
-                            <a href="#" class="btn-boxes">افزودن به سبد خرید</a>
+                <div class="items-box">
+                    <div class="item-box">
+                        <img src="./assets/img/boxes/pexels-alexazabache-3766111.jpg" alt="img" class="img-box">
+                        <div class="item-box__details">
+                            <h2 class="title-box">ساعت رولکس مدل عقابی</h2>
+                            <p class="description-box">ساعت رولکس مدل عقابی ساعت رولکس مدل عقابی ساعت رولکس مدل عقابی
+                                ساعت
+                                رولکس مدل عقابی</p>
+                            <div class="container-price">
+                                <p class="price-title">قیمت :
+                                <p class="price-text"><span class="price-num">100,000</span> تومان</p>
+                                </p>
+                            </div>
+                            <div class="footer-box">
+                                <button class="header__button-heart">
+                                    <i class="fa-regular fa-heart container-icon__header"></i>
+                                </button>
+                                <a href="#" class="btn-boxes">افزودن به سبد خرید</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="item-box">
-                    <img src="./assets/img/boxes/pexels-alexazabache-3766111.jpg" alt="img" class="img-box">
-                    <div class="item-box__details">
-                        <h2 class="title-box">ساعت رولکس مدل عقابی</h2>
-                        <p class="description-box">ساعت رولکس مدل عقابی ساعت رولکس مدل عقابی ساعت رولکس مدل عقابی
-                            ساعت
-                            رولکس مدل عقابی</p>
-                        <div class="container-price">
-                            <p class="price-title">قیمت :
-                            <p class="price-text"><span class="price-num">100,000</span> تومان</p>
-                            </p>
-                        </div>
-                        <div class="footer-box">
-                            <button class="header__button-heart">
-                                <i class="fa-regular fa-heart container-icon__header"></i>
-                            </button>
-                            <a href="#" class="btn-boxes">افزودن به سبد خرید</a>
+                    <div class="item-box">
+                        <img src="./assets/img/boxes/pexels-alexazabache-3766111.jpg" alt="img" class="img-box">
+                        <div class="item-box__details">
+                            <h2 class="title-box">ساعت رولکس مدل عقابی</h2>
+                            <p class="description-box">ساعت رولکس مدل عقابی ساعت رولکس مدل عقابی ساعت رولکس مدل عقابی
+                                ساعت
+                                رولکس مدل عقابی</p>
+                            <div class="container-price">
+                                <p class="price-title">قیمت :
+                                <p class="price-text"><span class="price-num">100,000</span> تومان</p>
+                                </p>
+                            </div>
+                            <div class="footer-box">
+                                <button class="header__button-heart">
+                                    <i class="fa-regular fa-heart container-icon__header"></i>
+                                </button>
+                                <a href="#" class="btn-boxes">افزودن به سبد خرید</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="item-box">
-                    <img src="./assets/img/boxes/pexels-alexazabache-3766111.jpg" alt="img" class="img-box">
-                    <div class="item-box__details">
-                        <h2 class="title-box">ساعت رولکس مدل عقابی</h2>
-                        <p class="description-box">ساعت رولکس مدل عقابی ساعت رولکس مدل عقابی ساعت رولکس مدل عقابی
-                            ساعت
-                            رولکس مدل عقابی</p>
-                        <div class="container-price">
-                            <p class="price-title">قیمت :
-                            <p class="price-text"><span class="price-num">100,000</span> تومان</p>
-                            </p>
+                    <div class="item-box">
+                        <img src="./assets/img/boxes/pexels-alexazabache-3766111.jpg" alt="img" class="img-box">
+                        <div class="item-box__details">
+                            <h2 class="title-box">ساعت رولکس مدل عقابی</h2>
+                            <p class="description-box">ساعت رولکس مدل عقابی ساعت رولکس مدل عقابی ساعت رولکس مدل عقابی
+                                ساعت
+                                رولکس مدل عقابی</p>
+                            <div class="container-price">
+                                <p class="price-title">قیمت :
+                                <p class="price-text"><span class="price-num">100,000</span> تومان</p>
+                                </p>
+                            </div>
+                            <div class="footer-box">
+                                <button class="header__button-heart">
+                                    <i class="fa-regular fa-heart container-icon__header"></i>
+                                </button>
+                                <a href="#" class="btn-boxes">افزودن به سبد خرید</a>
+                            </div>
                         </div>
-                        <div class="footer-box">
-                            <button class="header__button-heart">
-                                <i class="fa-regular fa-heart container-icon__header"></i>
-                            </button>
-                            <a href="#" class="btn-boxes">افزودن به سبد خرید</a>
+                    </div>
+                    <div class="item-box">
+                        <img src="./assets/img/boxes/pexels-alexazabache-3766111.jpg" alt="img" class="img-box">
+                        <div class="item-box__details">
+                            <h2 class="title-box">ساعت رولکس مدل عقابی</h2>
+                            <p class="description-box">ساعت رولکس مدل عقابی ساعت رولکس مدل عقابی ساعت رولکس مدل عقابی
+                                ساعت
+                                رولکس مدل عقابی</p>
+                            <div class="container-price">
+                                <p class="price-title">قیمت :
+                                <p class="price-text"><span class="price-num">100,000</span> تومان</p>
+                                </p>
+                            </div>
+                            <div class="footer-box">
+                                <button class="header__button-heart">
+                                    <i class="fa-regular fa-heart container-icon__header"></i>
+                                </button>
+                                <a href="#" class="btn-boxes">افزودن به سبد خرید</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-box">
+                        <img src="./assets/img/boxes/pexels-alexazabache-3766111.jpg" alt="img" class="img-box">
+                        <div class="item-box__details">
+                            <h2 class="title-box">ساعت رولکس مدل عقابی</h2>
+                            <p class="description-box">ساعت رولکس مدل عقابی ساعت رولکس مدل عقابی ساعت رولکس مدل عقابی
+                                ساعت
+                                رولکس مدل عقابی</p>
+                            <div class="container-price">
+                                <p class="price-title">قیمت :
+                                <p class="price-text"><span class="price-num">100,000</span> تومان</p>
+                                </p>
+                            </div>
+                            <div class="footer-box">
+                                <button class="header__button-heart">
+                                    <i class="fa-regular fa-heart container-icon__header"></i>
+                                </button>
+                                <a href="#" class="btn-boxes">افزودن به سبد خرید</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-box">
+                        <img src="./assets/img/boxes/pexels-alexazabache-3766111.jpg" alt="img" class="img-box">
+                        <div class="item-box__details">
+                            <h2 class="title-box">ساعت رولکس مدل عقابی</h2>
+                            <p class="description-box">ساعت رولکس مدل عقابی ساعت رولکس مدل عقابی ساعت رولکس مدل عقابی
+                                ساعت
+                                رولکس مدل عقابی</p>
+                            <div class="container-price">
+                                <p class="price-title">قیمت :
+                                <p class="price-text"><span class="price-num">100,000</span> تومان</p>
+                                </p>
+                            </div>
+                            <div class="footer-box">
+                                <button class="header__button-heart">
+                                    <i class="fa-regular fa-heart container-icon__header"></i>
+                                </button>
+                                <a href="#" class="btn-boxes">افزودن به سبد خرید</a>
+                            </div>
                         </div>
                     </div>
                 </div>

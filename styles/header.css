@@ -214,7 +214,7 @@ header {
 
 .header-button-cart-shopping>p {
     margin-right: -25px;
-    display: flex;
+    display: flex; 
     flex-direction: column;
     margin-bottom: 0;
 }
