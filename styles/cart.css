@@ -115,7 +115,8 @@
 }
 
 .items > img{
-    border-radius: 7px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
 }
 
 .items:hover{
@@ -151,7 +152,6 @@
 .container-price {
     display: flex;
     justify-content: start;
-
 }
 
 /* Styling for the price title text */

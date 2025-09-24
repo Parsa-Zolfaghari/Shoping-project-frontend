@@ -38,7 +38,7 @@ body {
 .div_img {
     width: 400px;
     height: 400px;
-    background-color: #292929;
+    background-color: #2A2A2A;
     padding: 40px;
     display: flex;
     justify-content: center;
@@ -61,7 +61,7 @@ body {
 .div_specifications {
     width: 460px;
     height: 375px;
-    background-color: #292929;
+    background-color: #2A2A2A;
     border-radius: 15px;
     margin-left: 90px;
     color: var(--light);
@@ -134,7 +134,7 @@ body {
 
 /* Secondary container styling */
 .secund__div {
-    background-color: #292929;
+    background-color: #2A2A2A;
     width: 1100px;
     height: 80px;
     display: flex;
@@ -184,6 +184,103 @@ body {
 }
 
 /* Responsive styling */
+
+.third-div {
+    background-color: #2A2A2A;
+    border: 1px solid #4C452D;
+    border-radius: 15px;
+    margin: 35px 85px;
+    text-align: center;
+    padding: 0 30px;
+    padding-bottom: 25px;
+    box-shadow: #c5a56d77 0px 0px 10px;
+    padding-right: 0px;
+    padding-right: 30px;
+}
+
+.text-description-div {
+    padding-right: 50px;
+}
+
+.third-div-title {
+    color: var(--primary);
+    margin-bottom: -5px;
+}
+
+.third-div-text {
+    color: var(--light);
+}
+
+.third-div-specs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.container-comment {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-right: -35px;
+}
+
+.third-div-item {
+    color: #4A5565;
+}
+
+.third-div-items {
+    border-bottom: 1px solid #4A5565;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.third-div-margin {
+    margin-bottom: 2px;
+    margin-right: 10px;
+}
+
+.third-div-comment {
+    width: 1000px;
+    border: 1px solid #353F4F;
+    border-radius: 10px;
+    background-color: var(--dark);
+}
+
+.name-div-comment {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    color: #657389;
+    padding: 0px 35px;
+}
+
+.date-comment {
+    text-align: center;
+    align-self: center;
+}
+
+.div-stars {
+    display: flex;
+    margin-right: 35px;
+    margin-top: -15px;
+    margin-bottom: 10px;
+}
+
+.star-icons {
+    color: #c5a46d;
+}
+
+.text-comment {
+    text-align: center;
+    display: flex;
+    margin-right: 35px;
+    font-size: 17px;
+    color: var(--light);
+    margin-bottom: 35px;
+}
+
 @media screen and (max-width: 455px) {
     .first_container {
         display: flex;
@@ -193,6 +290,11 @@ body {
 
     main {
         margin-top: -125px;
+    }
+
+    .third-div {
+        margin-left: 0;
+        margin-right: 0;
     }
 }
 
@@ -212,11 +314,21 @@ body {
         margin-top: 60px;
         direction: rtl;
     }
+
+    .third-div {
+        margin-left: 0;
+        margin-right: 0;
+    }
 }
 
 @media screen and (min-width: 481px) and (max-width: 577px) {
     main {
         margin-top: -135px;
+    }
+
+    .third-div {
+        margin-left: 0;
+        margin-right: 0;
     }
 }
 
@@ -235,6 +347,11 @@ body {
         margin: 0 !important;
         margin-top: 60px;
         direction: rtl;
+    }
+
+    .third-div {
+        margin-left: 0;
+        margin-right: 0;
     }
 }
 
