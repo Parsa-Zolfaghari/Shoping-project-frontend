@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024" role="img" aria-label="Watch illustration">
+  <!-- Transparent background (no rect) -->
+
+  <!-- subtle decorative dashed path -->
+  <g fill="none" stroke="#c3c8cc" stroke-width="10" stroke-linecap="round" opacity="0.65">
+    <path d="M790 220c30 18 48 44 48 44" stroke-dasharray="18 18" transform="rotate(18 790 220)" />
+    <path d="M220 760c-30 -18 -48 -44 -48 -44" stroke-dasharray="18 18" transform="rotate(-12 220 760)" />
+  </g>
+
+  <!-- dark circular backdrop -->
+  <circle cx="512" cy="512" r="360" fill="#2b3136"/>
+
+  <!-- watch strap top -->
+  <rect x="420" y="80" width="184" height="180" rx="18" ry="18" fill="#c88f3d"/>
+
+  <!-- watch strap bottom -->
+  <rect x="420" y="764" width="184" height="180" rx="18" ry="18" fill="#c88f3d"/>
+
+  <!-- watch bezel (outer) -->
+  <g>
+    <circle cx="512" cy="512" r="240" fill="#dfe7ea"/>
+    <!-- inner rim -->
+    <circle cx="512" cy="512" r="220" fill="#1a1a1a"/>
+    <!-- subtle bezel shadow -->
+    <ellipse cx="512" cy="568" rx="180" ry="18" fill="#000" opacity="0.06"/>
+  </g>
+
+  <!-- hour markers (12 marks) -->
+  <g transform="translate(512,512)">
+    <!-- generate 12 markers -->
+    <!-- marker style -->
+    <g id="marker" fill="#d7b073">
+      <rect x="-6" y="-200" width="12" height="36" rx="6" ry="6" />
+    </g>
+    <!-- rotate copies -->
+    <use href="#marker" transform="rotate(0)"/>
+    <use href="#marker" transform="rotate(30)"/>
+    <use href="#marker" transform="rotate(60)"/>
+    <use href="#marker" transform="rotate(90)"/>
+    <use href="#marker" transform="rotate(120)"/>
+    <use href="#marker" transform="rotate(150)"/>
+    <use href="#marker" transform="rotate(180)"/>
+    <use href="#marker" transform="rotate(210)"/>
+    <use href="#marker" transform="rotate(240)"/>
+    <use href="#marker" transform="rotate(270)"/>
+    <use href="#marker" transform="rotate(300)"/>
+    <use href="#marker" transform="rotate(330)"/>
+  </g>
+
+  <!-- center pin -->
+  <circle cx="512" cy="512" r="14" fill="#bfc8cc" stroke="#9aa5ab" stroke-width="2"/>
+
+  <!-- hour hand -->
+  <g transform="translate(512,512)">
+    <rect x="-10" y="-110" width="20" height="140" rx="8" ry="8" fill="#e07a3f" transform="rotate( -30)"/>
+  </g>
+
+  <!-- minute hand -->
+  <g transform="translate(512,512)">
+    <rect x="-8" y="-150" width="16" height="200" rx="6" ry="6" fill="#ff4d3a" transform="rotate(50)"/>
+  </g>
+
+  <!-- small face dots (kawaii eyes) -->
+  <g fill="#1f1f1f" opacity="0.9">
+    <circle cx="492" cy="542" r="6"/>
+    <circle cx="532" cy="542" r="6"/>
+  </g>
+
+  <!-- small highlight on bezel -->
+  <path d="M680 360c-10-12-22-22-38-28" fill="none" stroke="#ffffff" stroke-opacity="0.08" stroke-width="10" stroke-linecap="round"/>
+
+  <!-- subtle star sparkles -->
+  <g fill="#cfd6d9" opacity="0.7">
+    <path d="M760 190 l8 0 l0 8 l8 0 l0 8 l-8 0 l0 8 l-8 0 l0 -8 l-8 0 l0 -8 l8 0z" transform="scale(0.8) translate(70,30)"/>
+    <path d="M200 780 l6 0 l0 6 l6 0 l0 6 l-6 0 l0 6 l-6 0 l0 -6 l-6 0 l0 -6 l6 0z" transform="scale(0.6) translate(80,250)"/>
+  </g>
+
+  <!-- outer subtle vignette ring -->
+  <circle cx="512" cy="512" r="360" fill="none" stroke="#000" stroke-opacity="0.12" stroke-width="40"/>
+
+  <!-- accessibility title (hidden visually but in DOM) -->
+  <title>Watch illustration (transparent background)</title>
+</svg>
