@@ -221,12 +221,11 @@
 
     .container__header-title {
         grid-area: t;
-        margin-left: 200px;
+        margin: 10px auto;
     }
 
     .header-log {
         grid-area: b;
-        /* justify-self: center; */
         margin-left: 30px;
     }
 
@@ -239,7 +238,7 @@
     }
 
     .header__input-title {
-        font-size: 32.5px;
+        font-size: 25px;
         margin-top: 15px;
     }
 
@@ -384,7 +383,7 @@
     }
 
     .item-bottom__paragraph {
-        font-size: 15px;
+        font-size: 14px;
     }
 }
 
@@ -737,7 +736,15 @@
 
     .item-bottom__paragraph {
         font-size: 15px;
+   }
+}
+
+@media screen and (max-width: 768px) {
+    .item-top__link-list::after{
+        display: none;       
     }
 
-
+    .main{
+        margin-top: 0;
+    }
 }
