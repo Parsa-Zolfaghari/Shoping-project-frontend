@@ -230,7 +230,6 @@ input::placeholder {
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
 
 /* Container for input labels and fields */
@@ -328,6 +327,10 @@ input::placeholder {
     justify-content: center;
     align-items: center;
     margin-top: 18px;
+}
+
+.container-label__brand{
+    padding-right: 10px;
 }
 
 /* Responsive design for smaller screens */
