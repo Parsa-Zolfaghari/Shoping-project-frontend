@@ -240,7 +240,6 @@ input::placeholder {
     justify-content: center;
     align-items: center;
 }
-
 /* Container for price and label boxes */
 .price-box,
 .label-box {
@@ -249,24 +248,25 @@ input::placeholder {
     justify-content: center;
     align-items: center;
 }
-.color-box{
+
+.color-box {
     margin-right: 15px;
 }
 
-.container-label__color-text{
+.container-label__color-text {
     width: 350px;
     margin-top: 1px;
     color: var(--light);
-    margin-right: 25px;
+    /* margin-right: 25px; */
     margin-bottom: 4px;
 }
 
-.container-label__brand-text{
+.container-label__brand-text {
     color: var(--light);
     margin-right: 10px;
 }
 
-.container-label__price{
+.container-label__price {
     margin-top: 5px;
 }
 
@@ -329,6 +329,15 @@ input::placeholder {
     margin-top: 18px;
 }
 
+
+.last-input {
+    width: 100%;
+}
+
+.color-box{
+    width: 90%;
+    margin: 0;
+}
 .container-label__brand{
     padding-right: 10px;
 }
@@ -347,5 +356,36 @@ input::placeholder {
 
     .container-addbox__item-content {
         width: 100%;
+    }
+}
+
+@media screen and (max-width:490px) {
+    main {
+        margin-top: 0;
+    }
+
+    .container-box__show-content {
+        margin-bottom: 0;
+    }
+
+    form {
+        width: 90%;
+    }
+
+    .item-box {
+        width: 90%;
+    }
+
+    .item-forth {
+        width: 90%;
+    }
+
+    .last-input {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .color-box {
+        margin: 0 auto;
     }
 }

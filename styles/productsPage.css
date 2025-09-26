@@ -242,6 +242,11 @@ label:hover {
         grid-template-columns: 1fr;
     }
 
+    .form,
+    .container__input-product{
+        margin: 10px auto;
+    }
+
     .items-box {
         grid-template-columns: 1fr;
     }
