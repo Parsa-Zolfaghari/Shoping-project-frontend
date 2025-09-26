@@ -275,6 +275,7 @@ header {
     border-bottom-right-radius: 50px;
     outline: none;
     margin-left: 45px;
+    direction: rtl;
 }
 
 .input::placeholder {

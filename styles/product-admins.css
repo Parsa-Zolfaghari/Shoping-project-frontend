@@ -6,6 +6,10 @@
     font-family: 'IRANSANS';
 }
 
+body {
+    background-color: var(--dark);
+}
+
 /* Styling for fixed navigation bar */
 nav {
     position: fixed;
@@ -161,11 +165,10 @@ nav {
 }
 
 /* Container for product title and admin options */
-.container-title__box {
+/* .container-title__box {
     display: flex;
-    justify-content: space-evenly;
-    position: relative;
-}
+    justify-content: center;
+} */
 
 /* Product title styling */
 .title-box {
@@ -189,81 +192,6 @@ nav {
     margin-right: -25px;
 }
 
-/* Container for admin options icon */
-.container-icon__title {
-    height: 35px;
-    transition: all 600ms ease-in-out;
-}
-
-/* Admin options dropdown menu (hidden by default) */
-.list-box__title {
-    visibility: hidden;
-    height: 105px;
-    position: absolute;
-    top: 40px;
-    right: 0;
-    background-color: #000000;
-    border: 2px solid #c5a46d;
-    border-radius: 10px;
-    transition: all 600ms ease-in-out;
-    opacity: 0;
-    transform: translateY(-10px);
-    transition: all 600ms ease-in-out;
-    padding-right: 0;
-}
-
-/* Show admin options on hover */
-.container-icon__title:hover .list-box__title {
-    display: block;
-    visibility: visible;
-    transition: all 600ms ease-in-out;
-    opacity: 1;
-    transform: translateY(0);
-    visibility: visible;
-    margin-top: 20px;
-}
-
-/* Admin option button styling */
-.btn-box__title {
-    width: 100%;
-    cursor: pointer;
-}
-
-/* Admin option list item styling */
-.li-box__title {
-    padding: 5px;
-    border-bottom: 1px solid var(--primary);
-    transition-duration: 600ms;
-}
-
-/* Hover effect for admin options */
-.li-box__title:hover {
-    background-color: var(--primary);
-}
-
-/* Remove bottom border for last item */
-.b-b-n {
-    border-bottom: none;
-}
-
-/* Delete product button styling */
-.button-box__title {
-    all: unset;
-    color: var(--light);
-    font-size: 12px;
-    cursor: pointer;
-    width: 100%;
-    padding: 10px 0;
-}
-
-/* Edit product link styling */
-.link-box__title {
-    display: block;
-    font-size: 12px;
-    width: 100%;
-    height: 100%;
-    padding: 10px 0;
-}
 
 /* Media query for very small screens (max-width: 576px) */
 @media screen and (max-width: 576px) {
@@ -330,7 +258,6 @@ nav {
     width: 100%;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
-    /* border: 3px solid var(--primary); */
     border-bottom: none;
 }
 
@@ -345,20 +272,15 @@ nav {
     text-align: center;
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
-    /* border: 3px solid var(--primary); */
     border-top: none;
 }
 
 /* favorite styles */
 
 .footer-box{
+    width: 100%;
     display: flex;
     flex-direction: column;
-}
-
-.footer-box a{
-    width: 280px;
-    margin-top: 15px;
 }
 
 .favorite__button-heart{
@@ -432,7 +354,6 @@ header{
 
 .navbar_heart_color{
     margin-top: 8px;
-    /* margin-left: 8px; */
 }
 
 .navbar__a_title{
@@ -452,9 +373,6 @@ header{
     color: var(--primary);
     padding: 5px;
     margin: 5px;
-    margin-top: 10px;
-    margin-bottom: -5px;
-    margin-right: -65px;
 }
 
 .description-box {
@@ -491,11 +409,20 @@ header{
 }
 
 .btn-boxes {
+    box-sizing: border-box;
+    width: 75%;
+    padding: 0;
+    color: var(--light);
     background-color: var(--primary);
     padding: 10px 15px;
     border: 3px solid var(--light);
     border-radius: 7px;
     transition: all 600ms ease-in;
+}
+
+.delete-btn__boxes{
+    font-size: 17px;
+    cursor: pointer;
 }
 
 .btn-boxes:hover {

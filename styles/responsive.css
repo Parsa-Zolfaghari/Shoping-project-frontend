@@ -672,6 +672,8 @@
     .item-bottom__paragraph {
         font-size: 15px;
     }
+
+    .container__main-title {}
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
@@ -736,15 +738,19 @@
 
     .item-bottom__paragraph {
         font-size: 15px;
-   }
+    }
+
+    .main {
+        margin: 0;
+    }
 }
 
 @media screen and (max-width: 768px) {
-    .item-top__link-list::after{
-        display: none;       
+    .item-top__link-list::after {
+        display: none;
     }
 
-    .main{
+    .main {
         margin-top: 0;
     }
 }
