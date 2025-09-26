@@ -33,7 +33,7 @@
    Login / Register Section
 ================================= */
 
-.header-log {
+.header-profile {
     width: 95px;
     border: 3px solid var(--light);
     background-color: var(--primary);
@@ -44,7 +44,7 @@
     transition: all 600ms;
 }
 
-.header-log:hover {
+.header-profile:hover {
     background-color: var(--light);
     border: 3px solid var(--primary);
     transition: all 600ms ease-in;
@@ -52,7 +52,7 @@
     box-shadow: 0 0 20px rgba(249, 194, 100, 0.9);
 }
 
-.header-log:hover .header__log-hover {
+.header-profile:hover .header__log-hover {
     color: var(--primary);
     transition: all 600ms;
 }

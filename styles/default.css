@@ -147,3 +147,36 @@ li {
 .color {
     color: var(--primary);
 }
+
+.header-log {
+    width: 95px;
+    border: 3px solid var(--light);
+    background-color: var(--primary);
+    border-radius: 10px;
+    color: var(--light);
+    padding: 0 25px;
+    margin-left: 50px;
+    transition: all 600ms;
+}
+
+.header-log:hover {
+    background-color: var(--light);
+    border: 3px solid var(--primary);
+    transition: all 600ms ease-in;
+    color: var(--primary);
+    box-shadow: 0 0 20px rgba(249, 194, 100, 0.9);
+}
+
+.header-log:hover .header__log-hover {
+    color: var(--primary);
+    transition: all 600ms;
+}
+
+.profile_user{
+    width: 50px;
+    height: 50px;
+}
+
+.profile-name-user{
+    margin-left: 70px;
+}
