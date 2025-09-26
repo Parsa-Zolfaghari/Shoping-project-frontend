@@ -8,7 +8,7 @@
 
 .footer-box{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 }
 
 .favorite__button-heart{
@@ -25,6 +25,8 @@
     margin-right: 15px;
     margin-top: 12px;
     cursor: auto;
+    display: flex;
+    flex-direction: row;
 }
 
 .item-boxes{
@@ -37,6 +39,7 @@
     transition: 600ms all;
     box-shadow: rgba(241, 184, 84, 0.208) 0px 20px 40px;
 }
+
 
 main{
     margin-top: 150px;
