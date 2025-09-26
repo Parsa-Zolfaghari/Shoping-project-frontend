@@ -220,3 +220,13 @@ header {
 }
 
 /* Hide class to toggle dropdown */
+
+
+.container_icon__searchBar {
+    width: 23px;
+    height: 23px;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
