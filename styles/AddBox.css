@@ -338,6 +338,10 @@ input::placeholder {
     width: 90%;
     margin: 0;
 }
+.container-label__brand{
+    padding-right: 10px;
+}
+
 /* Responsive design for smaller screens */
 @media screen and (max-width:1020px) {
     .content-main__items {
