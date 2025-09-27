@@ -30,34 +30,6 @@
 }
 
 /* ===============================
-   Login / Register Section
-================================= */
-
-.header-profile {
-    width: 95px;
-    border: 3px solid var(--light);
-    background-color: var(--primary);
-    border-radius: 10px;
-    color: var(--light);
-    padding: 0 25px;
-    margin-left: 50px;
-    transition: all 600ms;
-}
-
-.header-profile:hover {
-    background-color: var(--light);
-    border: 3px solid var(--primary);
-    transition: all 600ms ease-in;
-    color: var(--primary);
-    box-shadow: 0 0 20px rgba(249, 194, 100, 0.9);
-}
-
-.header-profile:hover .header__log-hover {
-    color: var(--primary);
-    transition: all 600ms;
-}
-
-/* ===============================
    Header Background (Hero Section)
 ================================= */
 
