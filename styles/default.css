@@ -178,7 +178,7 @@ li {
     background-color: var(--primary);
     border-radius: 10px;
     color: var(--light);
-    margin-left: 50px;
+    margin: 0 auto 0 40px;
     transition: all 600ms;
 }
 
