@@ -116,13 +116,13 @@ body {
 .container>form {
     background-color: #292929;
     box-shadow: rgba(197, 164, 109, 0.3) 0px 0px 40px, rgba(0, 0, 0, 0.5) 0px 20px 40px;
-    width: 448px;
+    width: 870px;
     border-radius: 15px;
-    margin-top: 25px;
-    padding-top: 20px;
+    margin-top: 26px;
+    padding-top: 25px;
     transition: 600ms;
-    margin-bottom: 50px;
-    padding-bottom: 25px;
+    margin-bottom: 27px;
+    padding-bottom: 2px;
     z-index: 2;
 }
 
@@ -224,12 +224,13 @@ body {
 
 /* Form buttons container styling */
 .form__div-buttons {
-    width: 367px;
+    width: 554px;
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
     direction: rtl;
-    margin-right: 40px;
+    /* margin-right: 40px; */
+    justify-self: center;
     transition: 600ms;
 }
 
@@ -240,7 +241,7 @@ body {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 300ms;
+    transition: 300ms;
     width: 100px;
     transition: 600ms;
 }
@@ -254,53 +255,70 @@ body {
 /* Form button cancel styling */
 .form__button-cancel {
     background-color: var(--light);
-    width: 170px;
-    height: 40px;
+    width: 250px;
+    height: 50px;
+    font-size: 16px;
     color: var(--primary);
     border: 3px solid var(--primary);
     border-radius: 5px;
     cursor: pointer;
     transition: 600ms;
-    transition: background-color 300ms;
+    margin-left: 10px;
 }
 
 /* Form button cancel hover effect */
 .form__button-cancel:hover {
-    transition: 600ms;
     background-color: var(--primary);
     border: 3px solid var(--primary);
     color: var(--light);
+    transition: 600ms;
 }
 
 /* Form button save styling */
 .form__button-save {
     background-color: #D2B279;
-    width: 170px;
-    height: 40px;
+    width: 250px;
+    height: 50px;
     color: var(--light);
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 300ms;
     transition: 600ms;
+    font-size: 16px;
+    margin-right: 10px;
 }
 
 /* Form button save hover effect */
 .form__button-save:hover {
-    transition: 600ms;
     background-color: var(--light);
     border: 3px solid var(--primary);
     color: var(--primary);
+    transition: 600ms;
 }
 
 /* Form text styling */
+
 .form__text {
     color: var(--light);
     margin-top: -8px;
     text-align: center;
+    flex-wrap: nowrap;
 }
 
 /* Form color text styling */
 .form__color-text {
     color: var(--primary);
+}
+
+.form_div_inputs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.div_input_right {
+}
+
+.div_input_left {
+    gap: 0px;
+    /* margin-right: -25px; */
 }
