@@ -45,6 +45,7 @@ footer {
 /* Margin for the logo in footer */
 .logo {
     margin-top: 20px;
+    margin-right: 0;
 }
 
 /* Padding for the footer list */
