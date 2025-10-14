@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'IRANSANS', sans-serif;
+}
+
+.body {
+    background-color: var(--dark);
+}
+
+.container-div {
+    direction: rtl;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+/* Start Form */
+
+.container-div form {
+    transition: 600ms;
+    width: 550px;
+    border: 1px solid var(--primary);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+    margin-right: 50px;
+    padding: 30px;
+    gap: 20px;
+}
+
+.form-title {
+    transition: 600ms;
+    font-size: 27px;
+    text-align: center;
+    color: var(--light);
+}
+
+.form-input {
+    transition: 600ms;
+    background-color: var(--dark);
+    border: 1px solid var(--primary);
+    border-radius: 5px;
+    width: 90%;
+    height: 45px;
+    align-self: center;
+    padding-right: 25px;
+    color: var(--primary);
+}
+
+
+/* Form input focus styling */
+.form-input:focus {
+    transition: 600ms;
+    box-shadow: rgba(255, 248, 236, 0.8) 0px 0px 10px, rgba(0, 0, 0, 0.5) 0px 20px 40px;
+    transform: rotate(1deg);
+}
+
+.form-input-label {
+    transition: 600ms;
+    color: var(--light);
+    margin-right: 30px;
+    margin-bottom: -15px;
+}
+
+.form-button {
+    transition: 600ms;
+    background-color: var(--primary);
+    color: var(--light);
+    width: 65%;
+    height: 45px;
+    border-radius: 8px;
+    border: 3px solid var(--light);
+    align-self: center;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.form-button:hover {
+    transition: 600ms;
+    color: var(--primary);
+    border: 3px solid var(--primary);
+    background-color: var(--light);
+    transform: rotate(1deg);
+}
+
+/* end Form */
+
+/* start specs */
+
+.div-left {
+    border-radius: 15px;
+    padding: 30px;
+    margin-top: 25px;
+    margin-left: 50px;
+    transition: 600ms;
+}
+
+.form-title {
+    transition: 600ms;
+    position: relative;
+    text-align: center;
+    color: var(--light);
+}
+
+.form-title-normal{
+    text-align: center;
+    color: var(--light);
+}
+
+.div-boxes {
+    margin-top: 15px;
+    justify-content: center;
+    display: grid;
+    gap: 20px;
+    transition: 600ms;
+}
+
+.boxes {
+    background-color: #363636;
+    width: 460px;
+    height: 150px;
+    border-radius: 15px;
+    color: var(--light);
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    transition: 600ms;
+    position: relative;
+}
+
+.boxes:hover .boxes-div-icon{
+    transition: 600ms;
+    box-shadow: rgba(202, 165, 102, 0.3) 0px 00px 20px;
+    transform: rotate(5deg);
+}
+
+.boxes:hover {
+    transition: 600ms;
+    transform: scale(1.035);
+    cursor: pointer;
+    background-color: #36322C;
+}
+
+.text-div {
+    width: 300px;
+    transition: 600ms;
+}
+
+.phone-number{
+    direction: ltr;
+}
+
+.boxes-div-icon {
+    width: 50px;
+    height: 50px;
+    background-color: var(--primary);
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    position: absolute;
+    left: 50px;
+    transition: 600ms;
+}
+
+.boxes-icon {
+    width: 25px;
+    height: 25px;
+    color: var(--dark);
+    transition: 600ms;
+}
+
+/* end specs */
+
+/* Start location */
+
+.container-location{
+    background: linear-gradient(90deg,#262420,#3C362B,#262420);
+    border-radius: 15px;
+    border: 1px solid  #c5a56d44;
+    height: 470px;
+    margin: 20px 35px;
+    padding: 10px;
+}
+
+.main-container{
+    background-color: var(--dark);
+    border-radius: 10px;
+    border: 1px solid #c5a56d29;
+    height: 100%;
+    color: var(--light);
+}
+
+.location-div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.location-div-right{
+    width: 30%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 125px;
+    direction: rtl;
+}
+
+.location-div-icon{
+    width: 50px;
+    height: 50px;
+    background-color: var(--primary);
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    margin-bottom: 8px;
+}
+
+.location-div-left{
+    width: 80%;
+    height: 100%;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.location-iframe{
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+/* End location */

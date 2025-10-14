@@ -2,8 +2,12 @@
 :root {
     --primary: #c5a46d;
     --dark: #1c1c1c;
-    --light: aliceblue;
+    --light: rgb(212, 212, 212);
     --red: red;
+}
+
+.white{
+    color: var(--light);
 }
 
 /* Base styles for the body element */
