@@ -53,26 +53,21 @@
     }
 
     .header-nav {
-        grid-template-areas:
-            "t t"
-            "b i"
-        ;
-        grid-template-columns: repeat(1, auto);
+        grid-template-columns: 1fr;
+        grid-template-areas:"t" "t"
+                            "b" "i";
         border-bottom: none;
-    }
-
-    .container_btn__header {
-        justify-content: center;
     }
 
     .container__header-title {
         grid-area: t;
-        margin-left: 145px;
+        margin: 0 auto;
     }
 
-    .header-log {
+    .header-log,
+    .header-profile {
         grid-area: b;
-        margin-left: 30px;
+        margin-left: 5px;
     }
 
     .container_btn__header {
