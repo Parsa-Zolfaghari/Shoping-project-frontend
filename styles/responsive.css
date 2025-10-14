@@ -15,9 +15,149 @@
         padding-top: 25px;
         transition: 600ms;
     }
+
+
+
+
+
+    .header-nav {
+        grid-template-areas:
+            "t b"
+            "i"
+        ;
+        grid-template-columns: repeat(1, auto);
+        border-bottom: none;
+    }
+
+    .container_btn__header {
+        justify-content: center;
+    }
+
+    .container__header-title {
+        grid-area: t;
+        margin-right: -100px !important;
+        margin-top: -160px;
+    }
+
+    .container_btn__header {
+        grid-area: b;
+        margin-left: 30px;
+        margin-top: -150px;
+        /* margin-top: 250px; */
+    }
+
+    .nav-texts {
+        grid-area: i;
+        margin-right: 30px !important;
+        width: 250px;
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+
+
+
+
+    /* Container styling */
+    .container>form {
+        background-color: #292929;
+        box-shadow: rgba(197, 164, 109, 0.3) 0px 0px 40px, rgba(0, 0, 0, 0.5) 0px 20px 40px;
+        width: 448px;
+        border-radius: 15px;
+        margin-top: 25px;
+        padding-top: 20px;
+        transition: 600ms;
+        margin-bottom: 50px;
+        padding-bottom: 25px;
+        z-index: 2;
+    }
+
+    /* Form buttons container styling */
+    .form__div-buttons {
+        width: 367px;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+        direction: rtl;
+        justify-self: center;
+        transition: 600ms;
+    }
+
+    /* Form buttons styling */
+    .form__buttons {
+        background-color: var(--primary);
+        color: var(--light);
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        width: 100px;
+        transition: 600ms;
+    }
+
+    /* Form button cancel styling */
+    .form__button-cancel {
+        background-color: var(--light);
+        width: 170px;
+        height: 40px;
+        color: var(--primary);
+        border: 3px solid var(--primary);
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 600ms;
+        transition: background-color 300ms;
+    }
+
+    /* Form button cancel hover effect */
+    .form__button-cancel:hover {
+        transition: 600ms;
+        background-color: var(--primary);
+        border: 3px solid var(--primary);
+        color: var(--light);
+    }
+
+    /* Form button save styling */
+    .form__button-save {
+        background-color: #D2B279;
+        width: 170px;
+        height: 40px;
+        color: var(--light);
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 300ms;
+        transition: 600ms;
+    }
+
+    /* Form button save hover effect */
+    .form__button-save:hover {
+        transition: 600ms;
+        background-color: var(--light);
+        border: 3px solid var(--primary);
+        color: var(--primary);
+    }
+
+    .form_div_inputs {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    /* Form text styling */
+    .form__text {
+        color: var(--light);
+        margin-top: -8px;
+        text-align: center;
+    }
+
+    /* Form color text styling */
+    .form__color-text {
+        color: var(--primary);
+    }
 }
 
 @media screen and (max-width: 480px) {
+
     .title-parent {
         font-size: 18px;
         width: 100%;
@@ -53,14 +193,23 @@
     }
 
     .header-nav {
+<<<<<<< HEAD
         grid-template-columns: 1fr;
         grid-template-areas:"t" "t"
                             "b" "i";
+=======
+        grid-template-areas:
+            "t b"
+            ""
+        ;
+        grid-template-columns: repeat(1, auto);
+>>>>>>> d1a724b6b7add2e0aeeee7a1602489a40dffd40b
         border-bottom: none;
     }
 
     .container__header-title {
         grid-area: t;
+<<<<<<< HEAD
         margin: 0 auto;
     }
 
@@ -68,10 +217,22 @@
     .header-profile {
         grid-area: b;
         margin-left: 5px;
+=======
+        margin-right: -165px;
+        margin-top: -160px;
+>>>>>>> d1a724b6b7add2e0aeeee7a1602489a40dffd40b
     }
 
     .container_btn__header {
+        grid-area: b;
+        margin-left: 30px;
+        margin-top: -150px;
+        /* margin-top: 250px; */
+    }
+
+    .nav-texts {
         grid-area: i;
+        margin-right: -150px;
     }
 
     .header-button-home {
@@ -187,9 +348,104 @@
     .item-bottom__paragraph {
         font-size: 11px;
     }
+
     /* searchBar responsive */
     .search__result_div {
         width: 300px;
+    }
+    /* Container styling */
+    .container>form {
+        background-color: #292929;
+        box-shadow: rgba(197, 164, 109, 0.3) 0px 0px 40px, rgba(0, 0, 0, 0.5) 0px 20px 40px;
+        width: 448px;
+        border-radius: 15px;
+        margin-top: 25px;
+        padding-top: 20px;
+        transition: 600ms;
+        margin-bottom: 50px;
+        padding-bottom: 25px;
+        z-index: 2;
+    }
+
+    /* Form buttons container styling */
+    .form__div-buttons {
+        width: 367px;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+        direction: rtl;
+        justify-self: center;
+        transition: 600ms;
+    }
+
+    /* Form buttons styling */
+    .form__buttons {
+        background-color: var(--primary);
+        color: var(--light);
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        width: 100px;
+        transition: 600ms;
+    }
+
+    /* Form button cancel styling */
+    .form__button-cancel {
+        background-color: var(--light);
+        width: 170px;
+        height: 40px;
+        color: var(--primary);
+        border: 3px solid var(--primary);
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 600ms;
+        transition: background-color 300ms;
+    }
+
+    /* Form button cancel hover effect */
+    .form__button-cancel:hover {
+        transition: 600ms;
+        background-color: var(--primary);
+        border: 3px solid var(--primary);
+        color: var(--light);
+    }
+
+    /* Form button save styling */
+    .form__button-save {
+        background-color: #D2B279;
+        width: 170px;
+        height: 40px;
+        color: var(--light);
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 300ms;
+        transition: 600ms;
+    }
+
+    /* Form button save hover effect */
+    .form__button-save:hover {
+        transition: 600ms;
+        background-color: var(--light);
+        border: 3px solid var(--primary);
+        color: var(--primary);
+    }
+
+    .form_div_inputs {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    /* Form text styling */
+    .form__text {
+        color: var(--light);
+        margin-top: -8px;
+        text-align: center;
+    }
+
+    /* Form color text styling */
+    .form__color-text {
+        color: var(--primary);
     }
 }
 
@@ -207,8 +463,8 @@
 
     .header-nav {
         grid-template-areas:
-            "t t"
-            "b i"
+            "t b"
+            ""
         ;
         grid-template-columns: repeat(1, auto);
         border-bottom: none;
@@ -220,16 +476,20 @@
 
     .container__header-title {
         grid-area: t;
-        margin: 10px auto;
-    }
-
-    .header-log {
-        grid-area: b;
-        margin-left: 30px;
+        margin-right: -165px;
+        margin-top: -160px;
     }
 
     .container_btn__header {
+        grid-area: b;
+        margin-left: 30px;
+        margin-top: -150px;
+        /* margin-top: 250px; */
+    }
+
+    .nav-texts {
         grid-area: i;
+        margin-right: -150px;
     }
 
     .header-button-home {
@@ -384,13 +644,108 @@
     .item-bottom__paragraph {
         font-size: 14px;
     }
+
     /* searchBar responsive */
     .search__result_div {
         width: 450px;
     }
+    /* Container styling */
+    .container>form {
+        background-color: #292929;
+        box-shadow: rgba(197, 164, 109, 0.3) 0px 0px 40px, rgba(0, 0, 0, 0.5) 0px 20px 40px;
+        width: 448px;
+        border-radius: 15px;
+        margin-top: 25px;
+        padding-top: 20px;
+        transition: 600ms;
+        margin-bottom: 50px;
+        padding-bottom: 25px;
+        z-index: 2;
+    }
+
+    /* Form buttons container styling */
+    .form__div-buttons {
+        width: 367px;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+        direction: rtl;
+        justify-self: center;
+        transition: 600ms;
+    }
+
+    /* Form buttons styling */
+    .form__buttons {
+        background-color: var(--primary);
+        color: var(--light);
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        width: 100px;
+        transition: 600ms;
+    }
+
+    /* Form button cancel styling */
+    .form__button-cancel {
+        background-color: var(--light);
+        width: 170px;
+        height: 40px;
+        color: var(--primary);
+        border: 3px solid var(--primary);
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 600ms;
+        transition: background-color 300ms;
+    }
+
+    /* Form button cancel hover effect */
+    .form__button-cancel:hover {
+        transition: 600ms;
+        background-color: var(--primary);
+        border: 3px solid var(--primary);
+        color: var(--light);
+    }
+
+    /* Form button save styling */
+    .form__button-save {
+        background-color: #D2B279;
+        width: 170px;
+        height: 40px;
+        color: var(--light);
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 300ms;
+        transition: 600ms;
+    }
+
+    /* Form button save hover effect */
+    .form__button-save:hover {
+        transition: 600ms;
+        background-color: var(--light);
+        border: 3px solid var(--primary);
+        color: var(--primary);
+    }
+
+    .form_div_inputs {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    /* Form text styling */
+    .form__text {
+        color: var(--light);
+        margin-top: -8px;
+        text-align: center;
+    }
+
+    /* Form color text styling */
+    .form__color-text {
+        color: var(--primary);
+    }
 }
 
-@media screen and (min-width: 601px) and (max-width: 767px) {
+@media screen and (min-width: 601px) and (max-width: 768px) {
 
     .title::before {
         display: none;
@@ -425,33 +780,34 @@
     }
 
     .header-nav {
-        grid-template-areas: "b t i";
+        grid-template-areas:
+            "t b"
+            "i"
+        ;
         grid-template-columns: repeat(1, auto);
         border-bottom: none;
     }
 
-    .header-title {
+    .container_btn__header {
+        justify-content: center;
+    }
+
+    .container__header-title {
         grid-area: t;
-        text-align: center;
-    }
-
-    .header-log {
-        grid-area: b;
-        margin-left: 18px;
-        margin-right: 30px;
-    }
-
-    .header-profile{
-        grid-area: b;
-        margin-left: 18px;
-        margin-right: 30px;
+        margin-right: -20px;
+        margin-top: -160px;
     }
 
     .container_btn__header {
+        grid-area: b;
+        margin-right: 380px !important;
+        margin-top: -150px;
+        /* margin-top: 250px; */
+    }
+
+    .nav-texts {
         grid-area: i;
-        align-items: center;
-        justify-self: center;
-        margin-left: 10px;
+        margin-right: -0px;
     }
 
     .container__box {
@@ -559,15 +915,123 @@
     .item-bottom__paragraph {
         font-size: 15px;
     }
+
     /* searchBar responsive */
     .search__result_div {
         width: 600px;
     }
-}
+    /* Container styling */
+    .container>form {
+        background-color: #292929;
+        box-shadow: rgba(197, 164, 109, 0.3) 0px 0px 40px, rgba(0, 0, 0, 0.5) 0px 20px 40px;
+        width: 448px;
+        border-radius: 15px;
+        margin-top: 25px;
+        padding-top: 20px;
+        transition: 600ms;
+        margin-bottom: 50px;
+        padding-bottom: 25px;
+        z-index: 2;
+    }
 
+    /* Form buttons container styling */
+    .form__div-buttons {
+        width: 367px;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+        direction: rtl;
+        justify-self: center;
+        transition: 600ms;
+    }
+
+    /* Form buttons styling */
+    .form__buttons {
+        background-color: var(--primary);
+        color: var(--light);
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        width: 100px;
+        transition: 600ms;
+    }
+
+    /* Form button cancel styling */
+    .form__button-cancel {
+        background-color: var(--light);
+        width: 170px;
+        height: 40px;
+        color: var(--primary);
+        border: 3px solid var(--primary);
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 600ms;
+        transition: background-color 300ms;
+    }
+
+    /* Form button cancel hover effect */
+    .form__button-cancel:hover {
+        transition: 600ms;
+        background-color: var(--primary);
+        border: 3px solid var(--primary);
+        color: var(--light);
+    }
+
+    /* Form button save styling */
+    .form__button-save {
+        background-color: #D2B279;
+        width: 170px;
+        height: 40px;
+        color: var(--light);
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 300ms;
+        transition: 600ms;
+    }
+
+    /* Form button save hover effect */
+    .form__button-save:hover {
+        transition: 600ms;
+        background-color: var(--light);
+        border: 3px solid var(--primary);
+        color: var(--primary);
+    }
+
+    .form_div_inputs {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    /* Form text styling */
+    .form__text {
+        color: var(--light);
+        margin-top: -8px;
+        text-align: center;
+    }
+
+    /* Form color text styling */
+    .form__color-text {
+        color: var(--primary);
+    }
+}
 
 @media screen and (min-width: 768px) and (max-width: 885px) {
 
+    .container__header-title {
+        margin-right: -30px;
+    }
+
+    .container_btn__header {
+        margin-left: 10px;
+        margin-right: -25px;
+    }
+
+    .nav-texts {
+        margin-right: 1px !important;
+        flex-wrap: nowrap;
+        width: 420px;
+    }
 
     .title::before {
         display: none;
@@ -605,20 +1069,145 @@
 
     .content-advantage {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
     }
 
     .items-top {
+        margin-bottom: 30px;
         border: none;
     }
 
     .item-advantage {
+        border-bottom: 3px solid var(--primary);
         height: 250px;
     }
 
+    .items-bottom {
+        border-right: none;
+    }
+
+    .border-responsive {
+        border-bottom: none;
+        height: 235px;
+    }
+
+    .border-bottom {
+        bottom: none;
+    }
+
+    .margin-responsive {
+        margin-top: -20px;
+    }
+
+    .margin {
+        margin-top: -12px;
+    }
+
+    /* Container styling */
+    .container>form {
+        background-color: #292929;
+        box-shadow: rgba(197, 164, 109, 0.3) 0px 0px 40px, rgba(0, 0, 0, 0.5) 0px 20px 40px;
+        width: 448px;
+        border-radius: 15px;
+        margin-top: 25px;
+        padding-top: 20px;
+        transition: 600ms;
+        margin-bottom: 50px;
+        padding-bottom: 25px;
+        z-index: 2;
+    }
+
+    /* Form buttons container styling */
+    .form__div-buttons {
+        width: 367px;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+        direction: rtl;
+        justify-self: center;
+        transition: 600ms;
+    }
+
+    /* Form buttons styling */
+    .form__buttons {
+        background-color: var(--primary);
+        color: var(--light);
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        width: 100px;
+        transition: 600ms;
+    }
+
+    /* Form button cancel styling */
+    .form__button-cancel {
+        background-color: var(--light);
+        width: 170px;
+        height: 40px;
+        color: var(--primary);
+        border: 3px solid var(--primary);
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 600ms;
+        transition: background-color 300ms;
+    }
+
+    /* Form button cancel hover effect */
+    .form__button-cancel:hover {
+        transition: 600ms;
+        background-color: var(--primary);
+        border: 3px solid var(--primary);
+        color: var(--light);
+    }
+
+    /* Form button save styling */
+    .form__button-save {
+        background-color: #D2B279;
+        width: 170px;
+        height: 40px;
+        color: var(--light);
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 300ms;
+        transition: 600ms;
+    }
+
+    /* Form button save hover effect */
+    .form__button-save:hover {
+        transition: 600ms;
+        background-color: var(--light);
+        border: 3px solid var(--primary);
+        color: var(--primary);
+    }
+
+    .form_div_inputs {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    /* Form text styling */
+    .form__text {
+        color: var(--light);
+        margin-top: -8px;
+        text-align: center;
+    }
+
+    /* Form color text styling */
+    .form__color-text {
+        color: var(--primary);
+    }
 }
 
 @media screen and (min-width: 886px) and (max-width: 1023px) {
+
+
+    .nav-texts {
+        margin-right: -100px !important;
+        flex-wrap: nowrap;
+        width: 420px;
+    }
+
     .content-advantage {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -687,6 +1276,14 @@
     }
 
     .container__main-title {}
+}
+
+@media screen and (min-width: 1023px) and (max-width: 1185px) {
+    .nav-texts {
+        margin-right: -200px !important;
+        /* flex-wrap: nowrap; */
+        width: 420px;
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {

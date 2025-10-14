@@ -51,6 +51,10 @@ li {
     height: 30px;
 }
 
+.container-icon__header-primary_input{
+    color: var(--primary);
+}
+
 /* Container for navigation icon */
 .container-icon__nav {
     width: 100%;
