@@ -1,0 +1,286 @@
+/* Add Some variables for color */
+:root {
+    --primary: #c5a46d;
+    --dark: #1c1c1c;
+    --light: aliceblue;
+}
+
+/* Add default styles */
+body {
+    box-sizing: border-box;
+    background: linear-gradient(to bottom left, #0D0D0D, #1A1A1A, #1C1C1C);
+}
+
+/* add margin to main item of page */
+main {
+    margin-top: 140px;
+}
+
+/* add layout for main item */
+.main-container__profile {
+    display: grid;
+    grid-template-columns: 3fr 3fr;
+    justify-content: center;
+}
+
+/* add some styles for profile-details box */
+.profile-details {
+    box-sizing: border-box;
+    width: 65%;
+    margin: 10px auto;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 15px;
+    border: 2px solid rgba(197, 165, 109, 0.514);
+    box-shadow: 0 0 20px rgba(197, 164, 109, 0.6);
+    transition: all 600ms ease-in-out;
+}
+
+/* add hover style for profile-details box */
+.profile-details:hover {
+    border-color: var(--primary);
+}
+
+/* add color and font weight for title of profile-details box */
+.profile-details__title {
+    font-weight: bold;
+    color: var(--light);
+}
+
+/* add some styles for point of title */
+.profile-details--global {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: var(--primary);
+    margin-left: 8px;
+}
+
+/* add border for item of profile details */
+.container-item__profile-details {
+    border-bottom: 1px solid rgba(197, 165, 109, 0.514);
+}
+
+/* add global class for last item of profile-details box */
+.b-b-n {
+    border-bottom: none;
+}
+
+/* add some style for title of container of items */
+.container-title__profile-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* add flex display for content of items */
+.content-item__email,
+.content-item__fullname,
+.content-item__phone-number {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+/* add some layout for details of box */
+.container-texts__profile-details {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+
+/* add styles for icon of details */
+.icon-box__profile-details {
+    color: var(--primary);
+    background-color: rgba(202, 172, 142, 0.1);
+    padding: 8px;
+    font-size: 17px;
+    border-radius: 35%;
+}
+
+/* add styles for title of details */
+.fullname-title,
+.email-address__title {
+    color: gray;
+    margin-top: 10px;
+}
+
+/* add styles for text of details item */
+.email-address__text,
+.fullname-user__text {
+    margin: 5px 0;
+    color: var(--light);
+}
+
+.fullname-user__text{
+    margin-bottom: 10px;
+}
+
+/* add styles for container buttons of main item */
+.container-btns__profile {
+    width: 65%;
+    margin: 10px auto;
+}
+
+/* add sharing layout for buttons of main*/
+.btn-link__edit-profile,
+.btn-profile__log-out {
+    margin: 25px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* add sharing styles for buttons of main*/
+.link__edit-profile,
+.btn-log-out {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    font-size: 15px;
+    transition: all 600ms ease-in-out;
+}
+
+/* add some styles for link of edit profile page */
+.link__edit-profile {
+    border: 3px solid var(--light);
+    color: var(--light);
+    background-color: var(--primary);
+}
+
+/* add hover styles for link of edit profile page*/
+.link__edit-profile:hover {
+    background-color: var(--light);
+    border: 3px solid var(--primary);
+    color: var(--primary);
+    box-shadow: 0 0 20px rgba(249, 194, 100, 0.9);
+    transform: scale(1.03);
+}
+
+/* add some styles for log out btn of account*/
+.btn-log-out {
+    cursor: pointer;
+    font-family: "IRANSANS";
+    border: none;
+    color: rgba(255, 86, 86, 0.938);
+    background-color: rgba(255, 0, 0, 0.363);
+}
+
+/* add some hover styles for log out btn of account*/
+.btn-log-out:hover {
+    box-shadow: 0 0 20px rgba(145, 21, 21, 0.938);
+    transform: scale(1.03);
+}
+
+/* add margin right for icon of buttons */
+.icon-btn__log-out,
+.icon-link__edit-profile {
+    margin-right: 5px;
+}
+
+/* add width for profile information Item */
+.profile-informations {
+    width: 90%;
+}
+
+/* add styles for image of user */
+.image-user {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border: 5px solid var(--primary);
+}
+
+/* add styles for container of profile information item */
+.container-profile__informations {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 10px auto;
+}
+
+/* add styles for container of texts under profile of user */
+.container-text__under-profile {
+    text-align: center;
+}
+
+/* add styles for name of user text */
+.name-user__under-profile {
+    margin: 12px 0 6px 0;
+    color: var(--light);
+}
+
+/* add color for text of under name */
+.text-under__profile {
+    color: #d3cfcf;
+}
+
+/* add margin for box of details of user */
+.container-box__under-profile {
+    margin: 20px 0;
+}
+
+/* add margin for box of details of user */
+.content-box__under-profile {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* add styles for box of details of user */
+.box-item__under-profile {
+    width: 150px;
+    height: 165px;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 20px;
+    border-radius: 15px;
+    border: 1px solid rgba(197, 165, 109, 0.514);
+    transition: all 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+    box-shadow:
+        0 10px 20px rgba(197, 164, 109, 0.3),
+        0 10px 20px rgba(197, 164, 109, 0.2);
+}
+
+/* add hover styles for box of details of user */
+.box-item__under-profile:hover {
+    border-color: var(--primary);
+    transform: scale(1.03);
+}
+
+/* add styles for icon of box detail */
+.icon-box__under-profile {
+    color: var(--primary);
+    background-color: rgba(202, 172, 142, 0.1);
+    padding: 10px;
+    font-size: 25px;
+    border-radius: 1rem;
+    margin-bottom: 12px;
+}
+
+/* add styles for number of box details */
+.box-item__number {
+    font-weight: bolder;
+    font-size: 23px;
+    color: var(--light);
+    margin-bottom: 4px;
+}
+
+/* add styles for name of box details */
+.box-item__name {
+    color: gray;
+    margin: 0;
+}
+
+@media screen and (max-width:500px){
+    
+}
