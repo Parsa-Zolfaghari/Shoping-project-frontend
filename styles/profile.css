@@ -281,6 +281,29 @@ main {
     margin: 0;
 }
 
-@media screen and (max-width:500px){
-    
+@media screen and (max-width:1023px){
+    main {
+        margin-top: 20px;
+    }
+
+    .main-container__profile {
+        grid-template-areas: "top"
+                             "bottom";
+        grid-template-columns: 1fr;
+    }
+
+    .profile-details {
+        width: 85%;
+        grid-area: bottom;
+    }
+
+    .container-btns__profile{
+        width: 85%;
+    }
+
+    .profile-informations{
+        grid-area: top;
+        width: 85%;
+        margin: 20px auto;
+    }
 }
