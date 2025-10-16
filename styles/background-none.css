@@ -4,27 +4,6 @@
     --light: aliceblue;
 }
 
-
-
-header{
-    background: none;
-    height: 150px;
-}
-
 body{
     background-color:var(--dark);
-}
-
-@media screen and (max-width:601px){
-    header{
-        height: 200px;
-    }
-}
-
-@media screen and (max-width:550px){
-    .item-box{
-        width: 400px;
-        align-self: center;
-        justify-self: center;
-    }
 }

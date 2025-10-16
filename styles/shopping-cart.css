@@ -1,5 +1,3 @@
-@import url("shopping-cart__nav.css");
-
 /* CSS custom properties (variables) for consistent theming */
 :root {
     --primary: #c5a46d;
@@ -18,7 +16,6 @@ body {
 
 /* Container for the main title texts */
 .first-texts__main {
-    margin-top: 130px;
     margin-bottom: 20px;
     display: flex;
     flex-direction: column;

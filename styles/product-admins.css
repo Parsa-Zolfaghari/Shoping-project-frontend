@@ -10,21 +10,6 @@ body {
     background-color: var(--dark);
 }
 
-/* Styling for fixed navigation bar */
-nav {
-    position: fixed;
-    inset: 0 0 auto 0;
-    z-index: 1000;
-    padding: 18px 28px;
-    display: block;
-    background: linear-gradient(180deg, var(--glass-bg), rgba(255, 255, 255, 0.09));
-    overflow: hidden;
-    -webkit-backdrop-filter: blur(12px) saturate(140%) contrast(95%);
-    backdrop-filter: blur(12px) saturate(140%) contrast(95%);
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.45);
-    border-bottom: 1px solid rgba(249, 194, 100, 0.9);
-}
-
 /* Container for page title and icon */
 .container-top__item {
     display: flex;
@@ -323,22 +308,7 @@ nav {
 }
 
 main{
-    margin-top: 150px;
-}
-
-header{
-    position: fixed;
-    z-index: 99;
-}
-.header-nav {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    border-bottom: 1px solid var(--primary);
-    grid-template-rows: 110px;
-    color: var(--light);
-    background-color: rgba(0, 0, 0, 0.495);
-    margin-top: -150px;
+    margin-top: 30px;
 }
 
 .container__header-title{
