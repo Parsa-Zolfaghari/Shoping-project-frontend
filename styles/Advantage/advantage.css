@@ -1,4 +1,4 @@
-@import url('responsive.css');
+@import url('../Responsive/responsive.css');
 
 /* Creates an animated decorative line before section titles */
 .title::before {

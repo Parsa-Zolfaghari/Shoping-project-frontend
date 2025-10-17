@@ -1,9 +1,14 @@
-@import url("default.css");
+@import url("../Default/default.css");
 
 :root {
     --primary: #c5a46d;
     --dark: #1c1c1c;
     --light: aliceblue;
+}
+
+
+body{
+    background-color:var(--dark);
 }
 
 .favorite__button-heart {
