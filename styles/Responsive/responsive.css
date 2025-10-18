@@ -1668,56 +1668,6 @@
 
     .container-div form {
         transition: 600ms;
-        width: 50px;
-        border: 1px solid var(--primary);
-        border-radius: 15px;
-        display: flex;
-        flex-direction: column;
-        margin-top: 25px;
-        padding: 30px;
-        gap: 20px;
-    }
-
-    .div-left {
-        padding-right: 75px;
-    }
-
-    .boxes {
-        background-color: #363636;
-        width: 450px;
-        height: 150px;
-        border-radius: 15px;
-        color: var(--light);
-        padding: 30px;
-        display: flex;
-        flex-direction: row;
-        transition: 600ms;
-        position: relative;
-    }
-
-    .boxes-div-icon {
-        width: 50px;
-        height: 50px;
-        background-color: var(--primary);
-        border-radius: 8px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        align-self: center;
-        position: absolute;
-        left: 25px;
-        transition: 600ms;
-    }
-
-    .container-div {
-        direction: rtl;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
-
-
-    .container-div form {
-        transition: 600ms;
         width: 470px;
         border: 1px solid var(--primary);
         border-radius: 15px;
