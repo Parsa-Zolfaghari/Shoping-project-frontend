@@ -1,5 +1,6 @@
 @import url("../Font/font.css");
 @import url("../Default/default.css");
+@import url(../Responsive/responsive.css);
 
 /* Set IRANSANS font for all elements */
 *{
