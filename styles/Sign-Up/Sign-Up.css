@@ -1,5 +1,5 @@
-@import url("default.css");
-@import url("animate.css");
+@import url("../Default/default.css");
+@import url("../Animate/animate.css");
 /* Edit Profile Styles */
 .bubbles {
     position: absolute;

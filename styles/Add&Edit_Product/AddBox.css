@@ -1,3 +1,5 @@
+@import url(../Responsive/responsive.css);
+
 /* CSS custom properties (variables) for consistent theming */
 :root {
     --primary: #c5a46d;
@@ -10,11 +12,7 @@ body {
     background: linear-gradient(135deg, #000000 0%, #1C1C1C 50%, #110e0e 100%);
 }
 
-/* Main content margin */
-main {
-    margin-top: 120px;
-}
-
+/* Main content mar
 /* Grid layout for main content items */
 .content-main__items {
     display: grid;

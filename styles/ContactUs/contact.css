@@ -104,7 +104,7 @@
     color: var(--light);
 }
 
-.form-title-normal{
+.form-title-normal {
     text-align: center;
     color: var(--light);
 }
@@ -130,7 +130,7 @@
     position: relative;
 }
 
-.boxes:hover .boxes-div-icon{
+.boxes:hover .boxes-div-icon {
     transition: 600ms;
     box-shadow: rgba(202, 165, 102, 0.3) 0px 00px 20px;
     transform: rotate(5deg);
@@ -148,7 +148,7 @@
     transition: 600ms;
 }
 
-.phone-number{
+.phone-number {
     direction: ltr;
 }
 
@@ -177,16 +177,16 @@
 
 /* Start location */
 
-.container-location{
-    background: linear-gradient(90deg,#262420,#3C362B,#262420);
+.container-location {
+    background: linear-gradient(90deg, #262420, #3C362B, #262420);
     border-radius: 15px;
-    border: 1px solid  #c5a56d44;
+    border: 1px solid #c5a56d44;
     height: 470px;
     margin: 20px 35px;
     padding: 10px;
 }
 
-.main-container{
+.main-container {
     background-color: var(--dark);
     border-radius: 10px;
     border: 1px solid #c5a56d29;
@@ -194,14 +194,14 @@
     color: var(--light);
 }
 
-.location-div{
+.location-div {
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: row;
 }
 
-.location-div-right{
+.location-div-right {
     width: 30%;
     height: 100%;
     text-align: center;
@@ -212,7 +212,7 @@
     direction: rtl;
 }
 
-.location-div-icon{
+.location-div-icon {
     width: 50px;
     height: 50px;
     background-color: var(--primary);
@@ -224,14 +224,18 @@
     margin-bottom: 8px;
 }
 
-.location-div-left{
+.location-div-left {
     width: 80%;
     height: 100%;
     border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;
 }
 
-.location-iframe{
+.iframe {
+    font-family: 'IRANSANS';
+}
+
+.location-iframe {
     border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;
 }

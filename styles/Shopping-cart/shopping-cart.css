@@ -1,4 +1,4 @@
-@import url("shopping-cart__nav.css");
+@import url(../Responsive/responsive.css);
 
 /* CSS custom properties (variables) for consistent theming */
 :root {
@@ -18,7 +18,6 @@ body {
 
 /* Container for the main title texts */
 .first-texts__main {
-    margin-top: 130px;
     margin-bottom: 20px;
     display: flex;
     flex-direction: column;
