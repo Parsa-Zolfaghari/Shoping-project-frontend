@@ -547,7 +547,8 @@
 
     .header-nav {
         grid-template-areas:
-            "t b"
+            "t"
+            "b i"
         ;
         grid-template-columns: repeat(1, auto);
         border-bottom: none;
@@ -1623,7 +1624,6 @@
         padding-right: 200px;
     }
 }
-
 
 @media screen and (min-width: 1023px) and (max-width: 1185px) {
     .nav-texts {
