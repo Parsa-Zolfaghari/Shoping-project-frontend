@@ -11,7 +11,7 @@
 }
 
 html {
-  overflow-y: scroll;
+  /* overflow-y: scroll; */
   scrollbar-width: auto;
   scrollbar-color: #c5a46d #2c2c2c;
 }

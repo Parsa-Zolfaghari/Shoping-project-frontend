@@ -1,0 +1,270 @@
+/* styles/email-vertification.css */
+
+/* variables */
+:root {
+    --bg-dark-1: #0e0e0e;
+    --bg-dark-2: #1c1c1c;
+    --card-bg: rgba(28, 28, 28, 0.42);
+    --card-border: rgba(197, 164, 109, 0.22);
+    --gold: #c5a46d;
+    --gold-opaque: rgba(197, 164, 109, 0.16);
+    --glass-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+}
+
+/* page background */
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #f4f4f4;
+    background: radial-gradient(circle at 10% 10%, rgba(197, 164, 109, 0.02), transparent 8%),
+        radial-gradient(circle at 90% 90%, rgba(197, 164, 109, 0.01), transparent 8%),
+        linear-gradient(180deg, var(--bg-dark-2) 0%, var(--bg-dark-1) 100%);
+    background-attachment: fixed;
+}
+
+/* center the form container */
+.from-email__vertification {
+    margin: 30px auto;
+    width: 100%;
+    max-width: 480px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+
+/* the glass card */
+.container-email__vertification-box {
+    width: 100%;
+    padding: 22px;
+    border-radius: 20px;
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    background: linear-gradient(180deg, rgba(30, 30, 30, 0.38), rgba(20, 20, 20, 0.32));
+    border: 1px solid var(--card-border);
+    box-shadow: var(--glass-shadow), inset 0 1px 0 rgba(255, 255, 255, 0.02);
+}
+
+/* inner content spacing */
+.content-email__vertification-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+    text-align: center;
+    padding: 18px 14px;
+}
+
+/* logo */
+.container-logo {
+    width: 84px;
+    height: 84px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 6px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.01));
+    border: 1px solid rgba(255, 255, 255, 0.02);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.6), inset 0 0 10px rgba(255, 255, 255, 0.02);
+}
+
+.logo-website {
+    width: 56px;
+    height: auto;
+    display: block;
+    object-fit: contain;
+}
+
+/* title and subtitle */
+.container-texts__box {
+    margin-top: 6px;
+}
+
+.email-vertificated__title {
+    display: block;
+    font-weight: 700;
+    font-size: 20px;
+    color: #fff;
+    letter-spacing: 0.2px;
+    margin-bottom: 6px;
+}
+
+.write-code__text {
+    margin: 0;
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.72);
+    line-height: 1.45;
+}
+
+/* input row (6 boxes) */
+.container-input__write-code {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 6px;
+    flex-wrap: wrap;
+    padding: 6px 10px 0 10px;
+}
+
+/* each single code input */
+.input-write__code {
+    width: 56px;
+    height: 64px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.04);
+    color: #fff;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 700;
+    caret-color: var(--gold);
+    box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.6);
+    transition: all 220ms cubic-bezier(.2, .9, .3, 1);
+    outline: none;
+    -moz-appearance: textfield;
+    direction: ltr;
+    /* numbers/input center visually correct */
+}
+
+/* remove arrows on number inputs (if using type=number) */
+.input-write__code::-webkit-outer-spin-button,
+.input-write__code::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* focus effect (subtle gold glow) */
+.input-write__code:focus {
+    border-color: var(--gold);
+    box-shadow:
+        0 6px 18px rgba(0, 0, 0, 0.6),
+        0 0 10px rgba(197, 164, 109, 0.14),
+        inset 0 1px 0 rgba(255, 255, 255, 0.02);
+    transform: translateY(-2px);
+}
+
+/* placeholder style (if any) */
+.input-write__code::placeholder {
+    color: rgba(255, 255, 255, 0.28);
+}
+
+/* verification button */
+.container-button__vertification {
+    width: 100%;
+    margin-top: 6px;
+    padding: 0 10px;
+}
+
+.btn-vertification {
+    font-family: "IRANSANS";
+    display: block;
+    width: 100%;
+    padding: 14px 18px;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 15px;
+    color: #0f0f0f;
+    background: linear-gradient(135deg, var(--gold), #9b7e4b);
+    box-shadow:
+        0 8px 24px rgba(0, 0, 0, 0.45),
+        0 0 18px rgba(197, 164, 109, 0.18),
+        inset 0 1px 0 rgba(255, 255, 255, 0.06);
+    transition: transform .18s ease, box-shadow .18s ease;
+    text-align: center;
+    /* ensure the text is centered */
+}
+
+.btn-vertification:hover {
+    transform: translateY(-3px);
+    box-shadow:
+        0 14px 36px rgba(0, 0, 0, 0.55),
+        0 0 28px rgba(255, 215, 0, 0.24),
+        inset 0 1px 0 rgba(255, 255, 255, 0.06);
+}
+
+.btn-vertification:active {
+    transform: translateY(-1px) scale(.998);
+}
+
+/* resend button (ghost style) */
+.container-button__resend-code {
+    margin-top: 6px;
+}
+
+.btn-resend__code {
+    font-family: "IRANSANS";
+    background: transparent;
+    border: none;
+    color: rgba(255, 255, 255, 0.72);
+    font-weight: 600;
+    font-size: 13px;
+    cursor: pointer;
+    padding: 10px 6px;
+    transition: color .18s ease, text-decoration .18s ease;
+}
+
+.btn-resend__code:hover {
+    color: var(--gold);
+    text-decoration: underline;
+}
+
+/* suntime text bottom */
+.container-text__suntime {
+    margin-top: 6px;
+}
+
+.text-suntime {
+    font-size: 13px;
+    color: rgba(197, 164, 109, 0.75);
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+/* small screens responsiveness */
+@media (max-width:480px) {
+    .from-email__vertification {
+        width: 80%;
+    }
+
+    .container-email__vertification-box {
+        padding: 16px;
+        border-radius: 14px;
+    }
+
+    .logo-website {
+        width: 48px;
+    }
+
+    .input-write__code {
+        width: 44px;
+        height: 52px;
+        font-size: 20px;
+    }
+
+    .btn-vertification {
+        padding: 12px;
+        font-size: 14px;
+        border-radius: 10px;
+    }
+
+    .container-input__write-code {
+        gap: 10px;
+    }
+}
+
+/* accessibility focus visible */
+.input-write__code:focus-visible {
+    outline: 3px solid rgba(197, 164, 109, 0.12);
+    outline-offset: 3px;
+}

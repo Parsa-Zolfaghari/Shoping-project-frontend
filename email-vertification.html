@@ -5,17 +5,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/svg+xml" href="assets/img/svg/st p1.svg">
-    <link rel="stylesheet" href="./styles/font.css">
-    <link rel="stylesheet" href="./styles/footer.css">
-    <link rel="stylesheet" href="./styles/NavBar.css">
-    <link rel="stylesheet" href="./styles/default.css">
-    <link rel="stylesheet" href="./styles/shopping-cart__nav.css">
-    <link rel="stylesheet" href="./styles/email-vertification.css">
+    <link rel="stylesheet" href="./styles/Font/font.css">
+    <link rel="stylesheet" href="./styles/Footer/footer.css">
+    <link rel="stylesheet" href="./styles/NavBar/NavBar.css">
+    <link rel="stylesheet" href="./styles/Default/default.css">
+    <link rel="stylesheet" href="./styles/Responsive/responsive.css">
+    <link rel="stylesheet" href="./styles/Sign-Up/email-vertification.css">
     <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
     <title>صفحه تایید ایمیل | گالری سان تایم</title>
 </head>
 
 <body>
+    <!-- start header -->
+    <header>
+        <div class="header-container">
+            <nav class="header-nav">
+                <div class="container__header-title">
+                    <img src="assets/img/svg/st p1.svg" alt="logo" class="logo-header">
+                </div>
+                <ul class="nav-texts">
+                    <li class="nav-text">
+                        <a href="index.html" class="nav-text-link">صفحه اصلی</a>
+                    </li>
+                    <li class="nav-text">
+                        <a href="productsPage.html" class="nav-text-link">محصولات</a>
+                    </li>
+                    <li class="nav-text">
+                        <a href="favorite.html" class="nav-text-link">علاقه مندی ها</a>
+                    </li>
+                    <li class="nav-text">
+                        <a href="ContactUs.html" class="nav-text-link">ارتباط با ما</a>
+                    </li>
+                </ul>
+                <div class="container_btn__header">
+                    <a href="Profile.html" class="header__button-heart">
+                        <i class="fas fa-user container-icon__header-position"></i>
+                    </a>
+                    <a href="shopping-Cart.html" class="header__button-heart">
+                        <i class="fas fa-shopping-cart container-icon__header-position"></i>
+                    </a>
+                    <a href="#" class="header__button-heart">
+                        <i class="fa-solid fa-circle-half-stroke container-icon__header-position"></i>
+                    </a>
+                </div>
+
+                <!-- <div class="header-log">
+                    <p><a class="header__log-hover" href="Sign-Up.html">ثبت نام</a> / <a class="header__log-hover"
+                            href="Sign-In.html">ورود</a></p>
+                </div> -->
+            </nav>
+        </div>
+    </header>
+
+    <!-- start header -->
     <form class="from-email__vertification">
         <div class="container-email__vertification-box">
             <div class="content-email__vertification-box">
@@ -31,7 +73,6 @@
                     </p>
                 </div>
                 <div class="container-input__write-code">
-                    <input type="text" class="input-write__code">
                     <input type="text" class="input-write__code">
                     <input type="text" class="input-write__code">
                     <input type="text" class="input-write__code">
