@@ -1,0 +1,18 @@
+html {
+  overflow-y: scroll;
+  scrollbar-width: auto;
+  scrollbar-color: #c5a46d #2c2c2c;
+}
+
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background: #2c2c2c;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c5a46d;
+  border-radius: 10px;
+}
