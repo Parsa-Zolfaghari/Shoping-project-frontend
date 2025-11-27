@@ -12,5 +12,6 @@
     "github.copilot.nextEditSuggestions.enabled": true,
     "cSpell.enabledFileTypes": {
         "html": false
-    }
+    },
+    "liveServer.settings.port": 5501
 }
