@@ -2,9 +2,20 @@
    Global Variables (Theme Colors)
 ================================= */
 :root {
-    --primary: #c5a46d;
-    --dark: #1c1c1c;
-    --light: aliceblue;
+    --primary: #C49A6C;
+    --background-color-header-dark: #171513;
+    --background-color-header-light: #FFFFFF;
+    --font-color-for-dark: #FFFFFF;
+    --font-color-for-light: #1D1915;
+    --font-color-light: #6B6158;
+    --font-color-dark: #7A7068;
+    --background-color-navbar-light: #FFFFFF;
+    --background-color-navbar-dark: #1A1917;
+    --background-color-btn-dark: #181614;
+    --background-color-btn-light: #F9F9F9;
+    --border-color-dark: #35312C;
+    --border-color-light: #DAD5CC;
+    --font-family: 'IRANSANS', sans-serif;
 }
 
 /* ===============================
@@ -12,14 +23,14 @@
 ================================= */
 
 * {
-    font-family: 'IRANSANS', sans-serif;
+    font-family: var(--font-family);
 }
 
 /* ===============================
    Header Navigation Bar
 ================================= */
 
-.header-nav {
+/* .header-nav {
     display: grid;
     grid-template-columns: 1fr auto 1fr;
     align-items: center;
@@ -27,15 +38,15 @@
     grid-template-rows: 110px;
     color: var(--light);
     direction: rtl;
-}
+} */
 
 /* ===============================
    Header Background (Hero Section)
 ================================= */
 
 header {
-    background: url('../../assets/img/header/pexels-castorlystock-3829441.jpg')center center / cover;
-    object-fit: cover;
+    /* background-color: var(--background-color-header-dark); */
+    /* object-fit: cover; */
     width: 100%;
     height: 100vh;
 }
@@ -49,28 +60,28 @@ header {
    Logo
 ================================= */
 
-.logo-header {
-    width: 150px;
-    height: 60px;
-    margin-right: 35px;
+/* .logo-header {
+    width: 120px;
+    height: 80px;
+    margin-right: 850px;
     margin-bottom: -10px;
-}
+} */
 
 /* ===============================
    Header Buttons Container
 ================================= */
-
+/* 
 .container_btn__header {
     display: flex;
-    justify-content: start;
+    justify-content: start; */
     /* margin-right: 150px; */
-    justify-self: end;
+    /* justify-self: end;
     margin-left: 50px;
-}
+} */
 
 
 /* Styling for home button */
-.header-button__home {
+/* .header-button__home {
     width: 50px;
     height: 50px;
     border: 3px solid rgb(0, 0, 0, 0);
@@ -80,19 +91,19 @@ header {
     cursor: pointer;
     transition: all 400ms ease-in-out;
     margin-right: 40px;
-}
+} */
 
 /* Hover effect for home button */
-.header-button__home:hover {
+/* .header-button__home:hover {
     background-color: var(--light);
     border: 3px solid var(--primary);
     transition: all 600ms ease-in;
     color: var(--primary);
     box-shadow: 0 0 20px rgba(249, 194, 100, 0.9);
-}
+} */
 
 /* Styling for wishlist (heart) button */
-.header__button-heart {
+/* .header__button-heart {
     width: 50px;
     height: 50px;
     border: 3px solid rgb(0, 0, 0, 0);
@@ -104,46 +115,46 @@ header {
     margin-right: 15px;
     padding-top: 8px;
     transition: all 400ms ease-in-out;
-}
+} */
 
 /* Hover effect for wishlist button */
-.header__button-heart:hover {
+/* .header__button-heart:hover {
     background-color: var(--light);
     border: 3px solid var(--primary);
     transition: all 600ms ease-in;
     color: var(--primary);
     box-shadow: 0 0 20px rgba(249, 194, 100, 0.9);
-}
+} */
 
 /* ===============================
    Header Intro Text & Tagline
 ================================= */
 
-.header__input {
+/* .header__input {
     width: 100%;
     text-align: center;
     padding-top: 80px;
-}
+} */
 
-.header__input-title {
+/* .header__input-title {
     margin-top: 40px;
     color: var(--light);
-}
+} */
 
-.header__input-title>span {
+/* .header__input-title>span {
     color: var(--primary);
-}
+} */
 
-.header__input-tagline {
+/* .header__input-tagline {
     margin-top: -10px;
     color: var(--light);
     font-size: 14px;
-}
+} */
 
 /* ===============================
    Search Box Container
 ================================= */
-
+/* 
 .container__box {
     margin-top: 40px;
     display: flex;
@@ -156,9 +167,9 @@ header {
     text-align: center;
     align-items: center;
     justify-content: center;
-}
+} */
 
-.input {
+/* .input {
     position: relative;
     height: 26px;
     width: 510px;
@@ -172,17 +183,17 @@ header {
     outline: none;
     margin-left: 45px;
     direction: rtl;
-}
+} */
 
-.input::placeholder {
+/* .input::placeholder {
     color: #aaa;
     font-size: 15px;
-}
+} */
 
 /* ===============================
    Search Icon Container
 ================================= */
-
+/* 
 .container__icon-box {
     position: absolute;
     margin-left: -555px;
@@ -194,11 +205,11 @@ header {
     text-decoration: none;
     height: 46px;
     width: 50px;
-}
+} */
 
 /* Hide class to toggle dropdown */
 
-
+/* 
 .container_icon__searchBar {
     width: 23px;
     height: 23px;
@@ -206,20 +217,20 @@ header {
     right: 10px;
     top: 50%;
     transform: translateY(-50%);
-}
+} */
 
-.search__result_div {
-    width: 600px;
+/* .search__result_div {
+    width: 600px; */
     /* height: 200px; */
-    cursor: pointer;
+    /* cursor: pointer;
     border: 3px solid var(--primary);
     justify-self: center;
     border-radius: 15px;
     margin-top: 15px;
     background-color: var(--light);
-}
+} */
 
-.search__result_div_text {
+/* .search__result_div_text {
     text-align: right;
     padding-right: 25px;
     padding-left: 25px;
@@ -230,9 +241,9 @@ header {
 
 .border_result {
     border-bottom: 1px solid #bcbcbc;
-}
+} */
 
-.search__result_text {
+/* .search__result_text {
     display: flex;
     justify-content: space-between;
 
@@ -240,15 +251,15 @@ header {
 
 .icon_search_result {
     margin-bottom: 25px;
-}
+} */
 
-.chevron-left-searchBar {
+/* .chevron-left-searchBar {
     width: 16px;
     height: 16px;
     margin-top: 4px;
-}
+} */
 
-.nav-texts {
+/* .nav-texts {
     display: flex;
     flex-direction: row;
     gap: 15px;
@@ -256,9 +267,9 @@ header {
     padding-right: 0;
     margin-right: -380px;
     justify-content: center;
-}
+} */
 
-.nav-text{
+/* .nav-text {
     padding: 8px;
 }
 
@@ -272,4 +283,4 @@ header {
     color: var(--primary);
     transition: 1s;
 
-}
+} */

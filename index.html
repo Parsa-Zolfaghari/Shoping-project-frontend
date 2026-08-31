@@ -17,44 +17,99 @@
     <!-- start header -->
     <header>
         <div class="header-container">
-            <nav class="header-nav">
-                <div class="container__header-title">
-                    <img src="assets/img/svg/st p1.svg" alt="logo" class="logo-header" loading="lazy">
-                </div>
-                <ul class="nav-texts">
-                    <li class="nav-text">
-                        <a href="index.html" class="nav-text-link">صفحه اصلی</a>
-                    </li>
-                    <li class="nav-text">
-                        <a href="productsPage.html" class="nav-text-link">محصولات</a>
-                    </li>
-                    <li class="nav-text">
-                        <a href="favorite.html" class="nav-text-link">علاقه مندی ها</a>
-                    </li>
-                    <li class="nav-text">
-                        <a href="ContactUs.html" class="nav-text-link">ارتباط با ما</a>
-                    </li>
-                </ul>
-                <div class="container_btn__header">
-                    <a href="Profile.html" class="header__button-heart">
-                        <i class="fas fa-user container-icon__header-position"></i>
-                    </a>
-                    <a href="shopping-Cart.html" class="header__button-heart">
-                        <i class="fas fa-shopping-cart container-icon__header-position"></i>
-                    </a>
-                    <a href="#" class="header__button-heart">
-                        <i class="fa-solid fa-circle-half-stroke container-icon__header-position"></i>
-                    </a>
+            <div class="header-div_nav">
+                <nav class="header-nav">
+                    <div class="container__header-title">
+                        <img src="assets/img/svg/st p1.svg" alt="logo" class="logo-header" loading="lazy">
+                    </div>
+                    <ul class="nav-texts">
+                        <li class="nav-text">
+                            <a href="index.html" class="nav-text-link nav-text-page">خانه</a>
+                        </li>
+                        <li class="nav-text">
+                            <a href="productsPage.html" class="nav-text-link">محصولات</a>
+                        </li>
+                        <li class="nav-text">
+                            <a href="ContactUs.html" class="nav-text-link">ارتباط با ما</a>
+                        </li>
+                    </ul>
+                    <div class="container_btn__header">
+                        <a class="header__button-heart" onclick="searchBtnClick()">
+                            <i class="fas fa-search container-icon__heart-primary container_icon__searchBar"></i>
+                        </a>
+                        <a href="favorite.html" class="header__button-heart">
+                            <i class="fas fa-heart container-icon__header-position"></i>
+                        </a>
+                        <a href="shopping-Cart.html" class="header__button-heart">
+                            <i class="fas fa-shopping-cart container-icon__header-position"></i>
+                        </a>
+                        <a href="Profile.html" class="header__button-heart">
+                            <i class="fas fa-user container-icon__header-position"></i>
+                        </a>
+                        <a href="#" class="header__button-heart">
+                            <i class="fa-solid fa-circle-half-stroke container-icon__header-position"></i>
+                        </a>
+                        <a href="#" class="header__button-heart header-nav_btn_bars">
+                            <i class="fa-solid fa-bars container-icon__header-position
+                            header-nav_btn_bars" onclick="headerMenuResposive()"></i>
+                        </a>
+                    </div>
+                </nav>
+                <div class="header-nav_search">
+                    <div class="header-search">
+                        <div class="container__icon-box">
+                            <i class="fas fa-search header-search_icon"></i>
+                        </div>
+                        <div class="container__input-box">
+                            <input type="text" class="header-search_input" placeholder="محصول خود را جستجو کنید ...">
+                        </div>
+                    </div>
                 </div>
 
-                <!-- <div class="header-log">
-                    <p><a class="header__log-hover" href="Sign-Up.html">ثبت نام</a> / <a class="header__log-hover"
-                            href="Sign-In.html">ورود</a></p>
-                </div> -->
-            </nav>
 
+
+                <div class="header-btn_bars">
+                    <div class="header-open-texts">
+                        <div class="open-texts">
+                            <a href="index.html">
+                                <div class="open-text">
+                                    <p class="texts-menu selected">خانه</p>
+                                </div>
+                            </a>
+                            <a href="productsPage.html">
+                                <div class="open-text">
+                                    <p class="texts-menu">محصولات</p>
+                                </div>
+                            </a>
+                            <a href="ContactUs.html">
+                                <div class="open-text">
+                                    <p class="texts-menu">تماس با ما</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
             <div class="header__input">
-                <h1 class="header__input-title"> <span>سان تایم</span> | جایی که زمان زیبا تر می‌گذرد</h1>
+                <div class="header-slice-1">
+                    <p class="header-slice-text-borded">زمان، به سبک شما</p>
+                    <h1 class="header-slice-text-regular">انتخابی دقیق</h1>
+                    <h1 class="header-slice-text-primary">برای هر لحظه</h1>
+                    <p class="header-slice-text-description">مجموعه ای از بهترین ساعت های جهان، برای کسانی که لحظه
+                        ها برایشان ارزش دارد.</p>
+
+                    <button class="header-slice-button-primary">مشاهده محصولات <i
+                            class="fa-solid fa-arrow-left header-slice-button-primary_icon"></i></button>
+                    <button class="header-slice-button-regular">کشف مجموعه</button>
+                </div>
+                <div class="header-slice-2">
+                    <img src="assets\img\boxes\pexels-ferarcosn-190819.jpg" alt="" class="header-slice-img"
+                        loading="lazy">
+                </div>
+                <!-- <h1 class="header__input-title"> <span>سان تایم</span> | جایی که زمان زیبا تر می‌گذرد</h1>
                 <p class="header__input-tagline">فروشگاه آنلاین ساعت‌های اصل , از کلاسیک تا مدرن برای هر سلیقه</p>
 
                 <div class="container__box">
@@ -78,7 +133,7 @@
                         <p class="search__result_text"> ساعت رولکس از جنس آهن<i
                                 class="fa-solid fa-chevron-left chevron-left-searchBar"></i></p>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </header>
@@ -664,7 +719,6 @@
         </div>
     </main>
     <!-- end main -->
-    <!-- end main  -->
     <!-- start advantage  -->
     <section class="advantage">
         <div class="container-advantage">
@@ -784,9 +838,10 @@
                     <img src="assets/img/svg/st p1.svg" alt="" class="logo" loading="lazy">
                     <ul class="list-footer">
                         <li class="item-top__title">دسترسی سریع</li>
-                        <li class="text-link"><a href="index.html" class="item-top__link-list">صفحه اصلی</a></li>
-                        <li class="text-link"><a href="Sign-Up.html" class="item-top__link-list">ثبت نام</a></li>
-                        <li class="text-link"><a href="productsPage.html" class="item-top__link-list">محصولات</a></li>
+                        <li class="text-link"><a href="productPageForAdmins.html" class="item-top__link-list">صفحه
+                                اصلی</a></li>
+                        <li class="text-link"><a href="AddBox.html" class="item-top__link-list">ثبت نام</a></li>
+                        <li class="text-link"><a href="EditBox.html" class="item-top__link-list">محصولات</a></li>
                     </ul>
                 </div>
                 <div class="item-footer">
@@ -826,6 +881,8 @@
     </footer>
     <!-- end footer -->
     <script src="node_modules/swiper/swiper-bundle.min.js"></script>
+    <script src="JS/script.js"></script>
+    <script src="JS/Index.js"></script>
     <script src="node_modules/@fortawesome/fontawesome-free/js/all.min.js"></script>
     <script src="script.js"></script>
 </body>

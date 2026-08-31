@@ -1,32 +1,48 @@
 /* CSS custom properties (variables) for consistent theming */
-:root {
+/* :root {
     --primary: #c5a46d;
     --dark: #1c1c1c;
     --light: rgb(212, 212, 212);
     --red: red;
+} */
+
+:root {
+    --primary: #C49A6C;
+    --dark: #1e1e1e;
+    --font-color-for-dark: #FFFFFF;
+    --font-color-for-light: #1D1915;
+    --font-color-navbar-for-dark: #625B54;
+    --font-color-navbar-for-light: #7A7068;
+    --background-color-navbar-light: #FFFFFF;
+    --background-color-navbar-dark: #1A1917;
+    --background-color-btn-dark: #181614;
+    --background-color-btn-light: #F9F9F9;
+    --border-color-dark: #35312C;
+    --border-color-light: #DAD5CC;
+    --font-family: 'IRANSANS', sans-serif;
 }
 
-.white{
-    color: var(--light);
+.white {
+    color: var(--font-color-for-dark);
 }
 
 html {
-  /* overflow-y: scroll; */
-  scrollbar-width: auto;
-  scrollbar-color: #c5a46d #2c2c2c;
+    /* overflow-y: scroll; */
+    scrollbar-width: auto;
+    scrollbar-color: #c5a46d #2c2c2c;
 }
 
 ::-webkit-scrollbar {
-  width: 20px;
+    width: 20px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #2c2c2c;
+    background: #2c2c2c;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #c5a46d;
-  border-radius: 10px;
+    background: #c5a46d;
+    border-radius: 10px;
 }
 
 /* Base styles for the body element */
@@ -51,7 +67,9 @@ li {
 
 /* Container for primary heart icon */
 .container-icon__heart-primary {
-    color: var(--primary);
+    width: 22px;
+    height: 22px;
+    color: var(--font-color-navbar-dark);
 }
 
 .container-icon__heart-primary-home {
@@ -68,13 +86,13 @@ li {
 }
 
 /* Container for light header icon */
-.container-icon__header-light{
+.container-icon__header-light {
     color: var(--light);
     width: 30px;
     height: 30px;
 }
 
-.container-icon__header-primary_input{
+.container-icon__header-primary_input {
     color: var(--primary);
 }
 
@@ -89,23 +107,20 @@ li {
 .container-icon__header {
     width: 30px;
     height: 30px;
-    color: var(--primary);
+    color: var(--border-color-dark);
 }
 
 /* Container for header icon position */
 .container-icon__header-position {
-    width: 100%;
-    height: 30px;
-    padding-top: 10px;
-    color: var(--primary);
+    width: 50%;
+    height: 22px;
+    display: flex;
+        justify-self: center;
+    color: var(--font-color-navbar-for-dark);
 }
 
 /* Logo styling */
-.logo {
-    width: 200px;
-    height: 73px;
-    margin-top: 10px;
-}
+
 
 /* The SubTitle */
 .title-parent {
@@ -199,7 +214,7 @@ li {
     transition: all 600ms;
 }
 
-.header-profile {    
+.header-profile {
     width: fit-content;
     border: 3px solid var(--light);
     background-color: var(--primary);
@@ -209,7 +224,7 @@ li {
     transition: all 600ms;
 }
 
-.link-profile__header{
+.link-profile__header {
     padding: 5px 30px;
     display: flex;
     justify-content: start;
@@ -224,7 +239,7 @@ li {
     box-shadow: 0 0 20px rgba(249, 194, 100, 0.9);
 }
 
-.header-profile:hover .profile-name-user{
+.header-profile:hover .profile-name-user {
     transition: all 600ms ease-in-out;
     color: var(--primary);
 }
@@ -235,11 +250,11 @@ li {
 }
 
 
-.profile_user{
+.profile_user {
     width: 50px;
     height: 50px;
 }
 
-.profile-name-user{
+.profile-name-user {
     margin-left: 10px;
 }

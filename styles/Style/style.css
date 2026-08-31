@@ -1,5 +1,8 @@
+@import url("../Responsive/responsive.css");
 @import url("../Default/default.css");
-@import url("../Header/header.css");
+@import url("../Header/NHeader.css");
+/* @import url("../Header/header.css"); */
+@import url("../NavBar/NavBar.css");
 @import url("../Product/product.css");
 @import url("../Footer/footer.css");
 @import url("../Cart/cart.css");
@@ -7,4 +10,3 @@
 @import url("../AboutUs/AboutUs.css");
 @import url("../Edit-profile/Edit-profile.css");
 @import url("../Swiper/swiper.css");
-@import url("../Responsive/responsive.css");
