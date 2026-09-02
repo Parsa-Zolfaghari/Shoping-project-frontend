@@ -153,6 +153,7 @@ Header Buttons Container
 }
 
 .header-search_input {
+    font-family: var(--font-family);
     width: 560px;
     height: 30px;
     border: 1px solid var(--background-color-navbar-dark);
@@ -315,8 +316,7 @@ Header Buttons Container
         display: none;
     }
 
-    .header-nav_search 
-    .header-search {
+    .header-nav_search .header-search {
         height: 35px;
         width: 400px;
         padding: 3px;
