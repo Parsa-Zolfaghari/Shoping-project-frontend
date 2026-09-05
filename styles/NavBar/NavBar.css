@@ -1,6 +1,7 @@
 :root {
     --primary: #C49A6C;
     --dark: #1e1e1e;
+    --background-color-dark: #111110;
     --font-color-for-dark: #FFFFFF;
     --font-color-for-light: #1D1915;
     --font-color-navbar-light: #6B6158;

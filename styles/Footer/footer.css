@@ -1,11 +1,12 @@
 /* Styles for the main footer element with gradient background */
 footer {
-    background: linear-gradient(135deg,
+    background-color: #1A1917 ;
+    /* background: linear-gradient(135deg,
             #000000 0%,
             #0a0a0a 25%,
             #121212 50%,
             #1a1a1a 75%,
-            #1c1c1c 100%);
+            #1c1c1c 100%); */
     margin: 20px 0 0 0;
 }
 
@@ -153,7 +154,7 @@ footer {
 /* Styling for the bottom section of footer (copyright area) */
 .bottom-item__footer {
     margin: 10px 0 0 0;
-    background-color: #121212;
+    background-color: #1A1917;
     height: 60px;
     text-align: center;
     border-top: 1px solid var(--primary);

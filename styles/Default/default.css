@@ -9,6 +9,7 @@
 :root {
     --primary: #C49A6C;
     --dark: #1e1e1e;
+    --background-color-dark: #111110;
     --font-color-for-dark: #FFFFFF;
     --font-color-for-light: #1D1915;
     --font-color-navbar-for-dark: #625B54;
@@ -50,7 +51,7 @@ body {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: var(--light);
+    background-color: var(--background-color-dark);
     overflow-x: hidden;
 }
 
