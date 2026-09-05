@@ -131,7 +131,7 @@ li {
 }
 
 /* Title styling */
-.title {
+/* .title {
     font-size: 30px;
     font-weight: bold;
     color: transparent;
@@ -141,10 +141,10 @@ li {
     letter-spacing: 2px;
     position: relative;
     display: inline-block;
-}
+} */
 
 /* Decorative line after title */
-.title::after {
+/* .title::after {
     content: "";
     position: absolute;
     left: 315px;
@@ -155,10 +155,10 @@ li {
     margin: 15px auto 0 auto;
     border-radius: 10px;
     animation: shine 2s infinite linear;
-}
+} */
 
 /* Decorative line before title */
-.title::before {
+/* .title::before {
     content: "";
     position: absolute;
     right: 315px;
@@ -169,7 +169,7 @@ li {
     margin: 15px auto 0 auto;
     border-radius: 10px;
     animation: shine 2s infinite linear;
-}
+} */
 
 /* Keyframes for shine animation */
 @keyframes shine {

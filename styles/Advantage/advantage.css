@@ -1,44 +1,24 @@
 @import url('../Responsive/responsive.css');
 
-/* Creates an animated decorative line before section titles */
-.title::before {
-    content: "";
-    position: absolute;
-    right: 225px;
-    top: 10px;
-    width: 160px;
-    height: 3px;
-    background: linear-gradient(90deg, #c5a46d, #e6d3a3);
-    margin: 15px auto 0 auto;
-    border-radius: 10px;
-    animation: shine 2s infinite linear;
-}
-
-/* Creates an animated decorative line after section titles */
-.title::after {
-    content: "";
-    position: absolute;
-    left: 225px;
-    top: 10px;
-    width: 160px;
-    height: 3px;
-    background: linear-gradient(90deg, #c5a46d, #e6d3a3);
-    margin: 15px auto 0 auto;
-    border-radius: 10px;
-    animation: shine 2s infinite linear;
+.advantage {
+    background-color: #1A1917;
 }
 
 /* Grid layout for the advantages content (2 columns) */
 .content-advantage {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    width: 80%;
     align-items: center;
+    justify-content: center;
+    margin: 0 auto;
 }
 
 /* Container for the advantages section */
 .container-advantage {
     text-align: center;
-    margin: 15px;
+    /* margin: 15px; */
+    width: 100%;
 }
 
 /* Adds a right border to the bottom items container */
@@ -66,6 +46,23 @@
 }
 
 /* Styling for the advantage item titles */
+.title-advantage__parent {
+    text-align: right;
+    width: 80%;
+    margin: 40px auto 10px auto;
+}
+
+.title-advantage__text-advantage--word {
+    color: var(--primary);
+    margin-bottom: 0;
+}
+
+.title-advantage__text{
+    color: var(--light);
+    margin-top: 0;
+    font-size: 35px;
+}
+
 .title-item__text {
     font-weight: bold;
     color: var(--primary);

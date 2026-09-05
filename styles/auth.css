@@ -1,0 +1,542 @@
+/* ========================================
+   AUTH PAGE
+======================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --auth-bg: #10100f;
+    --auth-card-bg: #191816;
+    --auth-input-bg: #1b1a18;
+
+    --auth-border: #302e2a;
+
+    --auth-text: #f1eee8;
+    --auth-text-muted: #8f8b84;
+
+    --auth-accent: #c9a06b;
+    --auth-accent-hover: #d5ae7a;
+
+    --auth-radius: 10px;
+
+    --font-family: 'IRANSANS', sans-serif;
+}
+
+
+/* ========================================
+   BODY
+======================================== */
+
+body {
+    min-height: 100vh;
+
+    font-family: var(--font-family);
+    background-color: var(--auth-bg);
+    color: var(--auth-text);
+}
+
+
+/* ========================================
+   PAGE
+======================================== */
+
+.auth-page {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 40px 20px;
+}
+
+
+/* ========================================
+   CARD
+======================================== */
+
+.auth-card {
+    width: 100%;
+    max-width: 308px;
+
+    padding: 27px 26px 26px;
+
+    background-color: var(--auth-card-bg);
+
+    border: 1px solid var(--auth-border);
+
+    border-radius: 12px;
+}
+
+
+/* Signup can be slightly wider */
+
+.auth-card--signup {
+    max-width: 380px;
+}
+
+
+/* ========================================
+   HEADER
+======================================== */
+
+.auth-header {
+    text-align: center;
+
+    margin-bottom: 28px;
+}
+
+
+.auth-icon {
+    width: 50px;
+    height: 50px;
+
+    margin: 0 auto 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: var(--auth-accent);
+}
+
+
+.auth-header h1 {
+    font-size: 19px;
+    font-weight: 700;
+
+    line-height: 1.6;
+
+    margin-bottom: 3px;
+}
+
+
+.auth-header p {
+    color: var(--auth-text-muted);
+
+    font-size: 11px;
+
+    line-height: 1.7;
+}
+
+
+/* ========================================
+   FORM
+======================================== */
+
+.auth-form {
+    width: 100%;
+}
+
+
+.form-group {
+    margin-bottom: 16px;
+}
+
+
+.form-group label {
+    display: block;
+    text-align: right;
+    margin-bottom: 7px;
+
+    font-size: 14px;
+    font-weight: 500;
+
+    color: var(--auth-text);
+}
+
+
+/* ========================================
+   INPUT
+======================================== */
+
+.form-group input {
+    width: 100%;
+    height: 34px;
+
+    padding: 0 12px;
+
+    border: 1px solid var(--auth-border);
+    border-radius: 8px;
+
+    outline: none;
+
+    background-color: var(--auth-input-bg);
+
+    color: var(--auth-text);
+
+    font-family: inherit;
+    font-size: 12px;
+
+    direction: rtl;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+.form-group input::placeholder {
+    color: #77736d;
+}
+
+
+.form-group input:focus {
+    border-color: var(--auth-accent);
+
+    box-shadow: 0 0 0 2px rgba(201, 160, 107, 0.08);
+}
+
+
+/* ========================================
+   PASSWORD
+======================================== */
+
+.password-wrapper {
+    position: relative;
+}
+
+
+.password-wrapper input {
+    padding-left: 38px;
+}
+
+
+.password-toggle {
+    position: absolute;
+
+    left: 10px;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    width: 22px;
+    height: 22px;
+
+    padding: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: none;
+
+    background: transparent;
+
+    color: #77736d;
+
+    cursor: pointer;
+
+    transition: color 0.2s ease;
+}
+
+
+.password-toggle:hover {
+    color: var(--auth-accent);
+}
+
+
+/* ========================================
+   FORGOT PASSWORD
+======================================== */
+
+.forgot-password {
+    display: flex;
+    justify-content: flex-start;
+
+    margin-top: -4px;
+    margin-bottom: 19px;
+}
+
+
+.forgot-password a {
+    color: var(--auth-accent);
+
+    font-size: 11px;
+
+    text-decoration: none;
+
+    transition: color 0.2s ease;
+}
+
+
+.forgot-password a:hover {
+    color: var(--auth-accent-hover);
+}
+
+
+/* ========================================
+   SUBMIT BUTTON
+======================================== */
+
+.auth-submit {
+    width: 100%;
+    height: 35px;
+
+    border: none;
+    border-radius: 7px;
+
+    background-color: var(--auth-accent);
+
+    color: #17130f;
+
+    font-family: inherit;
+
+    font-size: 10px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.2s ease,
+        transform 0.15s ease;
+}
+
+
+.auth-submit:hover {
+    background-color: var(--auth-accent-hover);
+}
+
+
+.auth-submit:active {
+    transform: scale(0.98);
+}
+
+
+/* ========================================
+   FOOTER
+======================================== */
+
+.auth-footer {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 4px;
+
+    margin-top: 21px;
+
+    font-size: 12px;
+
+    color: var(--auth-text-muted);
+}
+
+
+.auth-footer a {
+    color: var(--auth-accent);
+
+    text-decoration: none;
+
+    font-weight: 500;
+
+    transition: color 0.2s ease;
+}
+
+
+.auth-footer a:hover {
+    color: var(--auth-accent-hover);
+}
+
+.auth-submit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+}
+
+.auth-submit {
+    width: 100%;
+    height: 35px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+
+    border: none;
+    border-radius: 7px;
+
+    background-color: var(--auth-accent);
+
+    color: #17130f;
+
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.2s ease,
+        transform 0.15s ease;
+}
+
+.bubbles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1
+}
+
+/* Bubbles styling */
+.bubbles span {
+    position: absolute;
+    bottom: -100px;
+    width: 10px;
+    height: 10px;
+    background-color: #67573C;
+    border-radius: 50%;
+    animation: rise 15s linear infinite;
+}
+
+.bubbles span:nth-child(1) {
+    left: 10%;
+    width: 12px;
+    height: 12px;
+    animation-duration: 12s;
+}
+
+.bubbles span:nth-child(2) {
+    left: 30%;
+    animation-duration: 18s;
+    animation-delay: 2s;
+}
+
+.bubbles span:nth-child(3) {
+    left: 50%;
+    width: 15px;
+    height: 15px;
+    animation-duration: 20s;
+    animation-delay: 4s;
+}
+
+.bubbles span:nth-child(4) {
+    left: 70%;
+    animation-duration: 25s;
+    animation-delay: 6s;
+}
+
+.bubbles span:nth-child(5) {
+    left: 90%;
+    width: 10px;
+    height: 10px;
+    animation-duration: 15s;
+    animation-delay: 1s;
+}
+
+@keyframes rise {
+    0% {
+        transform: translateY(0) scale(1);
+        opacity: 0;
+    }
+
+    30% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(-1200px) scale(1.5);
+        opacity: 0;
+    }
+}
+
+/* ========================================
+   RESPONSIVE
+======================================== */
+
+
+/* Tablet */
+
+@media (max-width: 768px) {
+
+    .auth-page {
+        padding: 30px 18px;
+    }
+
+}
+
+
+/* Mobile */
+
+@media (max-width: 480px) {
+
+    .auth-page {
+        padding: 20px 16px;
+    }
+
+
+    .auth-card {
+        max-width: 100%;
+
+        padding: 25px 20px 23px;
+    }
+
+
+    .auth-card--signup {
+        max-width: 100%;
+    }
+
+
+    .auth-header {
+        margin-bottom: 25px;
+    }
+
+
+    .auth-header h1 {
+        font-size: 16px;
+    }
+
+
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+
+    .form-group input {
+        height: 42px;
+
+        font-size: 12px;
+    }
+
+
+    .form-group label {
+        font-size: 11px;
+    }
+
+
+    .auth-submit {
+        height: 43px;
+
+        font-size: 11px;
+    }
+
+
+    .auth-footer {
+        font-size: 10px;
+    }
+
+}
+
+
+/* Very small screens */
+
+@media (max-width: 350px) {
+
+    .auth-page {
+        padding: 15px 12px;
+    }
+
+
+    .auth-card {
+        padding: 22px 16px;
+    }
+
+}
