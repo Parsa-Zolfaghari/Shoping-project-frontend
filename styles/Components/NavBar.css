@@ -1,0 +1,367 @@
+:root {
+    --primary: #C49A6C;
+    --dark: #1e1e1e;
+    --font-color-for-dark: #FFFFFF;
+    --font-color-for-light: #1D1915;
+    --font-color-navbar-light: #6B6158;
+    --font-color-navbar-dark: #7A7068;
+    --background-color-navbar-light: #FFFFFF;
+    --background-color-navbar-dark: #1A1917;
+    --background-color-btn-dark: #181614;
+    --background-color-btn-light: #F9F9F9;
+    --border-color-dark: #35312C;
+    --border-color-light: #DAD5CC;
+    --font-family: 'IRANSANS', sans-serif;
+}
+
+
+/* container__header-title */
+/* nav-texts */
+/* container_btn__header */
+
+.header-div_nav {
+    width: 100%;
+    position: fixed;
+    z-index: 900;
+}
+
+.header-nav {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    border-bottom: 1px solid var(--border-color-dark);
+    grid-template-rows: 80px;
+    color: var(--light);
+    direction: rtl;
+    background-color: var(--background-color-navbar-dark);
+}
+
+
+/* ===============================
+   Logo
+================================= */
+
+.container__header-title {
+    width: 300px;
+    height: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.logo-header {
+    width: 100px;
+    justify-self: center;
+}
+
+/* ===============================
+Header Buttons Container
+================================= */
+
+.container_btn__header {
+    display: flex;
+    justify-content: start;
+    justify-self: end;
+    margin-left: 100px;
+    /* margin-top: 1500px; */
+}
+
+
+/* Styling for home button */
+.header-button__home {
+    width: 50px;
+    height: 50px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Styling for wishlist (heart) button */
+.header__button-heart {
+    width: 50px;
+    height: 50px;
+    color: var(--font-color-for-dark);
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-texts {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    border-radius: 8px;
+    padding-right: 0;
+    margin-right: -380px;
+    justify-content: center;
+}
+
+.nav-text {
+    padding: 8px;
+}
+
+.nav-text-link {
+    color: var(--font-color-navbar-dark);
+    transition: 1s;
+}
+
+.nav-text-page {
+    background-color: #272320;
+    color: var(--primary);
+    padding: 8px 15px;
+    border-radius: 10px;
+}
+
+
+
+
+.header-nav_search {
+    width: 100%;
+    height: 65px;
+    /* var(--background-color-navbar-dark) */
+    background-color: var(--background-color-navbar-dark);
+    border-bottom: 1px solid var(--border-color-dark);
+    /* background-color: #ffffff00; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* changeable In JS */
+    display: none;
+}
+
+.header-search {
+    height: 35px;
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    padding: 3px;
+    background-color: var(--background-color-navbar-dark);
+    border: 2px solid var(--border-color-dark);
+}
+
+/* .container__icon-box {} */
+
+.header-search_icon {
+    width: 100%;
+    display: flex;
+    color: var(--border-color-dark);
+    margin-left: 10px;
+}
+
+.header-search_input {
+    font-family: var(--font-family);
+    width: 560px;
+    height: 30px;
+    border: 1px solid var(--background-color-navbar-dark);
+    border-radius: 8px;
+    background-color: var(--background-color-navbar-dark);
+    color: var(--font-color-for-dark);
+}
+
+.header-nav_search input:focus {
+    outline: none;
+}
+
+/* .header-search_input:focus {
+    border: 1px solid var(--background-color-navbar-dark);
+} */
+
+
+
+
+
+
+
+
+.header-nav_btn_bars {
+    display: none;
+}
+
+.header-btn_bars {
+    background-color: var(--background-color-navbar-dark);
+    border-bottom: 1px solid var(--border-color-dark);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 16px;
+    padding-left: 16px;
+    height: 200px;
+    /* changeable In JS */
+    display: none;
+}
+
+
+.open-text {
+    /* background-color: #272320; */
+    height: 40px;
+    border-radius: 3px;
+    padding-bottom: 5px;
+}
+
+.texts-menu {
+    /* margin-top: 15px; */
+    padding: 10px 20px;
+    color: var(--font-color-for-dark);
+}
+
+
+
+
+
+
+
+.selected {
+    background-color: #1F1D1B;
+    color: var(--primary);
+}
+
+
+
+
+
+
+
+
+/* /////////////////////////////////////////////////////////////////// */
+/* /////////////////////////////////////////////////////////////////// */
+
+
+
+
+
+
+
+
+@media screen and (max-width: 480px) {
+    .header-nav {
+        display: flex;
+        padding-top: 14px;
+        padding-bottom: 14px;
+    }
+
+    .container__header-title {
+        width: 100px;
+    }
+
+    .logo-header {
+        margin-right: 10px;
+    }
+
+    .container_btn__header {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: -152.5px;
+        margin-right: 25px;
+    }
+
+    .header__button-heart {
+        width: 45px;
+        height: 45px;
+    }
+
+    .nav-texts {
+        display: none;
+    }
+
+    .header-nav_search .header-search {
+        height: 35px;
+        width: 310px;
+        padding: 3px;
+    }
+
+    .header-search_icon {
+        width: 100%;
+        margin-left: 10px;
+    }
+
+    .header-search_input {
+        width: 270px;
+        height: 30px;
+    }
+
+    .header-nav_btn_bars {
+        display: flex;
+    }
+
+}
+
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+
+    .header-nav {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .container__header-title {
+        width: 100px;
+        margin-right: 30px;
+        grid-column: 1/3;
+    }
+
+    .container_btn__header {
+        grid-column: 4/3;
+        margin-left: 15px;
+    }
+
+    .header__button-heart {
+        width: 45px;
+        height: 45px;
+    }
+
+    .nav-texts {
+        display: none;
+    }
+
+    .header-nav_search .header-search {
+        height: 35px;
+        width: 400px;
+        padding: 3px;
+    }
+
+    .header-search_icon {
+        width: 100%;
+        margin-left: 10px;
+    }
+
+    .header-search_input {
+        width: 370px;
+        height: 30px;
+    }
+
+    .header-nav_btn_bars {
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+    .header-nav {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    .container__header-title {
+        width: 100px;
+        grid-column: 2/3;
+        margin-right: -50px;
+    }
+
+    .container_btn__header {
+        margin-left: 50px;
+        grid-column: 5/6;
+    }
+
+    .header__button-heart {
+        width: 45px;
+        height: 45px;
+    }
+
+    .nav-texts {
+        grid-column: 3/4;
+        margin-right: 10px;
+    }
+}
