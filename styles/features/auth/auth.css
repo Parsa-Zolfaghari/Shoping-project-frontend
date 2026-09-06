@@ -448,6 +448,145 @@ body {
     }
 }
 
+
+/* ========================================
+   EMAIL VERIFICATION
+======================================== */
+
+.from-email__vertification {
+    width: min(100% - 40px, 308px);
+    margin: 40px auto;
+    padding: 27px 26px 26px;
+
+    background-color: var(--auth-card-bg);
+    border: 1px solid var(--auth-border);
+    border-radius: 12px;
+}
+
+.container-email__vertification-box {
+    width: 100%;
+}
+
+.container-texts__box {
+    margin-bottom: 28px;
+    text-align: center;
+}
+
+.email-vertificated__title {
+    display: block;
+    margin-bottom: 3px;
+
+    color: var(--auth-text);
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 1.6;
+}
+
+.write-code__text {
+    color: var(--auth-text-muted);
+    font-size: 11px;
+    line-height: 1.7;
+}
+
+.container-input__write-code {
+    display: flex;
+    justify-content: center;
+    gap: 7px;
+    margin-bottom: 19px;
+    direction: ltr;
+}
+
+.input-write__code {
+    width: 38px;
+    height: 42px;
+    padding: 0;
+
+    border: 1px solid var(--auth-border);
+    border-radius: 8px;
+    outline: none;
+
+    background-color: var(--auth-input-bg);
+    color: var(--auth-text);
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.input-write__code:focus {
+    border-color: var(--auth-accent);
+    box-shadow: 0 0 0 2px rgba(201, 160, 107, 0.08);
+}
+
+.container-button__vertification,
+.container-button__resend-code {
+    width: 100%;
+}
+
+.btn-vertification,
+.btn-resend__code {
+    width: 100%;
+    height: 35px;
+
+    border: none;
+    border-radius: 7px;
+
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease,
+        transform 0.15s ease;
+}
+
+.btn-vertification {
+    background-color: var(--auth-accent);
+    color: #17130f;
+}
+
+.btn-vertification:hover {
+    background-color: var(--auth-accent-hover);
+}
+
+.btn-vertification:active,
+.btn-resend__code:active {
+    transform: scale(0.98);
+}
+
+.container-button__resend-code {
+    margin-top: 12px;
+}
+
+.btn-resend__code {
+    height: auto;
+    padding: 0;
+
+    background: transparent;
+    color: var(--auth-accent);
+    font-size: 11px;
+    font-weight: 500;
+}
+
+.btn-resend__code:hover {
+    color: var(--auth-accent-hover);
+}
+
+.container-text__suntime {
+    margin-top: 21px;
+    text-align: center;
+}
+
+.text-suntime {
+    color: var(--auth-text-muted);
+    font-size: 11px;
+    letter-spacing: 0.08em;
+}
+
 /* ========================================
    RESPONSIVE
 ======================================== */
@@ -518,6 +657,21 @@ body {
         font-size: 11px;
     }
 
+    .from-email__vertification {
+        width: min(100% - 32px, 308px);
+        margin: 20px auto;
+        padding: 25px 20px 23px;
+    }
+
+    .email-vertificated__title {
+        font-size: 16px;
+    }
+
+    .input-write__code {
+        width: 36px;
+        height: 40px;
+        font-size: 14px;
+    }
 
     .auth-footer {
         font-size: 10px;
@@ -537,6 +691,19 @@ body {
 
     .auth-card {
         padding: 22px 16px;
+    }
+
+    .from-email__vertification {
+        width: min(100% - 24px, 308px);
+        padding: 22px 16px;
+    }
+
+    .container-input__write-code {
+        gap: 5px;
+    }
+
+    .input-write__code {
+        width: 34px;
     }
 
 }
